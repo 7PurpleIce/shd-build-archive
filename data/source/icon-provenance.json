@@ -1,0 +1,462 @@
+{
+  "Ablative Nano-Plating": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Tardigrade Armor System",
+    "file": "tardigradearmorsystem-ablativenanoplating.png"
+  },
+  "Abridged": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Tinkerer",
+    "file": "tinkerer-abridged.png"
+  },
+  "Accelerando": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Virtuoso",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Ace in the Sleeve": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Aces & Eights",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Advanced Combat Tactics": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Future Initiative",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "All for One": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Concentrated Company",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Alternating Current": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Waveform",
+    "file": "waveform-alternatingcurrent.png"
+  },
+  "Best Buds": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Rigger",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Bleeding Edge": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Ridgeway's Pride",
+    "file": "ridgewayspride-bleedingedge.png"
+  },
+  "Bob and Weave": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Nimble Holster",
+    "file": "nimbleholster-bobandweave.png"
+  },
+  "Bond": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Beacon",
+    "file": "beacon-bond.png"
+  },
+  "Chain Combustion": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ortiz: Exuro",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Challenger": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Provocator",
+    "file": "provocator-challenger.png"
+  },
+  "Chemical Agent": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "The Catalyst",
+    "file": "thecatalyst-chemicalagent.png"
+  },
+  "Cold": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Heartbreaker",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Combat Medic": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Birdie's Quick Fix Pack",
+    "file": "birdiesquickfixpack-combatmedic.png"
+  },
+  "Compiler Optimization": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "System Corruption",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Complete Uptime": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Rigger",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Counter": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Centurion's Scabbard",
+    "file": "centurionsscabbard-counter.png"
+  },
+  "Critical Measures": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Negotiator's Dilemma",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Deceit": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Aegis",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Decoy King": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Sarru",
+    "file": "sarru-decoyking.png"
+  },
+  "Defibrillator": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Shocker Punch",
+    "file": "shockerpunch-defibrillator.png"
+  },
+  "Dragon's Glare": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Imperial Dynasty",
+    "file": "imperialdynasty-dragonsglare.png"
+  },
+  "Eagle's Strike / Tenacity": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Eagle Bearer",
+    "file": "eaglebearer-eaglesstrike.png"
+  },
+  "Endless Hunger": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hunter's Fury",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Escape Plan": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Acosta's Kneepads",
+    "file": "acostaskneepads-escapeplan.png"
+  },
+  "Flashpoint": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ember Engine",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Fortissimo": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Virtuoso",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "From the Shadows": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Umbra Initiative",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Heatstroke": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ortiz: Exuro",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Hivemind": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Measured Assembly",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Hoarder": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Collector",
+    "file": "collector-hoarder.png"
+  },
+  "Impervious": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Nurse's Kneepads",
+    "file": "nurseskneepads-impervious.png"
+  },
+  "Improved Dampeners": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ortiz: Reficere",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Improved Materials": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Foundry Bulwark",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Increased Interest": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Refactor",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Inner Core": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Core Strength",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Into the Light": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Umbra Initiative",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Iron Grip": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Rugged Gauntlets",
+    "file": "ruggedgauntlets-irongrip.png"
+  },
+  "Kill Confirmed": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Memento",
+    "file": "memento-killconfirmed.png"
+  },
+  "Lucky": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hotshot",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Max BPM": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Heartbreaker",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Multithreaded Execution": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "System Corruption",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "No Limit": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Aces & Eights",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "One for All": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Concentrated Company",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "One in the Hand... / ...Two in the Bag": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Acosta's Go-Bag",
+    "file": "acostasgobag-oneinhand.png"
+  },
+  "Ostracize": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Blacklisters",
+    "file": "blacklisters-ostracize.png"
+  },
+  "Outer Core": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Core Strength",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Over the top": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Bloody Knuckles",
+    "file": "bloodyknuckles-overthetop.png"
+  },
+  "Over-engineered": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Refactor",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Overcharged Nanites": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ortiz: Reficere",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Overcharging": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Cavalier",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Overwhelming Force": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hunter's Fury",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Pack Instincts": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Coyote's Mask",
+    "file": "coyotesmask-packinstincts.png"
+  },
+  "Parabellum Rounds": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ongoing Directive",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Parkour!": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "NinjaBike Messenger Kneepads",
+    "file": "ninjabikemessengerkneepads-parkour.png"
+  },
+  "Patriotic Boost": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "True Patriot",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Point of Honor": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Breaking Point",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Point of no Return": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Breaking Point",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Polyethylene Plating": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Aegis",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Positive Reinforcement": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hard Wired",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Press the Advantage": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Striker's Battlegear",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Process Refinery": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Foundry Bulwark",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Proliferation": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Eclipse Protocol",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Quick Draw": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Dodge City Gunslinger's Holster",
+    "file": "dodgecitygunslingersholster-quickdraw.png"
+  },
+  "Rebalance": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Harrier Pride",
+    "file": "harrierpride-rebalance.png"
+  },
+  "Resolved": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Iron Will",
+    "file": "ironwill-resolved.png"
+  },
+  "Resourceful": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "NinjaBike Messenger Backpack",
+    "file": "ninjabikemessengerbackpack-resourceful.png"
+  },
+  "Risk Management": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Striker's Battlegear",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Safe Charging": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Cavalier",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Short Circuit": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hard Wired",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Signature Moves": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Tip of the Spear",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Slotted": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Investor",
+    "file": "investor-slotted.png"
+  },
+  "Smart Cooperation": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Measured Assembly",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Smoke Screen": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Exodus Gloves",
+    "file": "exodusgloves-smokescreen.png"
+  },
+  "Snowball": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Tipping Scales",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Specialized Destruction": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Tip of the Spear",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Stand Tall": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Hotshot",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Stand Your Ground": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Sawyer's Kneepads",
+    "file": "sawyerskneepads-standyourground.png"
+  },
+  "Sustainability": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Tipping Scales",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Symptom Aggravator": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Eclipse Protocol",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Tactical Superiority": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Future Initiative",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Target Rich Environment": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Negotiator's Dilemma",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Toxic Delivery": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Vile",
+    "file": "vile-toxicdelivery.png"
+  },
+  "Transference Overclock": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "BTSU Datagloves",
+    "file": "btsudatagloves-transferenceoverclock.png"
+  },
+  "Trauma Specialist": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ongoing Directive",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Vicious Cycle": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Catharsis",
+    "file": "catharsis-viciouscycle.png"
+  },
+  "Waving the Flag": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "True Patriot",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "Weakest Link": {
+    "source": "https://hi-dep.github.io/division2/?view=exotic_gear",
+    "item": "Overdogs",
+    "file": "overdogs-weakestlink.png"
+  },
+  "White Hot": {
+    "source": "https://hi-dep.github.io/division2/?view=gearset",
+    "gearSet": "Ember Engine",
+    "representation": "Parent gear set icon for its unique talent"
+  },
+  "You can look...but you can't touch": {
+    "source": "https://hi-dep.github.io/division2/img/icon/exotic_weapon/Primadonna_You%20can%20look....png",
+    "selectedTalent": "You can look...",
+    "selection": "First talent icon, as requested"
+  }
+}

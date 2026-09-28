@@ -1,0 +1,818 @@
+{
+  "weapon": [
+    {
+      "grade": 1,
+      "receiver_components": 76,
+      "steel": 38,
+      "titanium": 45,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 2,
+      "receiver_components": 90,
+      "steel": 68,
+      "titanium": 52,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 3,
+      "receiver_components": 106,
+      "steel": 110,
+      "titanium": 61,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 4,
+      "receiver_components": 125,
+      "steel": 164,
+      "titanium": 72,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 5,
+      "receiver_components": 147,
+      "steel": 230,
+      "titanium": 85,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 6,
+      "receiver_components": 162,
+      "steel": 0,
+      "titanium": 105,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 7,
+      "receiver_components": 198,
+      "steel": 0,
+      "titanium": 122,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 8,
+      "receiver_components": 238,
+      "steel": 0,
+      "titanium": 141,
+      "field_recon_data": 1,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 9,
+      "receiver_components": 282,
+      "steel": 0,
+      "titanium": 162,
+      "field_recon_data": 2,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 10,
+      "receiver_components": 330,
+      "steel": 0,
+      "titanium": 185,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 11,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 12,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 4,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 13,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 4,
+      "shd_calibration": 1,
+      "exotic_components": 0
+    },
+    {
+      "grade": 14,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 1,
+      "exotic_components": 1
+    },
+    {
+      "grade": 15,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 16,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 6,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 17,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 6,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 18,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 3,
+      "exotic_components": 2
+    },
+    {
+      "grade": 19,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 3,
+      "exotic_components": 2
+    },
+    {
+      "grade": 20,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 8,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 21,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 8,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 22,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 9,
+      "shd_calibration": 4,
+      "exotic_components": 3
+    },
+    {
+      "grade": 23,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 9,
+      "shd_calibration": 5,
+      "exotic_components": 3
+    },
+    {
+      "grade": 24,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 5,
+      "exotic_components": 3
+    },
+    {
+      "grade": 25,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 6,
+      "exotic_components": 3
+    },
+    {
+      "grade": 26,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 11,
+      "shd_calibration": 6,
+      "exotic_components": 4
+    },
+    {
+      "grade": 27,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 11,
+      "shd_calibration": 6,
+      "exotic_components": 4
+    },
+    {
+      "grade": 28,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 7,
+      "exotic_components": 4
+    },
+    {
+      "grade": 29,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 7,
+      "exotic_components": 4
+    },
+    {
+      "grade": 30,
+      "receiver_components": 0,
+      "steel": 0,
+      "titanium": 0,
+      "field_recon_data": 13,
+      "shd_calibration": 8,
+      "exotic_components": 5
+    }
+  ],
+  "gear": [
+    {
+      "grade": 1,
+      "protective_fabric": 49,
+      "polycarbonate": 47,
+      "carbon_fiber": 35,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 2,
+      "protective_fabric": 58,
+      "polycarbonate": 54,
+      "carbon_fiber": 38,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 3,
+      "protective_fabric": 67,
+      "polycarbonate": 61,
+      "carbon_fiber": 41,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 4,
+      "protective_fabric": 76,
+      "polycarbonate": 68,
+      "carbon_fiber": 44,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 5,
+      "protective_fabric": 85,
+      "polycarbonate": 75,
+      "carbon_fiber": 47,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 6,
+      "protective_fabric": 92,
+      "polycarbonate": 0,
+      "carbon_fiber": 58,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 7,
+      "protective_fabric": 100,
+      "polycarbonate": 0,
+      "carbon_fiber": 62,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 8,
+      "protective_fabric": 108,
+      "polycarbonate": 0,
+      "carbon_fiber": 66,
+      "field_recon_data": 1,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 9,
+      "protective_fabric": 116,
+      "polycarbonate": 0,
+      "carbon_fiber": 70,
+      "field_recon_data": 2,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 10,
+      "protective_fabric": 124,
+      "polycarbonate": 0,
+      "carbon_fiber": 74,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 11,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 12,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 4,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 13,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 4,
+      "shd_calibration": 1,
+      "exotic_components": 0
+    },
+    {
+      "grade": 14,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 1,
+      "exotic_components": 1
+    },
+    {
+      "grade": 15,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 16,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 6,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 17,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 6,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 18,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 3,
+      "exotic_components": 2
+    },
+    {
+      "grade": 19,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 3,
+      "exotic_components": 2
+    },
+    {
+      "grade": 20,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 8,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 21,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 8,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 22,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 9,
+      "shd_calibration": 4,
+      "exotic_components": 3
+    },
+    {
+      "grade": 23,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 9,
+      "shd_calibration": 5,
+      "exotic_components": 3
+    },
+    {
+      "grade": 24,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 5,
+      "exotic_components": 3
+    },
+    {
+      "grade": 25,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 6,
+      "exotic_components": 3
+    },
+    {
+      "grade": 26,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 11,
+      "shd_calibration": 6,
+      "exotic_components": 4
+    },
+    {
+      "grade": 27,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 11,
+      "shd_calibration": 6,
+      "exotic_components": 4
+    },
+    {
+      "grade": 28,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 7,
+      "exotic_components": 4
+    },
+    {
+      "grade": 29,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 7,
+      "exotic_components": 4
+    },
+    {
+      "grade": 30,
+      "protective_fabric": 0,
+      "polycarbonate": 0,
+      "carbon_fiber": 0,
+      "field_recon_data": 13,
+      "shd_calibration": 8,
+      "exotic_components": 5
+    }
+  ],
+  "skill": [
+    {
+      "grade": 1,
+      "ceramics": 122,
+      "electronics": 76,
+      "printer_filament": 130,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 2,
+      "ceramics": 138,
+      "electronics": 88,
+      "printer_filament": 150,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 3,
+      "ceramics": 154,
+      "electronics": 100,
+      "printer_filament": 170,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 4,
+      "ceramics": 170,
+      "electronics": 112,
+      "printer_filament": 190,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 5,
+      "ceramics": 186,
+      "electronics": 124,
+      "printer_filament": 210,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 6,
+      "ceramics": 0,
+      "electronics": 136,
+      "printer_filament": 230,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 7,
+      "ceramics": 0,
+      "electronics": 148,
+      "printer_filament": 250,
+      "field_recon_data": 0,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 8,
+      "ceramics": 0,
+      "electronics": 160,
+      "printer_filament": 270,
+      "field_recon_data": 1,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 9,
+      "ceramics": 0,
+      "electronics": 172,
+      "printer_filament": 290,
+      "field_recon_data": 2,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 10,
+      "ceramics": 0,
+      "electronics": 184,
+      "printer_filament": 310,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 11,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 3,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 12,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 4,
+      "shd_calibration": 0,
+      "exotic_components": 0
+    },
+    {
+      "grade": 13,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 1,
+      "exotic_components": 0
+    },
+    {
+      "grade": 14,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 5,
+      "shd_calibration": 1,
+      "exotic_components": 1
+    },
+    {
+      "grade": 15,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 6,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 16,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 2,
+      "exotic_components": 1
+    },
+    {
+      "grade": 17,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 7,
+      "shd_calibration": 3,
+      "exotic_components": 1
+    },
+    {
+      "grade": 18,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 8,
+      "shd_calibration": 3,
+      "exotic_components": 2
+    },
+    {
+      "grade": 19,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 9,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 20,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 4,
+      "exotic_components": 2
+    },
+    {
+      "grade": 21,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 10,
+      "shd_calibration": 5,
+      "exotic_components": 2
+    },
+    {
+      "grade": 22,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 11,
+      "shd_calibration": 5,
+      "exotic_components": 3
+    },
+    {
+      "grade": 23,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 6,
+      "exotic_components": 3
+    },
+    {
+      "grade": 24,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 12,
+      "shd_calibration": 6,
+      "exotic_components": 3
+    },
+    {
+      "grade": 25,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 13,
+      "shd_calibration": 7,
+      "exotic_components": 3
+    },
+    {
+      "grade": 26,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 14,
+      "shd_calibration": 7,
+      "exotic_components": 4
+    },
+    {
+      "grade": 27,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 14,
+      "shd_calibration": 8,
+      "exotic_components": 4
+    },
+    {
+      "grade": 28,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 15,
+      "shd_calibration": 8,
+      "exotic_components": 4
+    },
+    {
+      "grade": 29,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 16,
+      "shd_calibration": 9,
+      "exotic_components": 4
+    },
+    {
+      "grade": 30,
+      "ceramics": 0,
+      "electronics": 0,
+      "printer_filament": 0,
+      "field_recon_data": 17,
+      "shd_calibration": 9,
+      "exotic_components": 5
+    }
+  ]
+}
