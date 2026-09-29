@@ -1,0 +1,28 @@
+'use client';
+import {useEffect,useState} from 'react';
+import {CalendarDays,ChevronLeft,ChevronRight,Clock3,ArrowUpRight,ArrowDownRight} from 'lucide-react';
+import {Table,TableHeader,TableBody,TableHead,TableRow,TableCell} from '@/components/ui/table';
+import {SectionHeading} from './Catalog';
+import {useLocale} from './Locale';
+import {TRADER_WINDOWS,traderTime,traderToday,traderEvent,traderMonth} from '@/lib/traders';
+import './traders.css';
+export function Traders(){
+ const {t,locale}=useLocale();
+ const [now,setNow]=useState(()=>new Date());
+ const [view,setView]=useState<{year:number;month:number}|null>(null);
+ useEffect(()=>{const timer=setInterval(()=>setNow(new Date()),60000);return ()=>clearInterval(timer)},[]);
+ const today=traderToday(now,locale);const {year,month}=view??today;
+ const days=traderMonth(year,month);const zone=t('UTC','МСК');
+ const weekdays=t('Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday','Понедельник,Вторник,Среда,Четверг,Пятница,Суббота,Воскресенье').split(',');
+ const shortDays=t('Mon,Tue,Wed,Thu,Fri,Sat,Sun','Пн,Вт,Ср,Чт,Пт,Сб,Вс').split(',');
+ const monthLabel=new Intl.DateTimeFormat(locale==='ru'?'ru-RU':'en-GB',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(Date.UTC(year,month,1)));
+ function move(step:number){const next=new Date(Date.UTC(year,month+step,1));setView({year:next.getUTCFullYear(),month:next.getUTCMonth()})}
+ return <div className="traders-page"><SectionHeading eyebrow={t('HIDDEN VENDORS / 06','СКРЫТЫЕ ТОРГОВЦЫ / 06')} title={t('Traders','Торговцы')}><span className="trader-zone"><Clock3 size={16}/>{t('All times in UTC','Время по МСК · UTC+3')}</span></SectionHeading>
+ <p className="trader-intro">{t('Hidden traders opening dates','Даты работы скрытых торговцев')}</p>
+ <div className="trader-periods">{TRADER_WINDOWS.map((window,index)=><article className="trader-period" key={window.day}><div className="trader-period-top"><span>{t('EVERY WEEK','КАЖДУЮ НЕДЕЛЮ')}</span><b>0{index+1}</b></div><div className="trader-period-time"><ArrowUpRight size={20}/><div><small>{t('Opens','Открывается')}</small><strong>{weekdays[window.day-1]}</strong></div><time>{traderTime(window.hour,locale)}<small>{zone}</small></time></div><div className="trader-period-time trader-period-end"><ArrowDownRight size={20}/><div><small>{t('Closes','Закрывается')}</small><strong>{weekdays[window.day]}</strong></div><time>{traderTime(window.hour,locale)}<small>{zone}</small></time></div><div className="trader-duration"><Clock3 size={14}/>{t('Open for 24 hours','Работает 24 часа')}</div></article>)}</div>
+ <section className="trader-calendar" aria-label={t('Traders calendar','Календарь торговцев')}><div className="trader-calendar-header"><div><span className="trader-calendar-kicker"><CalendarDays size={16}/>{t('MONTHLY SCHEDULE','РАСПИСАНИЕ НА МЕСЯЦ')}</span><h2 aria-live="polite">{monthLabel}</h2></div><div className="trader-month-controls"><button className="secondary-button" onClick={()=>{setNow(new Date());setView(null)}}>{t('Today','Сегодня')}</button><button className="secondary-button" onClick={()=>move(-1)} aria-label={t('Previous month','Предыдущий месяц')}><ChevronLeft size={19}/></button><button className="secondary-button" onClick={()=>move(1)} aria-label={t('Next month','Следующий месяц')}><ChevronRight size={19}/></button></div></div>
+ <div className="trader-legend"><span className="trader-open"><ArrowUpRight size={16}/>{t('Opens','Открытие')}</span><span className="trader-close"><ArrowDownRight size={16}/>{t('Closes','Закрытие')}</span><span>{zone}</span></div>
+ <p className="trader-mobile-hint">{t('Swipe the calendar to see the full week.','Прокрути календарь вбок, чтобы увидеть всю неделю.')}</p>
+ <div className="trader-calendar-scroll" tabIndex={0} role="region" aria-label={t('Monthly schedule, scroll horizontally','Расписание месяца, горизонтальная прокрутка')}><Table className="trader-month-table"><TableHeader><TableRow>{shortDays.map((day,index)=><TableHead key={day} scope="col"><abbr title={weekdays[index]}>{day}</abbr></TableHead>)}</TableRow></TableHeader><TableBody>{Array.from({length:days.length/7},(_,week)=><TableRow key={week}>{days.slice(week*7,week*7+7).map(day=>{const event=traderEvent(day.weekday);const current=day.year===today.year&&day.month===today.month&&day.day===today.day;return <TableCell key={day.key} className={[day.month!==month?'trader-outside':'',current?'trader-today':'',event?'trader-day-'+event.kind:''].join(' ')}><div className="trader-day-number"><time dateTime={day.key} aria-current={current?'date':undefined}>{day.day}</time>{current&&<span>{t('Today','Сегодня')}</span>}</div>{event&&<div className={'trader-calendar-event trader-'+event.kind}>{event.kind==='open'?<ArrowUpRight size={15}/>:<ArrowDownRight size={15}/>}<span>{event.kind==='open'?t('Opens','Открытие'):t('Closes','Закрытие')}<strong>{traderTime(event.hour,locale)}</strong></span></div>}</TableCell>})}</TableRow>)}</TableBody></Table></div>
+ <p className="trader-calendar-note">{t('The schedule repeats every week. Each opening lasts 24 hours.','Расписание повторяется каждую неделю. Каждый период работы длится 24 часа.')}</p></section></div>;
+}

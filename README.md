@@ -54,3 +54,7 @@ The build editor requires a title and description in both RU and ENG, with one s
 ## Build tags
 
 Owners can assign any combination of PvP, PvE, Sniper, Damage dealer, heal, support and tank when adding or editing a build. Tags appear on cards. The public tag filter matches all selected tags and combines with the current-language title search; resetting tags shows untagged builds again. Existing builds default to an empty tag list. The database validates the supported values, while existing owner-only write policies remain in effect.
+
+## Traders calendar
+
+The Traders tab displays the supplied recurring hidden-vendor schedule: Monday 03:00–Tuesday 03:00, Wednesday 11:00–Thursday 11:00, and Friday 19:00–Saturday 19:00 Moscow time. English displays the same instants at 00:00, 08:00 and 16:00 UTC respectively. The monthly calendar starts on Monday, supports previous/next month and Today, marks opening and closing dates, and computes today's date in the displayed timezone independently of the viewer's device timezone. Schedule constants live in `lib/traders.ts`.
