@@ -19,6 +19,10 @@ create table public.archive_builds (
  title_en text,
  description_ru text,
  description_en text,
+ tags text[] not null default '{}' constraint archive_builds_tags_valid check (
+  tags <@ array['PvP','PvE','Sniper','Damage dealer','heal','support','tank']::text[]
+  and array_position(tags,null) is null and cardinality(tags)<=7
+ ),
  constraint archive_builds_translations_complete check (
   num_nonnulls(title_ru,title_en,description_ru,description_en)=0
   or (

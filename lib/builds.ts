@@ -1,9 +1,19 @@
 import {requireSupabase} from './supabase';
-export type Build={id:string;title:string;description:string;image_key:string;created_at:string;title_ru?:string|null;description_ru?:string|null;title_en?:string|null;description_en?:string|null};
+export const BUILD_TAGS=['PvP','PvE','Sniper','Damage dealer','heal','support','tank'] as const;
+export type BuildTag=typeof BUILD_TAGS[number];
+export type Build={tags?:BuildTag[];id:string;title:string;description:string;image_key:string;created_at:string;title_ru?:string|null;description_ru?:string|null;title_en?:string|null;description_en?:string|null};
 const BUCKET='build-images';
-const BUILD_FIELDS='id,title,description,title_ru,description_ru,title_en,description_en,image_key,created_at';
+const BUILD_FIELDS='id,title,description,title_ru,description_ru,title_en,description_en,image_key,created_at,tags';
 export function getBuildText(build:Build,locale:'en'|'ru'){
  return {title:build[`title_${locale}`]?.trim()||build.title,description:build[`description_${locale}`]?.trim()||build.description};
+}
+export function matchesBuildTags(build:Pick<Build,'tags'>,selected:readonly BuildTag[]){
+ return selected.every(tag=>(build.tags??[]).includes(tag));
+}
+function readBuildTags(payload:FormData):BuildTag[]{
+ const tags=[...new Set(payload.getAll('tags').map(String))];
+ if(tags.some(tag=>!BUILD_TAGS.includes(tag as BuildTag)))throw new Error('Неизвестный тег / Unknown tag.');
+ return tags as BuildTag[];
 }
 function readTranslations(payload:FormData){
  const title_ru=String(payload.get('title_ru')??'').trim();
@@ -12,7 +22,7 @@ function readTranslations(payload:FormData){
  const description_en=String(payload.get('description_en')??'').trim();
  if([title_ru,title_en].some(v=>!v||v.length>120)||[description_ru,description_en].some(v=>!v||v.length>60000))throw new Error('Заполни название и описание на RU и ENG / Fill in the RU and ENG title and description.');
  // Keep legacy fields for cached clients until they refresh.
- return {title:title_en,description:description_en,title_ru,title_en,description_ru,description_en};
+ return {title:title_en,description:description_en,title_ru,title_en,description_ru,description_en,tags:readBuildTags(payload)};
 }
 export async function listBuilds():Promise<Build[]>{
  const {data,error}=await requireSupabase().from('archive_builds').select(BUILD_FIELDS).order('created_at',{ascending:false});

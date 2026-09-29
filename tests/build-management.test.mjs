@@ -23,3 +23,9 @@ console.log('PASS: edit preserves image, replacement and deletion ordering, deni
 api=setup();result=await api.updateBuild(original,payload());assert.equal(result.build.title_ru,'Обновлённый');assert.equal(api.getBuildText(result.build,'ru').description,'Описание');assert.equal(api.getBuildText(result.build,'en').title,'Updated');assert.equal(api.getBuildText(original,'ru').title,'Before');assert.equal(api.getBuildText(original,'en').description,'Before');
 const incomplete=payload();incomplete.delete('description_en');api=setup();await assert.rejects(api.updateBuild(original,incomplete));assert.equal(api.events.length,0);
 console.log('PASS: bilingual persistence, locale switching, legacy fallback and incomplete translation rejection.');
+
+api=setup();const tagged=payload();tagged.append('tags','PvE');tagged.append('tags','heal');tagged.append('tags','heal');result=await api.updateBuild(original,tagged);assert.deepEqual(Array.from(result.build.tags),['PvE','heal']);
+assert.equal(api.matchesBuildTags(result.build,['PvE','heal']),true);assert.equal(api.matchesBuildTags(result.build,['PvE','tank']),false);assert.equal(api.matchesBuildTags(original,[]),true);assert.equal(api.matchesBuildTags(original,['PvE']),false);
+result=await api.updateBuild(result.build,payload());assert.equal(result.build.tags.length,0);
+api=setup();const invalidTag=payload();invalidTag.append('tags','unknown');await assert.rejects(api.updateBuild(original,invalidTag));assert.equal(api.events.length,0);
+console.log('PASS: multiple tags, deduplication, all-selected filtering, untagged builds, tag removal and invalid tag rejection.');

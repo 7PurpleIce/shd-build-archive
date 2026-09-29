@@ -50,3 +50,7 @@ Dedicated project `shd-build-archive` is healthy in Frankfurt. The schema and st
 ## Build translations
 
 The build editor requires a title and description in both RU and ENG, with one shared screenshot. Cards, expanded descriptions and name search use the current site language. Existing builds without translations retain their original text as a fallback; their original copy is shown in the editor for manual translation. New fields are added by `supabase/migrations/20260929131408_build_translations.sql`; `schema.sql` includes them for fresh projects. Database owner policies are unchanged.
+
+## Build tags
+
+Owners can assign any combination of PvP, PvE, Sniper, Damage dealer, heal, support and tank when adding or editing a build. Tags appear on cards. The public tag filter matches all selected tags and combines with the current-language title search; resetting tags shows untagged builds again. Existing builds default to an empty tag list. The database validates the supported values, while existing owner-only write policies remain in effect.
