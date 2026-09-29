@@ -25,3 +25,12 @@
 @media(min-width:1450px){.augment-choice-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.augment-workspace{grid-template-columns:minmax(0,1fr) 320px;gap:24px}.augment-choice{padding:18px}}
 @media(max-width:1050px){.augment-workspace{grid-template-columns:1fr}.augment-sidebar{position:static;grid-template-columns:1fr 1fr;align-items:start}.augment-choice>p{min-height:48px}}
 @media(max-width:600px){.augment-workspace{gap:20px}.augment-choice-grid,.augment-sidebar{grid-template-columns:1fr}.augment-choice{padding:20px}.augment-choice>p{min-height:0}.augment-choice-top{margin-bottom:14px}.augment-progression{padding:20px}.augment-builder h2,.augment-sidebar h2,.augment-progression h2{font-size:21px}.augment-builder .calc-heading{gap:10px}.augment-level-badge{font-size:12px}.augment-loadout,.augment-cost-card{padding:22px}}
+
+/* Shared card geometry across the archive. */
+:root{--archive-card-radius:10px}
+.catalog-card,.expanded-entry,.category-choices button,.build-card,.empty-state,
+.calc-panel,.expertise-workspace .calc-panel,.upgrade-planner .upgrade-item,
+.effect-card,.level-comparison article,.augment-choice,.augment-loadout,
+.augment-cost-card,.augment-progression,.build-dialog{border-radius:var(--archive-card-radius)}
+.build-item.expanded>.build-card{border-radius:var(--archive-card-radius) var(--archive-card-radius) 0 0}
+.build-details{border-radius:0 0 var(--archive-card-radius) var(--archive-card-radius)}
