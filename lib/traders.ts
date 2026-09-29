@@ -24,3 +24,15 @@ export function traderMonth(year:number,month:number){
   return {year:date.getUTCFullYear(),month:date.getUTCMonth(),day:date.getUTCDate(),weekday:date.getUTCDay(),key:date.toISOString().slice(0,10)};
  });
 }
+
+export function traderStatus(window:{day:number;hour:number},now:Date){
+ const dayMs=86400000;const weekMs=7*dayMs;const instant=now.getTime();
+ const monday=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()-(now.getUTCDay()+6)%7);
+ let openedAt=monday+(window.day-1)*dayMs+window.hour*3600000;
+ if(instant<openedAt)openedAt-=weekMs;
+ const active=instant<openedAt+dayMs;
+ const target=active?openedAt+dayMs:openedAt+weekMs;
+ // Round up so a still-closed trader never shows 00h 00m before opening.
+ const minutes=Math.max(0,Math.ceil((target-instant)/60000));
+ return {active,target,hours:Math.floor(minutes/60),minutes:minutes%60};
+}
