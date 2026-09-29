@@ -46,3 +46,7 @@ The 257 referenced game icons are preserved losslessly in `assets/icons-*.b64` (
 ## Migration status
 
 Dedicated project `shd-build-archive` is healthy in Frankfurt. The schema and storage policies have been applied. Owner provisioning and Pages activation remain required. The task tracker uses its own project and is unaffected.
+
+## Build translations
+
+The build editor requires a title and description in both RU and ENG, with one shared screenshot. Cards, expanded descriptions and name search use the current site language. Existing builds without translations retain their original text as a fallback; their original copy is shown in the editor for manual translation. New fields are added by `supabase/migrations/20260929131408_build_translations.sql`; `schema.sql` includes them for fresh projects. Database owner policies are unchanged.

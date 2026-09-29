@@ -14,7 +14,21 @@ create table public.archive_builds (
  title text not null check (char_length(btrim(title)) between 1 and 120),
  description text not null check (char_length(btrim(description)) between 1 and 60000),
  image_key text not null unique check (image_key ~ '^[a-f0-9-]{36}\.(png|jpg|webp)$'),
- created_at timestamptz not null default now()
+ created_at timestamptz not null default now(),
+ title_ru text,
+ title_en text,
+ description_ru text,
+ description_en text,
+ constraint archive_builds_translations_complete check (
+  num_nonnulls(title_ru,title_en,description_ru,description_en)=0
+  or (
+   num_nonnulls(title_ru,title_en,description_ru,description_en)=4
+   and char_length(btrim(title_ru)) between 1 and 120
+   and char_length(btrim(title_en)) between 1 and 120
+   and char_length(btrim(description_ru)) between 1 and 60000
+   and char_length(btrim(description_en)) between 1 and 60000
+  )
+ )
 );
 alter table public.archive_builds enable row level security;
 revoke all on public.archive_builds from anon, authenticated;
