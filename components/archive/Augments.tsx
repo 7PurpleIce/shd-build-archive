@@ -1,8 +1,9 @@
 'use client';
+import {SectionHeading} from './SectionHeading';
 import {useState} from 'react';
 import {Minus,Plus,RotateCcw,Atom,Layers3} from 'lucide-react';
 import {Table,TableBody,TableCell,TableHead,TableHeader,TableRow} from '@/components/ui/table';
-import {SectionHeading} from './Catalog';
+
 import {useLocale} from './Locale';
 import augments from '@/data/augments.json';
 import {augmentTotal,MAX_AUGMENT_ITEMS} from '@/lib/calculators';
@@ -10,7 +11,7 @@ export function Augments(){
  const{t,locale}=useLocale();const[counts,setCounts]=useState<Record<string,number>>({});const equipped=Object.values(counts).reduce((a,b)=>a+b,0);
  const percent=(value:number)=>`${new Intl.NumberFormat(locale,{maximumFractionDigits:1}).format(value)}%`;
  function change(id:string,delta:number){setCounts(previous=>{const total=Object.values(previous).reduce((a,b)=>a+b,0);const current=previous[id]||0;if(current+delta<0||total+delta>MAX_AUGMENT_ITEMS)return previous;return {...previous,[id]:current+delta}})}
- return <><SectionHeading eyebrow={t('PROTOTYPE GEAR / 04','ПРОТОТИПЫ / 04')} title={t('Augments','Аугменты')}><p className="heading-note">{t('Level progression and equipment effects.','Прогрессия уровней и эффекты экипировки.')}</p></SectionHeading>
+ return <><SectionHeading section="augments" eyebrow={t('PROTOTYPE GEAR','ПРОТОТИПЫ')} title={t('Augments','Аугменты')}><p className="heading-note">{t('Level progression and equipment effects.','Прогрессия уровней и эффекты экипировки.')}</p></SectionHeading>
 
  <div className="augment-workspace">
  <section className="augment-builder"><div className="calc-heading"><div><span className="panel-kicker">{t('EQUIPMENT SETUP','СБОРКА ЭКИПИРОВКИ')}</span><h2>{t('Choose your effects','Выбери свои эффекты')}</h2></div><span className="augment-level-badge">{t('LEVEL','УРОВЕНЬ')} 10</span></div><p className="calc-note">{t('Assign up to 7 items. Each augment is calculated at its maximum level.','Распредели до 7 предметов. Каждый аугмент рассчитывается на максимальном уровне.')}</p>
