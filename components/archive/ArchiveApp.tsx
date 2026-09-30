@@ -8,7 +8,6 @@ import { useState } from "react";
 import { OwnerProvider, OwnerAuth, useOwner } from "./OwnerAuth";
 import { assetPath } from "@/lib/supabase";
 import {
-  Crosshair,
   Layers3,
   LayoutGrid,
   Zap,
@@ -43,9 +42,7 @@ function ArchiveContent() {
     <div className="archive-app">
       <header className="masthead">
         <a href={assetPath("/")} className="brand">
-          <span className="brand-mark">
-            <Crosshair size={30} />
-          </span>
+          <img className="brand-mark" src={assetPath("/shd-phoenix.svg")} alt="" width={48} height={48} />
           <span>
             SHD<span className="brand-sub">BUILD ARCHIVE</span>
           </span>

@@ -23,3 +23,7 @@ The owner supplied the in-game Russian names «Встряска» for Shakedown 
 The augment level table, Russian effect summaries, seven-item limit and prototype-core costs (6 maximum change cost; 31 to upgrade one augment from level 1 to 10) follow the three reference screenshots supplied by the owner on 28 September 2026. Percentages are added independently per effect; different effects are never added into one misleading percentage.
 
 Expertise material costs for levels 1–30 are extracted from hi-dep's `data/items_web.json.gz`, table `items_grade_cost`, snapshot 24 September 2026. The full-range weapon, gear and skill totals exactly match the owner's third screenshot. The calculator sums rows strictly above the current level through the target level, inclusive, once per item. `tests/calculators.test.mjs` checks the reference totals and range boundaries.
+
+## SHD masthead emblem
+
+SHD phoenix emblem (Ubisoft / Massive), sourced from The Division Zone: https://division.zone/the-division-shd/ . Original image: https://division.zone/wp-content/uploads/2014/08/strategic-homeland-division-shd-logo-300x300.png . Embedded unchanged in public/shd-phoenix.svg for self-contained hosting.
