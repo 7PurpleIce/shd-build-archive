@@ -26,4 +26,4 @@ Expertise material costs for levels 1–30 are extracted from hi-dep's `data/ite
 
 ## SHD masthead emblem
 
-SHD phoenix emblem (Ubisoft / Massive), sourced from The Division Zone: https://division.zone/the-division-shd/ . Original image: https://division.zone/wp-content/uploads/2014/08/strategic-homeland-division-shd-logo-300x300.png . Embedded unchanged in public/shd-phoenix.svg for self-contained hosting.
+SHD phoenix emblem (Ubisoft / Massive), sourced from The Division Zone: https://division.zone/the-division-shd/ . Original image: https://division.zone/wp-content/uploads/2014/08/strategic-homeland-division-shd-logo-300x300.png . Transparent PNG derivative in public/shd-phoenix.png; background removed with the built-in image tool. Original embedded source retained in public/shd-phoenix.svg.

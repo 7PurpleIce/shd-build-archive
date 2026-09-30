@@ -42,7 +42,7 @@ function ArchiveContent() {
     <div className="archive-app">
       <header className="masthead">
         <a href={assetPath("/")} className="brand">
-          <img className="brand-mark" src={assetPath("/shd-phoenix.svg")} alt="" width={48} height={48} />
+          <img className="brand-mark" src={assetPath("/shd-phoenix.png")} alt="" width={48} height={48} />
           <span>
             SHD<span className="brand-sub">BUILD ARCHIVE</span>
           </span>
