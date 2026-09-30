@@ -1,18 +1,348 @@
-'use client';
-import {useEffect,useState} from 'react';
-import {Plus,ImagePlus,ChevronDown,X,LoaderCircle,Pencil,Trash2} from 'lucide-react';
-import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/ui/dialog';
-import {AlertDialog,AlertDialogContent,AlertDialogTitle,AlertDialogDescription,AlertDialogCancel} from '@/components/ui/alert-dialog';
-import './build-actions.css';
-import {BuildTagFilter,BuildTagFields,BuildTagBadges} from './BuildTags';
-import {SectionHeading} from './Catalog';
-import {useLocale} from './Locale';
-import {NameSearch,NoSearchResults,startsWithName} from './NameSearch';
-import {listBuilds,createBuild,updateBuild,deleteBuild,buildImageUrl,getBuildText,matchesBuildTags,type BuildTag,type Build} from '@/lib/builds';
-export function Builds({canManage}:{canManage:boolean}){const{t,locale}=useLocale();const[builds,setBuilds]=useState<Build[]>([]);const[loading,setLoading]=useState(true);const[error,setError]=useState('');const[open,setOpen]=useState(false);const[selected,setSelected]=useState<string|null>(null);const[saving,setSaving]=useState(false);const[saveError,setSaveError]=useState('');const[query,setQuery]=useState('');const[editing,setEditing]=useState<Build|null>(null);const[deleting,setDeleting]=useState<Build|null>(null);const[deleteError,setDeleteError]=useState('');const[notice,setNotice]=useState('');const[tagFilter,setTagFilter]=useState<BuildTag[]>([]);const filtered=builds.filter(b=>startsWithName(query,getBuildText(b,locale).title)&&matchesBuildTags(b,tagFilter));
- async function load(){setLoading(true);setError('');try{setBuilds(await listBuilds())}catch{setError(t('Could not load builds. Please try again.','Не удалось загрузить билды. Попробуй ещё раз.'))}finally{setLoading(false)}}useEffect(()=>{void load()},[]);
- function startEdit(build:Build|null){setEditing(build);setSaveError('');setOpen(true)}
- async function remove(){if(!canManage||!deleting||saving)return;setSaving(true);setDeleteError('');try{const cleanupFailed=await deleteBuild(deleting);setBuilds(items=>items.filter(b=>b.id!==deleting.id));setSelected(id=>id===deleting.id?null:id);setDeleting(null);setNotice(cleanupFailed?t('Build deleted, but its old image could not be removed.','Билд удалён, но не удалось удалить старый скриншот.'):t('Build deleted.','Билд удалён.'))}catch{setDeleteError(t('Could not delete the build. Please try again.','Не удалось удалить билд. Попробуй ещё раз.'))}finally{setSaving(false)}}
- async function save(e:React.FormEvent<HTMLFormElement>){e.preventDefault();if(!canManage||saving)return;const form=e.currentTarget;const payload=new FormData(form);const file=payload.get('image') as File;if(file.size>10*1024*1024){setSaveError(t('Screenshot must be smaller than 10 MB.','Скриншот должен быть меньше 10 МБ.'));return}setSaving(true);setSaveError('');try{const result=editing?await updateBuild(editing,payload):{build:await createBuild(payload),cleanupFailed:false};const build=result.build;setBuilds(b=>editing?b.map(item=>item.id===build.id?build:item):[build,...b]);setNotice(result.cleanupFailed?t("Changes saved, but the old image could not be removed.","Изменения сохранены, но не удалось удалить старый скриншот."):t("Build saved.","Билд сохранён."));setSelected(build.id);setQuery('');setTagFilter([]);setOpen(false);form.reset()}catch(e){setSaveError(e instanceof Error?e.message:t('Could not save build.','Не удалось сохранить билд.'))}finally{setSaving(false)}}
- return <><SectionHeading eyebrow={t('BUILD COLLECTION / 02','КОЛЛЕКЦИЯ СБОРОК / 02')} title={t('Builds','Билды')}>{canManage&&<button className="primary-button" onClick={()=>startEdit(null)}><Plus size={18}/>{t('Add build','Добавить билд')}</button>}</SectionHeading><p className="build-notice" role="status">{notice}</p><NameSearch value={query} onChange={setQuery}/><BuildTagFilter selected={tagFilter} onChange={setTagFilter}/>{!loading&&!error&&builds.length>0&&<p className="build-filter-count" role="status">{t(`${filtered.length} of ${builds.length} builds`,`${filtered.length} из ${builds.length} билдов`)}</p>}{loading?<div className="empty-state"><LoaderCircle className="spin"/><p>{t('Loading builds…','Загружаем билды…')}</p></div>:error?<div className="empty-state"><p role="alert">{error}</p><button className="secondary-button" onClick={load}>{t('Retry','Повторить')}</button></div>:builds.length===0?<div className="empty-state"><span className="empty-icon"><ImagePlus size={36}/></span><h2>{canManage?t('Your collection starts here','Твоя коллекция начинается здесь'):t('No published builds yet','Пока нет опубликованных билдов')}</h2><p>{canManage?t('Add a screenshot, title and description of your first build.','Добавь скриншот, название и описание первого билда.'):t('The owner has not added any builds yet.','Владелец сайта ещё не добавил сборки.')}</p>{canManage&&<button className="primary-button" onClick={()=>startEdit(null)}><Plus size={18}/>{t('Add build','Добавить билд')}</button>}</div>:filtered.length===0?<div className="build-no-matches"><NoSearchResults/><p>{t('Change the name or selected tags.','Измени название или выбранные теги.')}</p><button className="secondary-button" onClick={()=>{setQuery('');setTagFilter([])}}>{t('Reset filters','Сбросить фильтры')}</button></div>:<div className="build-grid">{filtered.map(build=>{const text=getBuildText(build,locale);return <div key={build.id} className={selected===build.id?'build-item expanded':'build-item'}><button className="build-card" onClick={()=>setSelected(selected===build.id?null:build.id)} aria-expanded={selected===build.id}><img src={buildImageUrl(build.image_key)} alt={text.title}/><span><strong>{text.title}</strong><ChevronDown size={18}/></span></button><BuildTagBadges tags={build.tags??[]}/>{canManage&&<div className="build-actions"><button className="secondary-button" onClick={()=>startEdit(build)} aria-label={t("Edit build: ","Редактировать билд: ")+text.title}><Pencil size={16}/>{t("Edit","Редактировать")}</button><button className="secondary-button danger-button" onClick={()=>{setDeleteError('');setDeleting(build)}} aria-label={t("Delete build: ","Удалить билд: ")+text.title}><Trash2 size={16}/>{t("Delete","Удалить")}</button></div>}{selected===build.id&&<div className="build-details"><a href={buildImageUrl(build.image_key)} target="_blank" rel="noreferrer" aria-label={t('Open full-size screenshot','Открыть скриншот в полном размере')}><img src={buildImageUrl(build.image_key)} alt={text.title}/></a><div><p className="eyebrow">{t('BUILD DETAILS','ОПИСАНИЕ БИЛДА')}</p><h2>{text.title}</h2><p className="long-copy">{text.description}</p><button className="text-button" onClick={()=>setSelected(null)}><X size={15}/>{t('Collapse','Свернуть')}</button></div></div>}</div>})}</div>}<Dialog open={canManage&&open} onOpenChange={v=>{if(!saving)setOpen(v)}}><DialogContent className="build-dialog"><DialogTitle>{editing?t('Edit build','Редактировать билд'):t('New build','Новый билд')}</DialogTitle><DialogDescription>{t('Fill in both languages. The screenshot is shared by RU and ENG.','Заполни оба языка. Скриншот общий для RU и ENG.')}</DialogDescription><form key={editing?.id??"new"} onSubmit={save}>{editing&&!editing.title_ru&&!editing.title_en&&<details className="legacy-build-copy" open><summary>{t('Original text — copy it into the matching language below','Исходный текст — перенеси его в нужный язык ниже')}</summary><strong>{editing.title}</strong><p>{editing.description}</p></details>}<BuildTagFields tags={editing?.tags??[]} disabled={saving}/><div className="build-translations">{(['ru','en'] as const).map(language=><fieldset key={language} className="build-translation" disabled={saving}><legend>{language==='ru'?'RU · Русский':'ENG · English'}</legend><label>{language==='ru'?'Название':'Title'}<input lang={language} name={`title_${language}`} defaultValue={editing?.[`title_${language}`]??''} required maxLength={120} placeholder={language==='ru'?'Например: Striker — соло PvE':'For example: Striker — solo PvE'}/></label><label>{language==='ru'?'Описание':'Description'}<textarea lang={language} name={`description_${language}`} defaultValue={editing?.[`description_${language}`]??''} required maxLength={60000} rows={6} placeholder={language==='ru'?'Оружие, снаряжение, характеристики и стиль игры…':'Weapons, gear, attributes and playstyle…'}/></label></fieldset>)}</div><label>{t('Screenshot','Скриншот')}{editing&&<><img className="edit-build-preview" src={buildImageUrl(editing.image_key)} alt={getBuildText(editing,locale).title}/><small>{t("Leave empty to keep the current screenshot.","Оставь поле пустым, чтобы сохранить текущий скриншот.")}</small></>}<span className="upload-box"><ImagePlus size={24}/><input name="image" type="file" disabled={saving} required={!editing} accept="image/png,image/jpeg,image/webp"/><small>{t('PNG, JPG or WebP · up to 10 MB','PNG, JPG или WebP · до 10 МБ')}</small></span></label>{saveError&&<p className="error" role="alert">{saveError}</p>}<button className="primary-button" disabled={saving} type="submit">{saving?<><LoaderCircle className="spin" size={18}/>{t('Saving…','Сохраняем…')}</>:t('Save build','Сохранить билд')}</button></form></DialogContent></Dialog><AlertDialog open={canManage&&!!deleting} onOpenChange={v=>{if(!v&&!saving)setDeleting(null)}}><AlertDialogContent className="build-delete-dialog"><AlertDialogTitle>{t('Delete build?','Удалить билд?')}</AlertDialogTitle><AlertDialogDescription>{t('The build and its screenshot will be deleted. This cannot be undone.','Билд и его скриншот будут удалены. Это действие нельзя отменить.')}<strong className="delete-build-name">{deleting?getBuildText(deleting,locale).title:''}</strong></AlertDialogDescription>{deleteError&&<p className="error" role="alert">{deleteError}</p>}<div className="build-actions"><AlertDialogCancel disabled={saving}>{t('Cancel','Отмена')}</AlertDialogCancel><button className="secondary-button danger-button" disabled={saving} onClick={remove}>{saving?<LoaderCircle className="spin" size={16}/>:<Trash2 size={16}/>} {saving?t('Deleting…','Удаляем…'):t('Delete build','Удалить билд')}</button></div></AlertDialogContent></AlertDialog></>;
+"use client";
+import { SectionHeading } from "./SectionHeading";
+import { useEffect, useState } from "react";
+import {
+  Plus,
+  ImagePlus,
+  ChevronDown,
+  X,
+  LoaderCircle,
+  Pencil,
+  Trash2,
+} from "lucide-react";
+import { BuildEditorDialog } from "./BuildEditorDialog";
+import { DeleteBuildDialog } from "./DeleteBuildDialog";
+import "./build-actions.css";
+import { BuildTagFilter, BuildTagBadges } from "./BuildTags";
+
+import { useLocale } from "./Locale";
+import { NameSearch, NoSearchResults, startsWithName } from "./NameSearch";
+import {
+  listBuilds,
+  createBuild,
+  updateBuild,
+  deleteBuild,
+  buildImageUrl,
+  getBuildText,
+  matchesBuildTags,
+  type BuildTag,
+  type Build,
+} from "@/lib/builds";
+export function Builds({ canManage }: { canManage: boolean }) {
+  const { t, locale } = useLocale();
+  const [builds, setBuilds] = useState<Build[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState("");
+  const [query, setQuery] = useState("");
+  const [editing, setEditing] = useState<Build | null>(null);
+  const [deleting, setDeleting] = useState<Build | null>(null);
+  const [deleteError, setDeleteError] = useState("");
+  const [notice, setNotice] = useState("");
+  const [tagFilter, setTagFilter] = useState<BuildTag[]>([]);
+  const filtered = builds.filter(
+    (b) =>
+      startsWithName(query, getBuildText(b, locale).title) &&
+      matchesBuildTags(b, tagFilter),
+  );
+  async function load() {
+    setLoading(true);
+    setError("");
+    try {
+      setBuilds(await listBuilds());
+    } catch {
+      setError(
+        t(
+          "Could not load builds. Please try again.",
+          "Не удалось загрузить билды. Попробуй ещё раз.",
+        ),
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
+  useEffect(() => {
+    void load();
+  }, []);
+  function startEdit(build: Build | null) {
+    setEditing(build);
+    setSaveError("");
+    setOpen(true);
+  }
+  async function remove() {
+    if (!canManage || !deleting || saving) return;
+    setSaving(true);
+    setDeleteError("");
+    try {
+      const cleanupFailed = await deleteBuild(deleting);
+      setBuilds((items) => items.filter((b) => b.id !== deleting.id));
+      setSelected((id) => (id === deleting.id ? null : id));
+      setDeleting(null);
+      setNotice(
+        cleanupFailed
+          ? t(
+              "Build deleted, but its old image could not be removed.",
+              "Билд удалён, но не удалось удалить старый скриншот.",
+            )
+          : t("Build deleted.", "Билд удалён."),
+      );
+    } catch {
+      setDeleteError(
+        t(
+          "Could not delete the build. Please try again.",
+          "Не удалось удалить билд. Попробуй ещё раз.",
+        ),
+      );
+    } finally {
+      setSaving(false);
+    }
+  }
+  async function save(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!canManage || saving) return;
+    const form = e.currentTarget;
+    const payload = new FormData(form);
+    const file = payload.get("image");
+    if (file instanceof File && file.size > 10 * 1024 * 1024) {
+      setSaveError(
+        t(
+          "Screenshot must be smaller than 10 MB.",
+          "Скриншот должен быть меньше 10 МБ.",
+        ),
+      );
+      return;
+    }
+    setSaving(true);
+    setSaveError("");
+    try {
+      const result = editing
+        ? await updateBuild(editing, payload)
+        : { build: await createBuild(payload), cleanupFailed: false };
+      const build = result.build;
+      setBuilds((b) =>
+        editing
+          ? b.map((item) => (item.id === build.id ? build : item))
+          : [build, ...b],
+      );
+      setNotice(
+        result.cleanupFailed
+          ? t(
+              "Changes saved, but the old image could not be removed.",
+              "Изменения сохранены, но не удалось удалить старый скриншот.",
+            )
+          : t("Build saved.", "Билд сохранён."),
+      );
+      setSelected(build.id);
+      setQuery("");
+      setTagFilter([]);
+      setOpen(false);
+      form.reset();
+    } catch (e) {
+      setSaveError(
+        e instanceof Error
+          ? e.message
+          : t("Could not save build.", "Не удалось сохранить билд."),
+      );
+    } finally {
+      setSaving(false);
+    }
+  }
+  return (
+    <>
+      <SectionHeading
+        section="builds"
+        eyebrow={t("BUILD COLLECTION", "КОЛЛЕКЦИЯ СБОРОК")}
+        title={t("Builds", "Билды")}
+      >
+        {canManage && (
+          <button className="primary-button" onClick={() => startEdit(null)}>
+            <Plus size={18} />
+            {t("Add build", "Добавить билд")}
+          </button>
+        )}
+      </SectionHeading>
+      <p className="build-notice" role="status">
+        {notice}
+      </p>
+      <NameSearch value={query} onChange={setQuery} />
+      <BuildTagFilter selected={tagFilter} onChange={setTagFilter} />
+      {!loading && !error && builds.length > 0 && (
+        <p className="build-filter-count" role="status">
+          {t(
+            `${filtered.length} of ${builds.length} builds`,
+            `${filtered.length} из ${builds.length} билдов`,
+          )}
+        </p>
+      )}
+      {loading ? (
+        <div className="empty-state">
+          <LoaderCircle className="spin" />
+          <p>{t("Loading builds…", "Загружаем билды…")}</p>
+        </div>
+      ) : error ? (
+        <div className="empty-state">
+          <p role="alert">{error}</p>
+          <button className="secondary-button" onClick={load}>
+            {t("Retry", "Повторить")}
+          </button>
+        </div>
+      ) : builds.length === 0 ? (
+        <div className="empty-state">
+          <span className="empty-icon">
+            <ImagePlus size={36} />
+          </span>
+          <h2>
+            {canManage
+              ? t(
+                  "Your collection starts here",
+                  "Твоя коллекция начинается здесь",
+                )
+              : t("No published builds yet", "Пока нет опубликованных билдов")}
+          </h2>
+          <p>
+            {canManage
+              ? t(
+                  "Add a screenshot, title and description of your first build.",
+                  "Добавь скриншот, название и описание первого билда.",
+                )
+              : t(
+                  "The owner has not added any builds yet.",
+                  "Владелец сайта ещё не добавил сборки.",
+                )}
+          </p>
+          {canManage && (
+            <button className="primary-button" onClick={() => startEdit(null)}>
+              <Plus size={18} />
+              {t("Add build", "Добавить билд")}
+            </button>
+          )}
+        </div>
+      ) : filtered.length === 0 ? (
+        <div className="build-no-matches">
+          <NoSearchResults />
+          <p>
+            {t(
+              "Change the name or selected tags.",
+              "Измени название или выбранные теги.",
+            )}
+          </p>
+          <button
+            className="secondary-button"
+            onClick={() => {
+              setQuery("");
+              setTagFilter([]);
+            }}
+          >
+            {t("Reset filters", "Сбросить фильтры")}
+          </button>
+        </div>
+      ) : (
+        <div className="build-grid">
+          {filtered.map((build) => {
+            const text = getBuildText(build, locale);
+            return (
+              <div
+                key={build.id}
+                className={
+                  selected === build.id ? "build-item expanded" : "build-item"
+                }
+              >
+                <button
+                  className="build-card"
+                  onClick={() =>
+                    setSelected(selected === build.id ? null : build.id)
+                  }
+                  aria-expanded={selected === build.id}
+                >
+                  <img src={buildImageUrl(build.image_key)} alt={text.title} />
+                  <span>
+                    <strong>{text.title}</strong>
+                    <ChevronDown size={18} />
+                  </span>
+                </button>
+                <BuildTagBadges tags={build.tags ?? []} />
+                {canManage && (
+                  <div className="build-actions">
+                    <button
+                      className="secondary-button"
+                      onClick={() => startEdit(build)}
+                      aria-label={
+                        t("Edit build: ", "Редактировать билд: ") + text.title
+                      }
+                    >
+                      <Pencil size={16} />
+                      {t("Edit", "Редактировать")}
+                    </button>
+                    <button
+                      className="secondary-button danger-button"
+                      onClick={() => {
+                        setDeleteError("");
+                        setDeleting(build);
+                      }}
+                      aria-label={
+                        t("Delete build: ", "Удалить билд: ") + text.title
+                      }
+                    >
+                      <Trash2 size={16} />
+                      {t("Delete", "Удалить")}
+                    </button>
+                  </div>
+                )}
+                {selected === build.id && (
+                  <div className="build-details">
+                    <a
+                      href={buildImageUrl(build.image_key)}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={t(
+                        "Open full-size screenshot",
+                        "Открыть скриншот в полном размере",
+                      )}
+                    >
+                      <img
+                        src={buildImageUrl(build.image_key)}
+                        alt={text.title}
+                      />
+                    </a>
+                    <div>
+                      <p className="eyebrow">
+                        {t("BUILD DETAILS", "ОПИСАНИЕ БИЛДА")}
+                      </p>
+                      <h2>{text.title}</h2>
+                      <p className="long-copy">{text.description}</p>
+                      <button
+                        className="text-button"
+                        onClick={() => setSelected(null)}
+                      >
+                        <X size={15} />
+                        {t("Collapse", "Свернуть")}
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+      <BuildEditorDialog
+        open={canManage && open}
+        onOpenChange={setOpen}
+        editing={editing}
+        saving={saving}
+        saveError={saveError}
+        onSave={save}
+      />
+      <DeleteBuildDialog
+        deleting={canManage ? deleting : null}
+        onClose={() => setDeleting(null)}
+        saving={saving}
+        error={deleteError}
+        onDelete={remove}
+      />
+    </>
+  );
 }

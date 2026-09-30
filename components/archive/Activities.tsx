@@ -1,25 +1,19 @@
 'use client';
-import {useEffect,useState} from 'react';
+import {SectionHeading} from './SectionHeading';
+import {useCurrentTime} from '@/hooks/use-current-time';
 import {Clock3,RotateCcw,Swords,Shield} from 'lucide-react';
 import {ACTIVITY_GROUPS,activityReset} from '@/lib/activities';
-import {SectionHeading} from './Catalog';
+
 import {useLocale} from './Locale';
 import './activities.css';
 
 export function Activities(){
  const {t,locale}=useLocale();
- const [now,setNow]=useState(()=>new Date());
- useEffect(()=>{
-  const refresh=()=>setNow(new Date());
-  const timer=setInterval(refresh,1000);
-  window.addEventListener('focus',refresh);
-  document.addEventListener('visibilitychange',refresh);
-  return ()=>{clearInterval(timer);window.removeEventListener('focus',refresh);document.removeEventListener('visibilitychange',refresh)};
- },[]);
+ const {now}=useCurrentTime();
  const zone=t('UTC','МСК');
  const pad=(value:number)=>String(value).padStart(2,'0');
  return <div className="activities-page">
-  <SectionHeading eyebrow={t('WEEKLY ACTIVITIES / 07','ЕЖЕНЕДЕЛЬНЫЕ АКТИВНОСТИ / 07')} title={t('Incursions & raids','Вылазки и рейды')}><span className="activity-zone"><Clock3 size={16}/>{t('All times in UTC','Время по МСК · UTC+3')}</span></SectionHeading>
+  <SectionHeading section="activities" eyebrow={t('WEEKLY ACTIVITIES','ЕЖЕНЕДЕЛЬНЫЕ АКТИВНОСТИ')} title={t('Incursions & raids','Вылазки и рейды')}><span className="activity-zone"><Clock3 size={16}/>{t('All times in UTC','Время по МСК · UTC+3')}</span></SectionHeading>
   <p className="activity-intro">{t('Weekly reset schedule for raids and incursions.','Расписание еженедельного сброса рейдов и вылазок.')}</p>
   {ACTIVITY_GROUPS.map(group=>{
    const reset=activityReset(group.resetDay,now);
