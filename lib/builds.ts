@@ -1,5 +1,5 @@
 import {requireSupabase} from './supabase';
-export const BUILD_TAGS=['PvP','PvE','Sniper','Damage dealer','heal','support','tank'] as const;
+export const BUILD_TAGS=['PvP','PvE','Sniper','Damage dealer','heal','support','tank','Conflict','DarkZone'] as const;
 export type BuildTag=typeof BUILD_TAGS[number];
 export type Build={tags?:BuildTag[];id:string;title:string;description:string;image_key:string;created_at:string;title_ru?:string|null;description_ru?:string|null;title_en?:string|null;description_en?:string|null};
 const BUCKET='build-images';

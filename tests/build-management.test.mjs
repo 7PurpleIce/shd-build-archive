@@ -29,3 +29,6 @@ assert.equal(api.matchesBuildTags(result.build,['PvE','heal']),true);assert.equa
 result=await api.updateBuild(result.build,payload());assert.equal(result.build.tags.length,0);
 api=setup();const invalidTag=payload();invalidTag.append('tags','unknown');await assert.rejects(api.updateBuild(original,invalidTag));assert.equal(api.events.length,0);
 console.log('PASS: multiple tags, deduplication, all-selected filtering, untagged builds, tag removal and invalid tag rejection.');
+
+api=setup();const zoneTags=payload();zoneTags.append('tags','Conflict');zoneTags.append('tags','DarkZone');result=await api.updateBuild(original,zoneTags);assert.deepEqual(Array.from(result.build.tags),['Conflict','DarkZone']);assert.equal(api.matchesBuildTags(result.build,['Conflict','DarkZone']),true);assert.equal(api.matchesBuildTags(original,['Conflict']),false);assert.equal(api.matchesBuildTags(original,['DarkZone']),false);
+console.log('PASS: Conflict and DarkZone persistence and combined filtering.');
