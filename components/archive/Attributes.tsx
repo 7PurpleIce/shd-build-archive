@@ -1,5 +1,6 @@
 import {Crosshair,Shield,Zap} from 'lucide-react';
 import attributes from '@/data/attributes.json';
+import gearMods from '@/data/gear-mods.json';
 import {SectionHeading} from './SectionHeading';
 import {useLocale} from './Locale';
 import './attributes.css';
@@ -40,6 +41,17 @@ export function Attributes(){
     return <section className={`attribute-group attribute-${id}`} key={id} aria-labelledby={`attributes-${id}`}>
      <div className="attribute-group-heading"><Icon size={20} aria-hidden="true"/><h3 id={`attributes-${id}`}>{t(en,ru)}</h3><span>{items.length}</span></div>
      <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong>{item.value}{item.id==='armor-regeneration'?t('/s','/с'):''}</strong></li>)}</ul>
+    </section>;
+   })}</div>
+  </section>
+  <section className="attributes-other" aria-labelledby="gear-mods-title">
+   <div className="attributes-section-title"><h2 id="gear-mods-title">{t('Gear Mods','Вставки')}</h2><span>{gearMods.length}</span></div>
+   <div className="attributes-groups">{groups.map(({id,Icon})=>{
+    const items=gearMods.filter(item=>item.group===id);
+    const labels={offense:['Offensive mods','Атакующие вставки'],defense:['Defensive mods','Защитные вставки'],skill:['Utility mods','Вставки навыков']} as const;
+    return <section className={`attribute-group attribute-${id}`} key={id} aria-labelledby={`gear-mods-${id}`}>
+     <div className="attribute-group-heading"><Icon size={20} aria-hidden="true"/><h3 id={`gear-mods-${id}`}>{t(labels[id][0],labels[id][1])}</h3><span>{items.length}</span></div>
+     <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong>{item.value}</strong></li>)}</ul>
     </section>;
    })}</div>
   </section>

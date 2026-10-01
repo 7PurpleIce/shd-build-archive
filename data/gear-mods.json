@@ -1,0 +1,121 @@
+[
+  {
+    "id": "critical-hit-chance",
+    "group": "offense",
+    "en": "Critical Hit Chance",
+    "ru": "Шанс крит. попадания",
+    "value": "+6%"
+  },
+  {
+    "id": "critical-hit-damage",
+    "group": "offense",
+    "en": "Critical Hit Damage",
+    "ru": "Урон от крит. попадания",
+    "value": "+12%"
+  },
+  {
+    "id": "headshot-damage",
+    "group": "offense",
+    "en": "Headshot Damage",
+    "ru": "Урон от выстрела в голову",
+    "value": "+10%"
+  },
+  {
+    "id": "skill-haste",
+    "group": "skill",
+    "en": "Skill Haste",
+    "ru": "Убыстрение",
+    "value": "+12%"
+  },
+  {
+    "id": "repair-skills",
+    "group": "skill",
+    "en": "Repair Skills",
+    "ru": "Навыки ремонта",
+    "value": "+20%"
+  },
+  {
+    "id": "skill-duration",
+    "group": "skill",
+    "en": "Skill Duration",
+    "ru": "Длительность действия навыков",
+    "value": "+10%"
+  },
+  {
+    "id": "protection-from-elites-13",
+    "group": "defense",
+    "en": "Protection from Elites",
+    "ru": "Защита от элитных врагов",
+    "value": "+13%"
+  },
+  {
+    "id": "incoming-repairs",
+    "group": "defense",
+    "en": "Incoming Repairs",
+    "ru": "Получаемый ремонт",
+    "value": "+20%"
+  },
+  {
+    "id": "armor-on-kill",
+    "group": "defense",
+    "en": "Armor on Kill",
+    "ru": "Броня за убийство",
+    "value": "+18,935"
+  },
+  {
+    "id": "blind-deaf-resistance",
+    "group": "defense",
+    "en": "Blind/Deaf Resistance",
+    "ru": "Сопротивление ослеплению и оглушению",
+    "value": "+10%"
+  },
+  {
+    "id": "shock-resistance",
+    "group": "defense",
+    "en": "Shock Resistance",
+    "ru": "Сопротивление шоку",
+    "value": "+10%"
+  },
+  {
+    "id": "burn-resistance",
+    "group": "defense",
+    "en": "Burn Resistance",
+    "ru": "Сопротивление возгоранию",
+    "value": "+10%"
+  },
+  {
+    "id": "pulse-resistance",
+    "group": "defense",
+    "en": "Pulse Resistance",
+    "ru": "Сопротивление импульсу",
+    "value": "+10%"
+  },
+  {
+    "id": "freeze-resistance",
+    "group": "defense",
+    "en": "Freeze Resistance",
+    "ru": "Сопротивление заморозке",
+    "value": "+10%"
+  },
+  {
+    "id": "ensnare-resistance",
+    "group": "defense",
+    "en": "Ensnare Resistance",
+    "ru": "Сопротивление прилипанию",
+    "value": "+10%"
+  },
+  {
+    "id": "disorient-resistance",
+    "group": "defense",
+    "en": "Disorient Resistance",
+    "ru": "Сопротивление дезориентации",
+    "value": "+10%"
+  },
+  {
+    "id": "bleed-resistance",
+    "group": "defense",
+    "en": "Bleed Resistance",
+    "ru": "Сопротивление кровотечению",
+    "value": "+10%"
+  }
+]

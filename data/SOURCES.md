@@ -35,3 +35,7 @@ All 61 distinct stat IDs from div2hub/game-data `stats.csv` (blob 6fa841f026f6ea
 ## Attributes scope correction — 1 October 2026
 
 The owner's screenshot image(20261001-153459).png supersedes the broad stats registry for the Attributes page. Display exactly 3 gear cores and 12 secondary gear attributes, in screenshot order, with its normal maximum values and Russian labels (including «Эргономичность», «Навыки ремонта», «Убыстрение»). Armor regeneration is per second. Weapon/mod/brand-only stats are excluded from this page. Raw upstream snapshots remain archived as references.
+
+## Gear mods — 1 October 2026
+
+The Attributes page's Gear Mods / Вставки subsection reproduces the owner's screenshot image(20261001-154301).png: 17 entries with supplied values. Per the owner’s follow-up, Protection from Elites +12% is omitted; only +13% is displayed. The screenshot's «Сопротивление заморозке» is retained as supplied and translated literally as Freeze Resistance; these labels are not asserted to be official English localization. No database changes.
