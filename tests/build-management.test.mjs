@@ -32,3 +32,6 @@ console.log('PASS: multiple tags, deduplication, all-selected filtering, untagge
 
 api=setup();const zoneTags=payload();zoneTags.append('tags','Conflict');zoneTags.append('tags','DarkZone');result=await api.updateBuild(original,zoneTags);assert.deepEqual(Array.from(result.build.tags),['Conflict','DarkZone']);assert.equal(api.matchesBuildTags(result.build,['Conflict','DarkZone']),true);assert.equal(api.matchesBuildTags(original,['Conflict']),false);assert.equal(api.matchesBuildTags(original,['DarkZone']),false);
 console.log('PASS: Conflict and DarkZone persistence and combined filtering.');
+
+api=setup();const incursionTags=payload();incursionTags.append('tags','Broken Rain');incursionTags.append('tags','Paradise Lost');result=await api.updateBuild(original,incursionTags);assert.deepEqual(Array.from(result.build.tags),['Broken Rain','Paradise Lost']);assert.equal(api.matchesBuildTags(result.build,['Broken Rain','Paradise Lost']),true);assert.equal(api.matchesBuildTags(original,['Broken Rain']),false);assert.equal(api.matchesBuildTags(original,['Paradise Lost']),false);
+console.log('PASS: incursion tags persistence and combined filtering.');

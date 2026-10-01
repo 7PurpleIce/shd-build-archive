@@ -20,8 +20,8 @@ create table public.archive_builds (
  description_ru text,
  description_en text,
  tags text[] not null default '{}' constraint archive_builds_tags_valid check (
-  tags <@ array['PvP','PvE','Sniper','Damage dealer','heal','support','tank','Conflict','DarkZone']::text[]
-  and array_position(tags,null) is null and cardinality(tags)<=9
+  tags <@ array['PvP','PvE','Sniper','Damage dealer','heal','support','tank','Conflict','DarkZone','Broken Rain','Paradise Lost']::text[]
+  and array_position(tags,null) is null and cardinality(tags)<=11
  ),
  constraint archive_builds_translations_complete check (
   num_nonnulls(title_ru,title_en,description_ru,description_en)=0
