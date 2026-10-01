@@ -110,7 +110,7 @@ test('conditional specialization perks switch off when changing specialization',
  assert.equal(specializationEffect({...blankSpecialization(),id:'technician'},'smg').amps.length,0);
 });
 
-const {eventBonusEffect}=load('event-bonuses');
+const {eventBonusEffect,applyEventPreset,EVENT_PRESETS}=load('event-bonuses');
 const event=(type,value,enabled=true)=>({id:type+value,type,value,enabled,name:'Event'});
 test('event bonuses add within buckets and multiply independent amplifiers without double counting',()=>{
  const effect=eventBonusEffect([event('wd',20),event('wd',30),event('twd',10),event('out',5),event('amp',20),event('amp',30)]);
@@ -185,5 +185,20 @@ test('preset list resolves both weapons and never carries Prima Donna stacks int
  const {CALCULATOR_PRESETS}=load('calculator-presets');assert.equal(CALCULATOR_PRESETS.length,2);
  const p=CALCULATOR_PRESETS.find(p=>p.id==='mantis').create();const w=weaponData.find(w=>w.id===p.weaponId);
  assert.equal(w.name,'Mantis');assert.equal(weaponTalent(w.talentSlot,'').name,'In Plain Sight');assert.equal(p.talentValues[0].stacks,undefined);
- assert.equal(p.weaponRolls.minor_1.id,'dtoc-weapon-minor');assert.equal(p.active[0],true);assert.equal(p.eventBonuses.length,2);
+ assert.equal(p.weaponRolls.minor_1.id,'dtoc-weapon-minor');assert.equal(p.active[0],true);assert.equal(p.eventBonuses.length,5);
+});
+
+test('event presets fill five localized bonuses without duplication and preserve custom rows',()=>{
+ const custom={id:'custom',type:'twd',value:10,name:'Other',enabled:true};
+ const rows=applyEventPreset([custom],'deadeye-overdrive');
+ assert.deepEqual(JSON.parse(JSON.stringify(rows.slice(1).map(({type,value})=>({type,value})))),[
+  {type:'hsd',value:60},{type:'wd',value:30},{type:'accuracy',value:40},{type:'stability',value:40},{type:'weakpoint',value:40}
+ ]);
+ assert.equal(EVENT_PRESETS[0].en,'DeadEye Overdrive');assert.equal(EVENT_PRESETS[0].ru,'Снайперский Форсаж');
+ assert.equal(applyEventPreset(rows,'deadeye-overdrive').length,6);
+ assert.equal(new Set(rows.map(r=>r.id)).size,6);
+ const cleared=applyEventPreset(rows,'');assert.equal(cleared.length,1);assert.equal(cleared[0],custom);
+ const effects=eventBonusEffect(rows);assert.equal(effects.bonuses.wd,30);assert.equal(effects.bonuses.hsd,60);assert.equal(effects.bonuses.twd,10);
+ assert.equal(effects.bonuses.accuracy,undefined);assert.equal(effects.bonuses.stability,undefined);assert.equal(effects.bonuses.weakpoint,undefined);
+ rows[1].value=0;assert.equal(applyEventPreset([],'deadeye-overdrive')[0].value,60);
 });

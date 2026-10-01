@@ -3,7 +3,7 @@ import attributes from '../data/weapon-attributes.json';
 import {initialWeaponRolls} from './weapon-attributes';
 import {calculatorTalents} from './calculator-talents';
 import {maxWatchPoints} from './shd-watch';
-import type {EventBonus} from './event-bonuses';
+import {applyEventPreset} from './event-bonuses';
 export function primaDonnaPreset(){
  const weapon=weapons.find(w=>w.name==='Prima Donna')!;
  const weaponRolls=initialWeaponRolls(weapon.attributes,attributes);
@@ -14,7 +14,7 @@ export function primaDonnaPreset(){
  talents:['',calculatorTalents.find(t=>t.name==='Headhunter')!.id,calculatorTalents.find(t=>t.name==='Perfect Concussion')!.id],active:[true,true,true],
  talentValues:[{stacks:10},{previous:71541528},{mode:3}] as Record<string,number>[],
  setStates:{'aces-eights':{enabled:true,values:{}}},
- eventBonuses:[{id:'preset-wd',type:'wd',value:30,name:'Event',enabled:true},{id:'preset-hsd',type:'hsd',value:60,name:'Event',enabled:true}] as EventBonus[],armored:false,outside:true,headshots:100};
+ eventBonuses:applyEventPreset([],'deadeye-overdrive'),armored:false,outside:true,headshots:100};
 }
 
 export function mantisPreset(){
