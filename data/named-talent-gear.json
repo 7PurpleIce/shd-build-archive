@@ -1,0 +1,284 @@
+[
+  {
+    "name": "Henri",
+    "kind": "chest",
+    "talent": "Perfect Companion",
+    "brand": "electrique"
+  },
+  {
+    "name": "Hunter-Killer",
+    "kind": "chest",
+    "talent": "Perfect Intimidate",
+    "brand": "golan-gear-ltd"
+  },
+  {
+    "name": "Everyday Carrier",
+    "kind": "chest",
+    "talent": "Perfect Efficient",
+    "brand": "belstone-armory"
+  },
+  {
+    "name": "Chainkiller",
+    "kind": "chest",
+    "talent": "Perfect Headhunter",
+    "brand": "walker-harris-co"
+  },
+  {
+    "name": "Pointman",
+    "kind": "chest",
+    "talent": "Perfect Vanguard",
+    "brand": "gila-guard"
+  },
+  {
+    "name": "Vedmedytsya Vest",
+    "kind": "chest",
+    "talent": "Perfect Braced",
+    "brand": "petrov-defense-group"
+  },
+  {
+    "name": "The Sacrifice",
+    "kind": "chest",
+    "talent": "Perfect Glass Cannon",
+    "brand": "providence-defense"
+  },
+  {
+    "name": "Zero F's",
+    "kind": "chest",
+    "talent": "Perfect Unbreakable",
+    "brand": "badger-tuff"
+  },
+  {
+    "name": "Ferocious Calm",
+    "kind": "chest",
+    "talent": "Perfect Overwatch",
+    "brand": "fenris-group-ab"
+  },
+  {
+    "name": "Door-Kicker's Knock",
+    "kind": "chest",
+    "talent": "Perfect Spark",
+    "brand": "grupo-sombra-s-a"
+  },
+  {
+    "name": "Caesar's Guard",
+    "kind": "chest",
+    "talent": "Perfect Skilled",
+    "brand": "empress-international"
+  },
+  {
+    "name": "Closer",
+    "kind": "chest",
+    "talent": "Perfect Spotter",
+    "brand": "uzina-getica"
+  },
+  {
+    "name": "Cherished",
+    "kind": "chest",
+    "talent": "Perfect Trauma",
+    "brand": "habsburg-guard"
+  },
+  {
+    "name": "Carpenter",
+    "kind": "chest",
+    "talent": "Perfect Mad Bomber",
+    "brand": "lengmo"
+  },
+  {
+    "name": "Bober",
+    "kind": "chest",
+    "talent": "Perfect Entrench",
+    "brand": "zwiadowka-sp-z-o-o"
+  },
+  {
+    "name": "Pristine Example",
+    "kind": "chest",
+    "talent": "Perfect Focus",
+    "brand": "airaldi-holdings"
+  },
+  {
+    "name": "Sleight",
+    "kind": "chest",
+    "talent": "Perfect Protected Reload",
+    "brand": "urban-lookout"
+  },
+  {
+    "name": "Combustor",
+    "kind": "chest",
+    "talent": "Perfect Explosive Delivery",
+    "brand": "palisade-steelworks"
+  },
+  {
+    "name": "Equalizer",
+    "kind": "chest",
+    "talent": "Perfect Obliterate",
+    "brand": "unit-alloys"
+  },
+  {
+    "name": "Impetus",
+    "kind": "chest",
+    "talent": "Perfect Kinetic Momentum",
+    "brand": "wyvern-wear"
+  },
+  {
+    "name": "Benefactor",
+    "kind": "chest",
+    "talent": "Perfect Empathic Resolve",
+    "brand": "edelweiss-gpz"
+  },
+  {
+    "name": "Trick Shot",
+    "kind": "chest",
+    "talent": "Perfect Reassigned",
+    "brand": "imminence-armaments"
+  },
+  {
+    "name": "Rushdown",
+    "kind": "chest",
+    "talent": "Perfect Tag Team",
+    "brand": "richter-kaiser-gmbh"
+  },
+  {
+    "name": "Robin",
+    "kind": "chest",
+    "talent": "Perfect Gunslinger",
+    "brand": "royal-works"
+  },
+  {
+    "name": "Liquid Engineer",
+    "kind": "backpack",
+    "talent": "Perfect Bloodsucker",
+    "brand": "belstone-armory"
+  },
+  {
+    "name": "Hermano",
+    "kind": "backpack",
+    "talent": "Perfect Overclock",
+    "brand": "brazos-de-arcabuz"
+  },
+  {
+    "name": "The Courier",
+    "kind": "backpack",
+    "talent": "Perfect Creeping Death",
+    "brand": "habsburg-guard"
+  },
+  {
+    "name": "Backbone",
+    "kind": "backpack",
+    "talent": "Perfect Unstoppable Force",
+    "brand": "lengmo"
+  },
+  {
+    "name": "Anarchist's Cookbook",
+    "kind": "backpack",
+    "talent": "Perfect Wicked",
+    "brand": "golan-gear-ltd"
+  },
+  {
+    "name": "Strategic Alignment",
+    "kind": "backpack",
+    "talent": "Perfect Shock and Awe",
+    "brand": "china-light-industries"
+  },
+  {
+    "name": "Lavoisier",
+    "kind": "backpack",
+    "talent": "Perfect Galvanize",
+    "brand": "electrique"
+  },
+  {
+    "name": "Matador",
+    "kind": "backpack",
+    "talent": "Perfect Adrenaline Rush",
+    "brand": "walker-harris-co"
+  },
+  {
+    "name": "The Gift",
+    "kind": "backpack",
+    "talent": "Perfect Vigilance",
+    "brand": "providence-defense"
+  },
+  {
+    "name": "Percussive Maintenance",
+    "kind": "backpack",
+    "talent": "Perfect Tech Support",
+    "brand": "alps-summit-armaments"
+  },
+  {
+    "name": "Vigil",
+    "kind": "backpack",
+    "talent": "Perfect Versatile",
+    "brand": "legatus-s-p-a"
+  },
+  {
+    "name": "Devil's Due",
+    "kind": "backpack",
+    "talent": "Perfect Clutch",
+    "brand": "ceska-vyroba-s-r-o"
+  },
+  {
+    "name": "Battery Pack",
+    "kind": "backpack",
+    "talent": "Perfect Calculated",
+    "brand": "empress-international"
+  },
+  {
+    "name": "The Setup",
+    "kind": "backpack",
+    "talent": "Perfect Opportunistic",
+    "brand": "uzina-getica"
+  },
+  {
+    "name": "Force Multiplier",
+    "kind": "backpack",
+    "talent": "Perfect Combined Arms",
+    "brand": "hana-u-corporation"
+  },
+  {
+    "name": "Proxy",
+    "kind": "backpack",
+    "talent": "Perfect Tamper Proof",
+    "brand": "palisade-steelworks"
+  },
+  {
+    "name": "Axel",
+    "kind": "backpack",
+    "talent": "Perfect Energize",
+    "brand": "shiny-monkey"
+  },
+  {
+    "name": "Cap'n",
+    "kind": "backpack",
+    "talent": "Perfect Leadership",
+    "brand": "imminence-armaments"
+  },
+  {
+    "name": "Festive Delivery",
+    "kind": "backpack",
+    "talent": "Fireworks Show",
+    "brand": "grupo-sombra-s-a"
+  },
+  {
+    "name": "Momma Badger",
+    "kind": "backpack",
+    "talent": "Perfect Safeguard",
+    "brand": "edelweiss-gpz"
+  },
+  {
+    "name": "Keeper",
+    "kind": "backpack",
+    "talent": "Perfect Protector",
+    "brand": "5-11-tactical"
+  },
+  {
+    "name": "Melon Baller",
+    "kind": "backpack",
+    "talent": "Perfect Concussion",
+    "brand": "airaldi-holdings"
+  },
+  {
+    "name": "Bulldog",
+    "kind": "backpack",
+    "talent": "Perfect Composure",
+    "brand": "royal-works"
+  }
+]

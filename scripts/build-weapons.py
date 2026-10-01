@@ -44,3 +44,15 @@ for weapon in weapons:
         if spec.startswith('fixed:'):
             assert any(a['id'] == spec.split(':')[1] for a in attributes), spec
 print('Weapon attribute references verified.')
+
+# Named chest/backpack talent bindings let the calculator select the correct brand.
+catalog = json.loads((root / 'data/catalog.json').read_text())
+brand_ids = {s['name']: s['id'] for s in catalog['sets']}
+bindings = []
+for file, kind in [('chests', 'chest'), ('backpacks', 'backpack')]:
+    with (root / 'data/source' / (file + '.csv')).open() as source:
+        for row in csv.DictReader(source):
+            if row['is_named'] == 'TRUE' and row['talent_slot'].startswith('fixed:'):
+                bindings.append({'name': row['name'], 'kind': kind, 'talent': row['talent_slot'][6:], 'brand': brand_ids[row['brand_set']]})
+(root / 'data/named-talent-gear.json').write_text(json.dumps(bindings, ensure_ascii=False, indent=2) + '\n')
+print(f'Normalized {len(bindings)} named gear talent bindings.')

@@ -34,7 +34,7 @@ test('fixed exotic and perfect mechanics; unsupported effects never guessed',()=
  assert.equal(run('Payment in Kind',{stacks:100}).bonuses.chd,200);
  assert.equal(run('Bullet Hell',{},false).noReload,true);
  assert.equal(run('Perfect Extra',{},false).bonuses.mag,30);
- assert.equal(talentRule(get('Headhunter')),undefined);
+ assert.ok(talentRule(get('Headhunter')));
  assert.equal(talentRule(get('Plague of the Outcasts')),undefined);
  assert.equal(talentRule({...get('Gunslinger'),name:'Unknown talent'}),undefined);
 });
