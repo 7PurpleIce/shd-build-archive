@@ -1,0 +1,983 @@
+[
+  {
+    "id": "0:Punch Drunk",
+    "name": "Punch Drunk",
+    "ru": "Punch Drunk",
+    "slot": 0,
+    "brand": "douglas-harding",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:headshot-damage-punch-drunk",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": ""
+  },
+  {
+    "id": "0:Nightwatcher",
+    "name": "Nightwatcher",
+    "ru": "Nightwatcher",
+    "slot": 0,
+    "brand": "gila-guard",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:scanner-pulse-haste-nightwatcher",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": ""
+  },
+  {
+    "id": "0:Chill Out",
+    "name": "Chill Out",
+    "ru": "Chill Out",
+    "slot": 0,
+    "brand": "gila-guard",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor"
+    ],
+    "mods": 2,
+    "talent": ""
+  },
+  {
+    "id": "0:Visionario",
+    "name": "Visionario",
+    "ru": "Visionario",
+    "slot": 0,
+    "brand": "legatus-s-p-a",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:optimal-range-visionario",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": ""
+  },
+  {
+    "id": "0:The Hollow Man",
+    "name": "The Hollow Man",
+    "ru": "The Hollow Man",
+    "slot": 0,
+    "brand": "yaahl-gear",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:health-damage-the-hollow-man",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": ""
+  },
+  {
+    "id": "1:Henri",
+    "name": "Henri",
+    "ru": "Henri",
+    "slot": 1,
+    "brand": "electrique",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Companion"
+  },
+  {
+    "id": "1:Hunter-Killer",
+    "name": "Hunter-Killer",
+    "ru": "Hunter-Killer",
+    "slot": 1,
+    "brand": "golan-gear-ltd",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Intimidate"
+  },
+  {
+    "id": "1:Everyday Carrier",
+    "name": "Everyday Carrier",
+    "ru": "Everyday Carrier",
+    "slot": 1,
+    "brand": "belstone-armory",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Efficient"
+  },
+  {
+    "id": "1:Chainkiller",
+    "name": "Chainkiller",
+    "ru": "Chainkiller",
+    "slot": 1,
+    "brand": "walker-harris-co",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Headhunter"
+  },
+  {
+    "id": "1:Pointman",
+    "name": "Pointman",
+    "ru": "Pointman",
+    "slot": 1,
+    "brand": "gila-guard",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Vanguard"
+  },
+  {
+    "id": "1:Vedmedytsya Vest",
+    "name": "Vedmedytsya Vest",
+    "ru": "Vedmedytsya Vest",
+    "slot": 1,
+    "brand": "petrov-defense-group",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Braced"
+  },
+  {
+    "id": "1:The Sacrifice",
+    "name": "The Sacrifice",
+    "ru": "The Sacrifice",
+    "slot": 1,
+    "brand": "providence-defense",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Glass Cannon"
+  },
+  {
+    "id": "1:Zero F's",
+    "name": "Zero F's",
+    "ru": "Zero F's",
+    "slot": 1,
+    "brand": "badger-tuff",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Unbreakable"
+  },
+  {
+    "id": "1:Ferocious Calm",
+    "name": "Ferocious Calm",
+    "ru": "Ferocious Calm",
+    "slot": 1,
+    "brand": "fenris-group-ab",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Overwatch"
+  },
+  {
+    "id": "1:Door-Kicker's Knock",
+    "name": "Door-Kicker's Knock",
+    "ru": "Door-Kicker's Knock",
+    "slot": 1,
+    "brand": "grupo-sombra-s-a",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Spark"
+  },
+  {
+    "id": "1:Caesar's Guard",
+    "name": "Caesar's Guard",
+    "ru": "Caesar's Guard",
+    "slot": 1,
+    "brand": "empress-international",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Skilled"
+  },
+  {
+    "id": "1:Closer",
+    "name": "Closer",
+    "ru": "Closer",
+    "slot": 1,
+    "brand": "uzina-getica",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Spotter"
+  },
+  {
+    "id": "1:Cherished",
+    "name": "Cherished",
+    "ru": "Cherished",
+    "slot": 1,
+    "brand": "habsburg-guard",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Trauma"
+  },
+  {
+    "id": "1:Carpenter",
+    "name": "Carpenter",
+    "ru": "Carpenter",
+    "slot": 1,
+    "brand": "lengmo",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Mad Bomber"
+  },
+  {
+    "id": "1:Bober",
+    "name": "Bober",
+    "ru": "Bober",
+    "slot": 1,
+    "brand": "zwiadowka-sp-z-o-o",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Entrench"
+  },
+  {
+    "id": "1:Pristine Example",
+    "name": "Pristine Example",
+    "ru": "Pristine Example",
+    "slot": 1,
+    "brand": "airaldi-holdings",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Focus"
+  },
+  {
+    "id": "1:Sleight",
+    "name": "Sleight",
+    "ru": "Sleight",
+    "slot": 1,
+    "brand": "urban-lookout",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Protected Reload"
+  },
+  {
+    "id": "1:Combustor",
+    "name": "Combustor",
+    "ru": "Combustor",
+    "slot": 1,
+    "brand": "palisade-steelworks",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Explosive Delivery"
+  },
+  {
+    "id": "1:Equalizer",
+    "name": "Equalizer",
+    "ru": "Equalizer",
+    "slot": 1,
+    "brand": "unit-alloys",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Obliterate"
+  },
+  {
+    "id": "1:Impetus",
+    "name": "Impetus",
+    "ru": "Impetus",
+    "slot": 1,
+    "brand": "wyvern-wear",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Kinetic Momentum"
+  },
+  {
+    "id": "1:Benefactor",
+    "name": "Benefactor",
+    "ru": "Benefactor",
+    "slot": 1,
+    "brand": "edelweiss-gpz",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Empathic Resolve"
+  },
+  {
+    "id": "1:Trick Shot",
+    "name": "Trick Shot",
+    "ru": "Trick Shot",
+    "slot": 1,
+    "brand": "imminence-armaments",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Reassigned"
+  },
+  {
+    "id": "1:Rushdown",
+    "name": "Rushdown",
+    "ru": "Rushdown",
+    "slot": 1,
+    "brand": "richter-kaiser-gmbh",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Tag Team"
+  },
+  {
+    "id": "1:Robin",
+    "name": "Robin",
+    "ru": "Robin",
+    "slot": 1,
+    "brand": "royal-works",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Gunslinger"
+  },
+  {
+    "id": "2:Liquid Engineer",
+    "name": "Liquid Engineer",
+    "ru": "Liquid Engineer",
+    "slot": 2,
+    "brand": "belstone-armory",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Bloodsucker"
+  },
+  {
+    "id": "2:Hermano",
+    "name": "Hermano",
+    "ru": "Hermano",
+    "slot": 2,
+    "brand": "brazos-de-arcabuz",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Overclock"
+  },
+  {
+    "id": "2:The Courier",
+    "name": "The Courier",
+    "ru": "The Courier",
+    "slot": 2,
+    "brand": "habsburg-guard",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Creeping Death"
+  },
+  {
+    "id": "2:Backbone",
+    "name": "Backbone",
+    "ru": "Backbone",
+    "slot": 2,
+    "brand": "lengmo",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Unstoppable Force"
+  },
+  {
+    "id": "2:Anarchist's Cookbook",
+    "name": "Anarchist's Cookbook",
+    "ru": "Anarchist's Cookbook",
+    "slot": 2,
+    "brand": "golan-gear-ltd",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Wicked"
+  },
+  {
+    "id": "2:Strategic Alignment",
+    "name": "Strategic Alignment",
+    "ru": "Strategic Alignment",
+    "slot": 2,
+    "brand": "china-light-industries",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Shock and Awe"
+  },
+  {
+    "id": "2:Lavoisier",
+    "name": "Lavoisier",
+    "ru": "Lavoisier",
+    "slot": 2,
+    "brand": "electrique",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Galvanize"
+  },
+  {
+    "id": "2:Matador",
+    "name": "Matador",
+    "ru": "Matador",
+    "slot": 2,
+    "brand": "walker-harris-co",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Adrenaline Rush"
+  },
+  {
+    "id": "2:The Gift",
+    "name": "The Gift",
+    "ru": "The Gift",
+    "slot": 2,
+    "brand": "providence-defense",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Vigilance"
+  },
+  {
+    "id": "2:Percussive Maintenance",
+    "name": "Percussive Maintenance",
+    "ru": "Percussive Maintenance",
+    "slot": 2,
+    "brand": "alps-summit-armaments",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Tech Support"
+  },
+  {
+    "id": "2:Vigil",
+    "name": "Vigil",
+    "ru": "Vigil",
+    "slot": 2,
+    "brand": "legatus-s-p-a",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Versatile"
+  },
+  {
+    "id": "2:Devil's Due",
+    "name": "Devil's Due",
+    "ru": "Devil's Due",
+    "slot": 2,
+    "brand": "ceska-vyroba-s-r-o",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Clutch"
+  },
+  {
+    "id": "2:Battery Pack",
+    "name": "Battery Pack",
+    "ru": "Battery Pack",
+    "slot": 2,
+    "brand": "empress-international",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Calculated"
+  },
+  {
+    "id": "2:The Setup",
+    "name": "The Setup",
+    "ru": "The Setup",
+    "slot": 2,
+    "brand": "uzina-getica",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Opportunistic"
+  },
+  {
+    "id": "2:Force Multiplier",
+    "name": "Force Multiplier",
+    "ru": "Force Multiplier",
+    "slot": 2,
+    "brand": "hana-u-corporation",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Combined Arms"
+  },
+  {
+    "id": "2:Proxy",
+    "name": "Proxy",
+    "ru": "Proxy",
+    "slot": 2,
+    "brand": "palisade-steelworks",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Tamper Proof"
+  },
+  {
+    "id": "2:Axel",
+    "name": "Axel",
+    "ru": "Axel",
+    "slot": 2,
+    "brand": "shiny-monkey",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Energize"
+  },
+  {
+    "id": "2:Cap'n",
+    "name": "Cap'n",
+    "ru": "Cap'n",
+    "slot": 2,
+    "brand": "imminence-armaments",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Leadership"
+  },
+  {
+    "id": "2:Festive Delivery",
+    "name": "Festive Delivery",
+    "ru": "Festive Delivery",
+    "slot": 2,
+    "brand": "grupo-sombra-s-a",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Fireworks Show"
+  },
+  {
+    "id": "2:Momma Badger",
+    "name": "Momma Badger",
+    "ru": "Momma Badger",
+    "slot": 2,
+    "brand": "edelweiss-gpz",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Safeguard"
+  },
+  {
+    "id": "2:Keeper",
+    "name": "Keeper",
+    "ru": "Keeper",
+    "slot": 2,
+    "brand": "5-11-tactical",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Protector"
+  },
+  {
+    "id": "2:Melon Baller",
+    "name": "Melon Baller",
+    "ru": "Melon Baller",
+    "slot": 2,
+    "brand": "airaldi-holdings",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Concussion"
+  },
+  {
+    "id": "2:Bulldog",
+    "name": "Bulldog",
+    "ru": "Bulldog",
+    "slot": 2,
+    "brand": "royal-works",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 1,
+    "talent": "Perfect Composure"
+  },
+  {
+    "id": "3:Deathgrips",
+    "name": "Deathgrips",
+    "ru": "Deathgrips",
+    "slot": 3,
+    "brand": "5-11-tactical",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:armor-on-kill-deathgrips",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "3:Contractor's Gloves",
+    "name": "Contractor's Gloves",
+    "ru": "Contractor's Gloves",
+    "slot": 3,
+    "brand": "petrov-defense-group",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:damage-to-armor-contractors-gloves",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "3:Motherly Love",
+    "name": "Motherly Love",
+    "ru": "Motherly Love",
+    "slot": 3,
+    "brand": "alps-summit-armaments",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:skill-health-motherly-love",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "3:Eagles Grasp",
+    "name": "Eagles Grasp",
+    "ru": "Eagles Grasp",
+    "slot": 3,
+    "brand": "zwiadowka-sp-z-o-o",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:weapon-handling-eagles-grasp",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "3:Firm Handshake",
+    "name": "Firm Handshake",
+    "ru": "Firm Handshake",
+    "slot": 3,
+    "brand": "sokolov-concern",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:status-effects-firm-handshake",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Forge",
+    "name": "Forge",
+    "ru": "Forge",
+    "slot": 4,
+    "brand": "richter-kaiser-gmbh",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:shield-health-forge",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Ammo Dump",
+    "name": "Ammo Dump",
+    "ru": "Ammo Dump",
+    "slot": 4,
+    "brand": "badger-tuff",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:ammo-capacity-ammo-dump",
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Picaros Holster",
+    "name": "Picaros Holster",
+    "ru": "Picaros Holster",
+    "slot": 4,
+    "brand": "brazos-de-arcabuz",
+    "core": "type:gear-core|!weapon-damage-gear-core",
+    "minor": [
+      "fixed:weapon-damage-picaros-holster",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Spot-On",
+    "name": "Spot-On",
+    "ru": "Spot-On",
+    "slot": 4,
+    "brand": "urban-lookout",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:accuracy-spot-on",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Salvo",
+    "name": "Salvo",
+    "ru": "Salvo",
+    "slot": 4,
+    "brand": "unit-alloys",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:rate-of-fire-salvo",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Claws Out",
+    "name": "Claws Out",
+    "ru": "Claws Out",
+    "slot": 4,
+    "brand": "wyvern-wear",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:melee-damage-claws-out",
+      "type:gear-minor",
+      "fixed:pistol-damage-claws-out"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "4:Bulldog",
+    "name": "Bulldog",
+    "ru": "Bulldog",
+    "slot": 4,
+    "brand": "royal-works",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": "Perfect Composure"
+  },
+  {
+    "id": "5:Fox's Prayer",
+    "name": "Fox's Prayer",
+    "ru": "Окопная молитва",
+    "slot": 5,
+    "brand": "overlord-armaments",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:dtoc-foxs-prayer",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "5:Snow Machine",
+    "name": "Snow Machine",
+    "ru": "Snow Machine",
+    "slot": 5,
+    "brand": "electrique",
+    "core": "type:gear-core",
+    "minor": [
+      "type:gear-minor",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": "Flurry"
+  },
+  {
+    "id": "5:Turmoil",
+    "name": "Turmoil",
+    "ru": "Turmoil",
+    "slot": 5,
+    "brand": "ceska-vyroba-s-r-o",
+    "core": "fixed:weapon-damage-turmoil",
+    "minor": [
+      "fixed:critical-hit-chance-turmoil",
+      "fixed:critical-hit-damage-turmoil"
+    ],
+    "mods": 0,
+    "talent": "Bewildered"
+  },
+  {
+    "id": "5:Emperor's Guard",
+    "name": "Emperor's Guard",
+    "ru": "Emperor's Guard",
+    "slot": 5,
+    "brand": "murakami-industries",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:armor-regeneration-emperors-guard",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "5:Grease",
+    "name": "Grease",
+    "ru": "Grease",
+    "slot": 5,
+    "brand": "shiny-monkey",
+    "core": "type:gear-core",
+    "minor": [
+      "fixed:status-effects-grease",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  },
+  {
+    "id": "5:Cloak",
+    "name": "Cloak",
+    "ru": "Cloak",
+    "slot": 5,
+    "brand": "imminence-armaments",
+    "core": "fixed:weapon-damage-cloak",
+    "minor": [
+      "fixed:reduced-threat-cloak",
+      "type:gear-minor"
+    ],
+    "mods": 0,
+    "talent": ""
+  }
+]

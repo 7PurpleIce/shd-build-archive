@@ -56,3 +56,32 @@ for file, kind in [('chests', 'chest'), ('backpacks', 'backpack')]:
                 bindings.append({'name': row['name'], 'kind': kind, 'talent': row['talent_slot'][6:], 'brand': brand_ids[row['brand_set']]})
 (root / 'data/named-talent-gear.json').write_text(json.dumps(bindings, ensure_ascii=False, indent=2) + '\n')
 print(f'Normalized {len(bindings)} named gear talent bindings.')
+
+# All named gear slots and fixed rolls, from the same weekly upstream snapshot.
+stats = {r['id']: r['name'] for r in csv.DictReader((root / 'data/source/stats.csv').open())}
+attr_by_id = {a['id']: a for a in attributes}
+site_attrs = {a['id']: a for a in json.loads((root / 'data/attributes.json').read_text())}
+ru_stats = {'dtoc':'Урон цели вне укрытия','damage-to-armor':'Урон по броне','health-damage':'Урон по здоровью',
+ 'scanner-pulse-haste':'Ускорение сканирующего импульса','optimal-range':'Оптимальная дальность','shield-health':'Прочность щита',
+ 'ammo-capacity':'Боезапас','accuracy':'Точность','rate-of-fire':'Скорострельность','melee-damage':'Урон в ближнем бою',
+ 'pistol-damage':'Урон пистолета','skill-health':'Прочность навыков','reduced-threat':'Снижение угрозы'}
+named_items, fixed_attrs = [], {}
+for slot, file in enumerate(['masks','chests','backpacks','gloves','holsters','knees']):
+ for row in csv.DictReader((root / 'data/source' / (file+'.csv')).open()):
+  if row['is_named'] != 'TRUE' or row['is_exotic'] == 'TRUE': continue
+  item = {'id':str(slot)+':'+row['name'],'name':row['name'],'ru':"Окопная молитва" if row['name']=="Fox's Prayer" else row['name'],
+          'slot':slot,'brand':brand_ids[row['brand_set']], 'core':row['core_1'],
+          'minor':[row[k] for k in ['minor_1','minor_2','minor_3'] if row[k]!='N/A'],
+          'mods':sum(row[k]!='N/A' for k in ['mod_1','mod_2','mod_3']),
+          'talent':row['talent_slot'][6:] if row['talent_slot'].startswith('fixed:') else ''}
+  named_items.append(item)
+  for spec in [item['core'],*item['minor']]:
+   if not spec.startswith('fixed:'): continue
+   attr = attr_by_id[spec[6:]]; stat = attr['stat_id']; existing=site_attrs.get(stat,{})
+   fixed_attrs[attr['id']] = {'id':attr['id'],'statId':stat,'value_formats':'percent' if attr['range_max'].endswith('%') else 'flat',
+    'en':stats[stat], 'ru':existing.get('ru',ru_stats.get(stat,stats[stat])), 'group':existing.get('group','offense'),
+    'core':spec==item['core'],'value':attr['range_max'],'enValue':attr['range_max'],
+    'prototypeValue':attr['proto_max'],'enPrototypeValue':attr['proto_max']}
+(root / 'data/named-gear.json').write_text(json.dumps(named_items,ensure_ascii=False,indent=2)+'\n')
+(root / 'data/named-gear-attributes.json').write_text(json.dumps(list(fixed_attrs.values()),ensure_ascii=False,indent=2)+'\n')
+print(f'Normalized {len(named_items)} named gear items and {len(fixed_attrs)} fixed attributes.')

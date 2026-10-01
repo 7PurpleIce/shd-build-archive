@@ -168,8 +168,7 @@ test('Prima Donna preset reproduces the verified build with full watch, three mo
  const totals=baseCalculatorBonuses();const add=bs=>Object.entries(bs).forEach(([k,n])=>totals[k]=(totals[k]||0)+n);
  const counts={};p.gear.forEach(g=>counts[g.brand]=(counts[g.brand]||0)+1);
  for(const s of catalog.sets.filter(s=>counts[s.id]))for(const b of s.bonuses.filter(b=>b.pieces<=counts[s.id]))for(const x of load('damage').staticBonus(b.text,w.type))add({[x.key]:x.value});
- const keys={'weapon-damage':'wd','headshot-damage':'hsd','weapon-handling':'handling'};
- for(const g of p.gear){for(const roll of [g.core,...g.minor]){const a=gearAttributes.find(a=>a.id===roll.id);if(a&&keys[a.id])add({[keys[a.id]]:load('attribute-values').attributeRollAmount(a,roll)});}if(g.mod)add({hsd:g.modValue});}
+ for(const [i,g] of p.gear.entries()){add(load('named-gear').gearRollBonuses(g,i,w.type,catalog.sets.find(s=>s.id===g.brand)?.kind==='set'));if(g.mod)add({hsd:g.modValue});}
  const wm=load('weapon-mods');const mods=JSON.parse(readFileSync(new URL('../data/weapon-mods.json',import.meta.url),'utf8'));
  add(wm.attachmentBonuses(wm.selectedWeaponMods(w.slots,{},mods)));add(load('shd-watch').watchDamageBonuses(p.watch));add(weaponAttributeBonuses(w.attributes,p.weaponRolls,weaponAttributeData,true));add(specializationEffect(p.specialization,w.type).bonuses);
  const event=eventBonusEffect(p.eventBonuses);add(event.bonuses);
@@ -201,4 +200,54 @@ test('event presets fill five localized bonuses without duplication and preserve
  const effects=eventBonusEffect(rows);assert.equal(effects.bonuses.wd,30);assert.equal(effects.bonuses.hsd,60);assert.equal(effects.bonuses.twd,10);
  assert.equal(effects.bonuses.accuracy,undefined);assert.equal(effects.bonuses.stability,undefined);assert.equal(effects.bonuses.weakpoint,undefined);
  rows[1].value=0;assert.equal(applyEventPreset([],'deadeye-overdrive')[0].value,60);
+});
+
+const ng=load('named-gear');
+const gearFor=(brand,proto=false)=>({brand,core:{id:'weapon-damage',proto,value:proto?22.5:15},minor:[{id:'critical-hit-chance',proto,value:3},{id:'headshot-damage',proto,value:5}],mod:''});
+const namedFor=(name)=>ng.namedGear.find(n=>n.name===name);
+test('Fox prayer uses 8/12 caps and adjustable rolls in the out-of-cover damage bucket',()=>{
+ const fox=namedFor("Fox's Prayer");assert.equal(fox.slot,5);assert.equal(fox.ru,'Окопная молитва');
+ let g=ng.selectNamedGear(gearFor(fox.brand),5,fox.id);assert.equal(g.minor[1].value,5);
+ assert.equal(ng.gearRollBonuses(g,5,'rifle').out,8);
+ g.minor[0]=setAttributePrototype(g.minor[0],ng.gearAttribute(g.minor[0].id),true);assert.equal(ng.gearRollBonuses(g,5,'rifle').out,12);
+ g.minor[0].value=4.5;assert.equal(ng.gearRollBonuses(g,5,'rifle').out,4.5);
+ g.minor[0].value=100;assert.equal(ng.gearRollBonuses(g,5,'rifle').out,12);
+ g.minor[0].value=0;assert.equal(ng.gearRollBonuses(g,5,'rifle').out,1);
+ const base={...input,out:0};const bonus={...base,out:12};close(talentDamage(bonus,[]).body/talentDamage(base,[]).body,1.12);
+ close(talentDamage({...bonus,outside:false},[]).body,talentDamage({...base,outside:false},[]).body);
+});
+test('named bonuses disappear when changing item, brand or slot and never become ordinary choices',()=>{
+ const fox=namedFor("Fox's Prayer");const g=ng.selectNamedGear(gearFor(fox.brand),5,fox.id);
+ assert.equal(ng.gearRollBonuses(ng.selectNamedGear(g,5,''),5,'rifle').out,undefined);
+ assert.equal(ng.gearRollBonuses({...g,brand:'airaldi-holdings'},5,'rifle').out,undefined);
+ assert.equal(ng.gearRollBonuses(g,0,'rifle').out,undefined);
+ assert.equal(ng.selectNamedGear(gearFor('airaldi-holdings'),5,fox.id).namedId,undefined);
+});
+test('every named item resolves fixed stats and normal/prototype limits without nonfinite bonuses',()=>{
+ assert.equal(ng.namedGear.length,70);
+ for(const item of ng.namedGear)for(const proto of [false,true]){
+  const g=ng.selectNamedGear(gearFor(item.brand,proto),item.slot,item.id);
+  assert.equal(ng.selectedNamedGear(g,item.slot).id,item.id);
+  assert.equal(g.minor.length,item.minor.length);
+  for(const r of [g.core,...g.minor])if(r.id)assert.ok(ng.gearAttribute(r.id),r.id);
+  assert.ok(Object.values(ng.gearRollBonuses(g,item.slot,'rifle')).every(Number.isFinite));
+  if(item.talent&&(item.slot===1||item.slot===2))assert.ok(load('calculator-talents').calculatorTalents.some(t=>t.name===item.talent));
+ }
+});
+test('named extra mod and extra attribute slots follow item structure and clear on unequip',()=>{
+ const chill=namedFor('Chill Out');const g=ng.selectNamedGear(gearFor(chill.brand),0,chill.id);
+ assert.equal(g.minor.length,1);assert.equal(ng.gearModCount(g,0),2);assert.equal(g.extraMods.length,1);
+ const cleared=ng.selectNamedGear(g,0,'');assert.equal(cleared.minor.length,2);assert.equal(cleared.extraMods.length,0);
+ const claws=namedFor('Claws Out');const c=ng.selectNamedGear(gearFor(claws.brand),4,claws.id);
+ assert.equal(c.minor.length,3);assert.equal(ng.gearRollBonuses(c,4,'pistol').wd,25);assert.equal(ng.gearRollBonuses(c,4,'rifle').wd,15);
+});
+test('named armor, health, handling and rate of fire stats use their independent buckets',()=>{
+ for(const [name,key,value] of [["Contractor's Gloves",'armor',8],['The Hollow Man','health',14],['Salvo','rof',5],['Eagles Grasp','handling',15]]){
+  const item=namedFor(name);const g=ng.selectNamedGear(gearFor(item.brand),item.slot,item.id);assert.equal(ng.gearRollBonuses(g,item.slot,'rifle')[key],value);
+ }
+});
+
+test('set pieces count only one minor roll while normal brands count two',()=>{
+ const g=gearFor('aces-eights');assert.equal(ng.gearRollBonuses(g,0,'rifle',true).hsd,undefined);
+ assert.equal(ng.gearRollBonuses(g,0,'rifle',false).hsd,5);
 });
