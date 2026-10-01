@@ -29,10 +29,10 @@ test('brand weapon bonuses apply only to matching class; talent prose not parsed
  assert.equal(staticBonus('+20% — Critical Hit Damage\n+15% — Rate Of Fire','smg').length,2);
  assert.equal(staticBonus('Amplifies damage by 60% when shooting.','smg').length,0);
 });
-test('admin tab, content and lazy-loaded component are all guarded',()=>{
+test('calculator tab, content and lazy-loaded component are all guarded',()=>{
  const read=p=>readFileSync(new URL(p,import.meta.url),'utf8');
- assert.match(read('../components/archive/ArchiveNavigation.tsx'),/section.id!=='damage'\|\|canManage/);
- assert.match(read('../components/archive/ArchiveApp.tsx'),/canManage && <TabsContent value="damage"/);
- assert.match(read('../components/archive/DamageCalculator.tsx'),/return canManage\?<CalculatorBody\/>:null/);
+ assert.match(read('../components/archive/ArchiveNavigation.tsx'),/section.id!=='damage'\|\|canUseCalculator/);
+ assert.match(read('../components/archive/ArchiveApp.tsx'),/canUseCalculator && <TabsContent value="damage"/);
+ assert.match(read('../components/archive/DamageCalculator.tsx'),/return canUseCalculator\?<CalculatorBody\/>:null/);
  assert.match(read('../components/archive/DamageCalculator.tsx'),/g.minor.slice\(0,isSet\?1:2\)/);
 });

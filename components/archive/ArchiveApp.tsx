@@ -17,19 +17,19 @@ import {accessibleSection,readSection,saveSection} from "@/lib/archive-view-stat
 const DamageCalculator = lazy(() => import("./DamageCalculator"));
 function ArchiveContent() {
   const owner = useOwner();
-  const { canManage, loading } = owner;
+  const { canManage, canUseCalculator, loading } = owner;
   const { t } = useLocale();
   const [tab, setTab] = useState(readSection);
   const [calculatorVisited, setCalculatorVisited] = useState(false);
   useEffect(() => {
     const next = accessibleSection(tab, owner);
     if (next !== tab) { setTab(next); saveSection(next); }
-    else if (tab !== "damage" || canManage) saveSection(tab);
-  }, [canManage, loading, tab]);
+    else if (tab !== "damage" || canUseCalculator) saveSection(tab);
+  }, [canUseCalculator, loading, tab]);
   useEffect(() => {
-    if (!canManage && !loading) setCalculatorVisited(false);
-    else if (canManage && tab === "damage") setCalculatorVisited(true);
-  }, [canManage, loading, tab]);
+    if (!canUseCalculator && !loading) setCalculatorVisited(false);
+    else if (canUseCalculator && tab === "damage") setCalculatorVisited(true);
+  }, [canUseCalculator, loading, tab]);
   return (
     <div className="archive-app">
       <header className="masthead">
@@ -53,8 +53,8 @@ function ArchiveContent() {
       <main>
         <Tabs value={tab} onValueChange={setTab}>
           <ArchiveNavigation activeTab={tab} />
-          {tab === "damage" && loading && !canManage && <p role="status">{t("Checking access…", "Проверка доступа…")}</p>}
-          {canManage && <TabsContent value="damage" forceMount hidden={tab !== "damage"}><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}>{(calculatorVisited || tab === "damage") && <DamageCalculator />}</Suspense></TabsContent>}
+          {tab === "damage" && loading && !canUseCalculator && <p role="status">{t("Checking access…", "Проверка доступа…")}</p>}
+          {canUseCalculator && <TabsContent value="damage" forceMount hidden={tab !== "damage"}><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}>{(calculatorVisited || tab === "damage") && <DamageCalculator />}</Suspense></TabsContent>}
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>

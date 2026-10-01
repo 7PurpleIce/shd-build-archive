@@ -36,7 +36,7 @@ type Roll={id:string;proto:boolean;value?:number};
 type Gear={brand:string;core:Roll;minor:Roll[];mod:string;modValue?:number};
 const blankGear=():Gear[]=>slots.map(()=>({brand:'',core:{id:'weapon-damage',proto:false},minor:[{id:'',proto:false},{id:'',proto:false}],mod:''}));
 const statKey:Record<string,string>={'weapon-damage':'wd','critical-hit-chance':'chc','critical-hit-damage':'chd','headshot-damage':'hsd','weapon-handling':'handling'};
-export default function DamageCalculator(){const {canManage}=useOwner();return canManage?<CalculatorBody/>:null;}
+export default function DamageCalculator(){const {canUseCalculator}=useOwner();return canUseCalculator?<CalculatorBody/>:null;}
 function CalculatorBody(){
  const {t,locale}=useLocale();
  const [weaponId,setWeaponId]=useState(weapons.find(w=>w.name==='FAMAS 2010')!.id);
@@ -102,7 +102,7 @@ function CalculatorBody(){
   return <div className="damage-roll-editor"><div className="damage-roll"><label>{label}<CalculatorSelect value={roll.id} onChange={e=>{const next=options.find(a=>a.id===e.target.value);onChange({...roll,id:e.target.value,value:next?attributeAmount(next,roll.proto):0});}}><option value="">{t('None','Нет')}</option>{options.filter(a=>a.id!==excluded).map(a=><option key={a.id} value={a.id}>{t(a.en,a.ru)}</option>)}</CalculatorSelect></label><label className="damage-check prototype"><input type="checkbox" checked={roll.proto} disabled={!roll.id} onChange={e=>{const nextMax=item?attributeAmount(item,e.target.checked):0;onChange({...roll,proto:e.target.checked,value:value===max?nextMax:Math.min(value,nextMax)});}}/>{t('Proto','Прото')}</label></div>{item&&<CalculatorNumber label={t(item.en,item.ru)+(item.value.endsWith('%')?' %':'')} value={value} onChange={value=>onChange({...roll,value})} max={max} step={item.id==='skill-tier'?(roll.proto?0.5:1):item.value.endsWith('%')?'any':1} showMax/>}</div>;
  }
  return <div className="damage-page">
- <SectionHeading section="damage" eyebrow={t('ADMIN LAB · V1 · PVE','ЛАБОРАТОРИЯ АДМИНА · V1 · PVE')} title={t('Damage calculator','Калькулятор урона')}/>
+ <SectionHeading section="damage" eyebrow={t('TEST LAB · V1 · PVE','ТЕСТОВАЯ ЛАБОРАТОРИЯ · V1 · PVE')} title={t('Damage calculator','Калькулятор урона')}/>
  <p className="damage-notice">{t('Experimental PvE calculation at optimal range, with all shots landing. Weapon base stats are provisional and editable. No PvP normalization or damage falloff. In-game and calculated damage may differ slightly — around 0.00004% in the tested builds, possibly due to rounding differences.','Тестовый расчёт PvE на оптимальной дистанции, при попадании всех выстрелов. Базовые параметры оружия требуют сверки; урон можно изменить. Без нормализации PvP и падения урона с расстоянием. Урон в игре и калькуляторе может незначительно отличаться — в проверенных билдах примерно на 0,00004%, возможно из-за особенностей округления.')}</p>
  <div className="damage-toolbar"><p className="damage-help">{t('Reset clears all selected bonuses, gear and watch points, and restores the starting weapon and its base damage.','Сброс обнуляет все выбранные бонусы, экипировку и часы, возвращает начальное оружие и его базовый урон.')}</p><button type="button" className="damage-action damage-reset" onClick={resetStats}><RotateCcw size={16}/>{t('RESET','СБРОС')}</button></div>
  <div className="damage-layout"><div className="damage-config">
