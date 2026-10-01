@@ -16,3 +16,10 @@ export function attributeRollAmount(item:AttributeValue,roll:{proto:boolean;valu
  const max=attributeAmount(item,roll.proto);
  return roll.value===undefined?max:Number.isFinite(roll.value)?Math.min(max,Math.max(0,roll.value)):0;
 }
+
+/** Preserve custom rolls; a roll at the old cap follows the new cap. */
+export function setAttributePrototype<T extends {id:string;proto:boolean;value?:number}>(roll:T,item:AttributeValue|undefined,proto:boolean):T{
+ if(!item)return {...roll,proto};
+ const current=attributeRollAmount(item,roll),oldMax=attributeAmount(item,roll.proto),max=attributeAmount(item,proto);
+ return {...roll,proto,value:current===oldMax?max:Math.min(current,max)};
+}

@@ -18,7 +18,7 @@ export function initialWeaponRolls(specs:Record<string,string>,all:WeaponAttribu
   return [slot,{id:a?.id||'',proto:false,value:a&&!zero?weaponRollMax(a,false,spec):0}];
  }));
 }
-export function weaponAttributeBonuses(specs:Record<string,string>,rolls:WeaponRolls,all:WeaponAttribute[]){
+export function weaponAttributeBonuses(specs:Record<string,string>,rolls:WeaponRolls,all:WeaponAttribute[],exotic=false){
  const result:Record<string,number>={};const seen=new Set<string>();
  const keys:Record<string,string>={'critical-hit-chance':'chc','critical-hit-damage':'chd','headshot-damage':'hsd','health-damage':'health','dtoc':'out','damage-to-armor':'armor','reload-speed':'reload','rate-of-fire':'rof','magazine-size':'mag','skill-tier':'skillTier'};
  for(const slot of WEAPON_ATTRIBUTE_SLOTS){
@@ -26,7 +26,18 @@ export function weaponAttributeBonuses(specs:Record<string,string>,rolls:WeaponR
   const spec=specs[slot];const a=attributeOptions(spec,all).find(a=>a.id===r.id);
   if(!a||seen.has(a.stat_id))continue;seen.add(a.stat_id);
   const key=a.stat_id.endsWith('-damage')&&/^(assault-rifle|smg|lmg|rifle|marksman-rifle|shotgun|pistol)-damage$/.test(a.stat_id)?'wd':keys[a.stat_id];
-  if(key)result[key]=(result[key]||0)+(Number.isFinite(r.value)?Math.min(weaponRollMax(a,r.proto,spec),Math.max(0,r.value)):0);
+  if(key)result[key]=(result[key]||0)+(Number.isFinite(r.value)?Math.min(weaponRollMax(a,!exotic&&r.proto,spec),Math.max(0,r.value)):0);
  }
  return result;
+}
+
+export function setWeaponPrototype(specs:Record<string,string>,rolls:WeaponRolls,all:WeaponAttribute[],proto:boolean,exotic=false):WeaponRolls{
+ return Object.fromEntries(WEAPON_ATTRIBUTE_SLOTS.map(slot=>{
+  const roll=rolls[slot],spec=specs[slot],nextProto=!exotic&&proto&&spec!=='N/A';
+  const a=attributeOptions(spec,all).find(a=>a.id===roll.id);
+  if(!a)return [slot,{...roll,proto:nextProto,value:0}];
+  const oldMax=weaponRollMax(a,roll.proto,spec),max=weaponRollMax(a,nextProto,spec);
+  const current=Number.isFinite(roll.value)?Math.max(0,Math.min(oldMax,roll.value)):0;
+  return [slot,{...roll,proto:nextProto,value:current===oldMax?max:Math.min(current,max)}];
+ }));
 }

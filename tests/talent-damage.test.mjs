@@ -131,3 +131,33 @@ test('disabled, removed and invalid event rows do not leave bonuses behind',()=>
  assert.equal(e.bonuses.wd,undefined);assert.equal(e.bonuses.hsd,0);assert.equal(e.amps.length,0);
  assert.equal(Object.keys(eventBonusEffect([]).bonuses).length,0);
 });
+
+const weaponAttributeData=JSON.parse(readFileSync(new URL('../data/weapon-attributes.json',import.meta.url),'utf8'));
+const weaponData=JSON.parse(readFileSync(new URL('../data/weapons.json',import.meta.url),'utf8'));
+const {initialWeaponRolls,setWeaponPrototype,weaponAttributeBonuses}=load('weapon-attributes');
+const {setAttributePrototype}=load('attribute-values');
+test('one weapon prototype switch applies to every slot and preserves custom and zero rolls',()=>{
+ const w=weaponData.find(w=>w.name==='FAMAS 2010');const rolls=initialWeaponRolls(w.attributes,weaponAttributeData);
+ const proto=setWeaponPrototype(w.attributes,rolls,weaponAttributeData,true);
+ assert.equal(proto.core_1.value,22.5);assert.equal(proto.core_2.proto,true);assert.equal(proto.minor_1.proto,true);
+ const normal=setWeaponPrototype(w.attributes,proto,weaponAttributeData,false);assert.equal(normal.core_1.value,15);
+ rolls.core_1.value=10;assert.equal(setWeaponPrototype(w.attributes,rolls,weaponAttributeData,true).core_1.value,10);
+ rolls.core_1.value=0;assert.equal(setWeaponPrototype(w.attributes,rolls,weaponAttributeData,true).core_1.value,0);
+});
+test('exotic weapon prototype flags are rejected by the switch and cannot raise calculation caps',()=>{
+ for(const name of ['Mantis','Prima Donna']){
+  const w=weaponData.find(w=>w.name===name),rolls=initialWeaponRolls(w.attributes,weaponAttributeData);
+  const invalid=setWeaponPrototype(w.attributes,rolls,weaponAttributeData,true);
+  assert.equal(weaponAttributeBonuses(w.attributes,invalid,weaponAttributeData,true).wd,15);
+  assert.equal(weaponAttributeBonuses(w.attributes,invalid,weaponAttributeData,true).hsd,111);
+  const safe=setWeaponPrototype(w.attributes,invalid,weaponAttributeData,true,true);
+  assert.ok(Object.values(safe).every(r=>!r.proto));assert.equal(safe.core_1.value,15);
+ }
+});
+test('gear prototype switching retains rolled values while changing maximum rolls and future empty slots',()=>{
+ const a={value:'+15%',prototypeValue:'+22.5%'};
+ assert.equal(setAttributePrototype({id:'weapon-damage',proto:false,value:15},a,true).value,22.5);
+ assert.equal(setAttributePrototype({id:'weapon-damage',proto:true,value:20.8},a,false).value,15);
+ assert.equal(setAttributePrototype({id:'weapon-damage',proto:false,value:10},a,true).value,10);
+ assert.equal(setAttributePrototype({id:'',proto:false},undefined,true).proto,true);
+});
