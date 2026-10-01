@@ -13,10 +13,21 @@ export function weaponRollMax(a:WeaponAttribute,proto:boolean,spec:string){
  return parseFloat(fixed||(proto?a.proto_max:a.range_max));
 }
 export function initialWeaponRolls(specs:Record<string,string>,all:WeaponAttribute[],zero=false):WeaponRolls{
- return Object.fromEntries(WEAPON_ATTRIBUTE_SLOTS.map(slot=>{
+ const rolls:WeaponRolls=Object.fromEntries(WEAPON_ATTRIBUTE_SLOTS.map(slot=>{
   const spec=specs[slot];const a=spec.startsWith('fixed:')?attributeOptions(spec,all)[0]:undefined;
   return [slot,{id:a?.id||'',proto:false,value:a&&!zero?weaponRollMax(a,false,spec):0}];
  }));
+ if(zero)return rolls;
+ // Reserve every fixed stat before selecting free slots, including named/exotic minors.
+ const used=new Set(Object.values(rolls).map(r=>all.find(a=>a.id===r.id)?.stat_id).filter(Boolean));
+ const priority=['dtoc','damage-to-armor','health-damage','critical-hit-damage','headshot-damage','critical-hit-chance','rate-of-fire','reload-speed'];
+ for(const slot of WEAPON_ATTRIBUTE_SLOTS){
+  const spec=specs[slot];if(!spec.startsWith('type:'))continue;
+  const options=attributeOptions(spec,all).filter(a=>!used.has(a.stat_id));
+  const a=priority.map(stat=>options.find(a=>a.stat_id===stat)).find(Boolean)||options[0];
+  if(a){rolls[slot]={id:a.id,proto:false,value:weaponRollMax(a,false,spec)};used.add(a.stat_id);}
+ }
+ return rolls;
 }
 export function weaponAttributeBonuses(specs:Record<string,string>,rolls:WeaponRolls,all:WeaponAttribute[],exotic=false){
  const result:Record<string,number>={};const seen=new Set<string>();

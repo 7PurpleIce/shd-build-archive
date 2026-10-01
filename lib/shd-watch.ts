@@ -25,3 +25,5 @@ export function watchDamageBonuses(points:WatchPoints){
  for(const stat of WATCH_STATS)if(stat.damageKey)result[stat.damageKey]=watchBonus(points[stat.id]||0,stat.max);
  return result;
 }
+
+export function maxWatchPoints():WatchPoints{return Object.fromEntries(WATCH_STATS.map(stat=>[stat.id,WATCH_CAP]));}

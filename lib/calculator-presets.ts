@@ -1,0 +1,18 @@
+import weapons from '../data/weapons.json';
+import attributes from '../data/weapon-attributes.json';
+import {initialWeaponRolls} from './weapon-attributes';
+import {calculatorTalents} from './calculator-talents';
+import {maxWatchPoints} from './shd-watch';
+import type {EventBonus} from './event-bonuses';
+export function primaDonnaPreset(){
+ const weapon=weapons.find(w=>w.name==='Prima Donna')!;
+ const weaponRolls=initialWeaponRolls(weapon.attributes,attributes);
+ weaponRolls.minor_1={id:'dtoc-weapon-minor',proto:false,value:10};
+ const cores=[22.5,15,15,20.8,22.5,22.5],heads=[15,15,15,14.2,13.2,15];
+ const gear=cores.map((value,i)=>({brand:i===1||i===2?'airaldi-holdings':'aces-eights',core:{id:'weapon-damage',proto:true,value},minor:[{id:'headshot-damage',proto:true,value:heads[i]},{id:i===1||i===2?'weapon-handling':'',proto:true,value:i===1||i===2?8:0}],mod:i<3?'headshot-damage':'',modValue:i<3?10:0}));
+ return {weaponId:weapon.id,weaponRolls,gear,watch:maxWatchPoints(),specialization:{id:'sharpshooter',weaponTier:3,conditions:{},team:{}},expertise:30,
+ talents:['',calculatorTalents.find(t=>t.name==='Headhunter')!.id,calculatorTalents.find(t=>t.name==='Perfect Concussion')!.id],active:[true,true,true],
+ talentValues:[{stacks:10},{previous:71541528},{mode:3}] as Record<string,number>[],
+ setStates:{'aces-eights':{enabled:true,values:{}}},
+ eventBonuses:[{id:'preset-wd',type:'wd',value:30,name:'Event',enabled:true},{id:'preset-hsd',type:'hsd',value:60,name:'Event',enabled:true}] as EventBonus[],armored:false,outside:true,headshots:100};
+}

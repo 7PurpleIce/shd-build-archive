@@ -1,3 +1,4 @@
+import {CalculatorPanel} from './CalculatorPanel';
 import {Plus,Trash2,Zap} from 'lucide-react';
 import {CalculatorPanelHeading} from './CalculatorPanelHeading';
 import {CalculatorSelect} from './CalculatorSelect';
@@ -6,7 +7,7 @@ import {useLocale} from './Locale';
 import {EVENT_BONUS_TYPES,type EventBonus,type EventBonusType} from '@/lib/event-bonuses';
 export function EventBonuses({value,onChange}:{value:EventBonus[];onChange:(rows:EventBonus[])=>void}){
  const {t}=useLocale();const patch=(id:string,patch:Partial<EventBonus>)=>onChange(value.map(row=>row.id===id?{...row,...patch}:row));
- return <section className="damage-panel"><CalculatorPanelHeading icon={Zap} label="06 / EVENT BONUSES" title={t('Event bonuses & amplifiers','Бонусы и усиления события')}/>
+ return <CalculatorPanel><CalculatorPanelHeading icon={Zap} label="06 / EVENT BONUSES" title={t('Event bonuses & amplifiers','Бонусы и усиления события')}/>
  <p className="damage-help">{t('Add one row per external bonus: choose its damage type and value. Bonuses of the same type add together; independent multipliers multiply separately. Gear and talent bonuses already calculated above do not need another row.','Добавь строку для каждого внешнего бонуса: выбери тип и значение. Бонусы одного типа суммируются; независимые множители перемножаются. Уже учтённые выше бонусы экипировки и талантов повторно добавлять не нужно.')}</p>
  {value.length===0&&<p className="damage-help">{t('No additional event bonuses.','Дополнительных бонусов события нет.')}</p>}
  <div className="damage-event-list">{value.map((row,i)=><div className="damage-event-row" key={row.id}>
@@ -17,5 +18,5 @@ export function EventBonuses({value,onChange}:{value:EventBonus[];onChange:(rows
  {row.type==='hsd'&&<p className="damage-help">{t('Adds to headshot damage; does not increase ordinary body hits.','Добавляется к урону в голову; не увеличивает обычное попадание в тело.')}</p>}
  </div>)}</div>
  <button type="button" className="damage-action damage-event-add" onClick={()=>onChange([...value,{id:crypto.randomUUID(),type:'amp',value:0,name:'',enabled:true}])}><Plus size={16}/>{t('Add bonus','Добавить бонус')}</button>
- </section>;
+ </CalculatorPanel>;
 }

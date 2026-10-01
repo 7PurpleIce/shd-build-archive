@@ -161,3 +161,22 @@ test('gear prototype switching retains rolled values while changing maximum roll
  assert.equal(setAttributePrototype({id:'weapon-damage',proto:false,value:10},a,true).value,10);
  assert.equal(setAttributePrototype({id:'',proto:false},undefined,true).proto,true);
 });
+
+test('Prima Donna preset reproduces the verified build with full watch, three mods and event bonuses',()=>{
+ const p=load('calculator-presets').primaDonnaPreset();const w=weaponData.find(w=>w.id===p.weaponId);
+ const gearAttributes=JSON.parse(readFileSync(new URL('../data/attributes.json',import.meta.url),'utf8'));
+ const totals=baseCalculatorBonuses();const add=bs=>Object.entries(bs).forEach(([k,n])=>totals[k]=(totals[k]||0)+n);
+ const counts={};p.gear.forEach(g=>counts[g.brand]=(counts[g.brand]||0)+1);
+ for(const s of catalog.sets.filter(s=>counts[s.id]))for(const b of s.bonuses.filter(b=>b.pieces<=counts[s.id]))for(const x of load('damage').staticBonus(b.text,w.type))add({[x.key]:x.value});
+ const keys={'weapon-damage':'wd','headshot-damage':'hsd','weapon-handling':'handling'};
+ for(const g of p.gear){for(const roll of [g.core,...g.minor]){const a=gearAttributes.find(a=>a.id===roll.id);if(a&&keys[a.id])add({[keys[a.id]]:load('attribute-values').attributeRollAmount(a,roll)});}if(g.mod)add({hsd:g.modValue});}
+ const wm=load('weapon-mods');const mods=JSON.parse(readFileSync(new URL('../data/weapon-mods.json',import.meta.url),'utf8'));
+ add(wm.attachmentBonuses(wm.selectedWeaponMods(w.slots,{},mods)));add(load('shd-watch').watchDamageBonuses(p.watch));add(weaponAttributeBonuses(w.attributes,p.weaponRolls,weaponAttributeData,true));add(specializationEffect(p.specialization,w.type).bonuses);
+ const event=eventBonusEffect(p.eventBonuses);add(event.bonuses);
+ const ctx={weaponType:w.type,magazine:w.mag,armored:p.armored};const choices=[weaponTalent(w.talentSlot,''),...p.talents.slice(1).map(id=>load('calculator-talents').calculatorTalents.find(t=>t.id===id))];
+ const effects=choices.map((talent,i)=>evaluateTalent(talent,p.active[i],p.talentValues[i],ctx));effects.forEach(e=>add(e.bonuses));effects.push(evaluateSetRule(setRule('aces-eights'),true,{},ctx));
+ const r=talentDamage({...input,base:w.damage,wd:totals.wd+p.expertise,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:w.hsd+totals.hsd,armor:0,health:0,out:totals.out,armored:p.armored,outside:p.outside,headshots:p.headshots},effects);
+ close(totals.wd+p.expertise,260.3);close(totals.hsd,424.4);close(r.head,71541516.14317176);
+ assert.equal(Object.values(p.watch).length,16);assert.ok(Object.values(p.watch).every(v=>v===50));assert.equal(p.gear.filter(g=>g.mod).length,3);
+ const fresh=load('calculator-presets').primaDonnaPreset();p.gear[0].core.value=0;assert.equal(fresh.gear[0].core.value,22.5);
+});
