@@ -23,3 +23,17 @@ test('corrected gear-mod identity and audited source snapshot are consistent',()
  assert.equal(read('source/upstream-manifest.json').commit,'9c9ff25552439aabe9f995f4ed66897040ac0cc0');
  assert.equal(read('weapon-mods.json').length,252);
 });
+test('Russian augment descriptions interpolate the same maximum and retain numeric conditions',()=>{
+ const augments=read('augments.json');
+ for(const a of augments){assert.ok(a.ru.includes('{}'),a.id);assert.ok(a.en.includes('{}'),a.id);}
+ assert.match(augments.find(a=>a.id==='synesthesia').ru,/0\.2/);
+ assert.match(augments.find(a=>a.id==='paradox').ru,/2 патрона/);
+});
+test('Russian missing durations and set-upgrade quantities now mirror English',()=>{
+ const sets=read('catalog.json').sets;
+ const heart=sets.find(s=>s.name==='Heartbreaker').ru.bonuses.find(b=>b.pieces===4).text;assert.match(heart,/заряд эффекта на 5 сек/);
+ const umbra=sets.find(s=>s.name==='Umbra Initiative').ru.extra;
+ assert.match(umbra[0].description,/расхода с 10 до 20/);assert.doesNotMatch(umbra[1].description,/расхода/);
+ assert.match(talent('Actum Est').ru.description,/на 100%/);
+ assert.match(talent('Shakedown').ru.description,/1 заряд/);
+});
