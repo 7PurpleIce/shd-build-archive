@@ -16,3 +16,12 @@ export function primaDonnaPreset(){
  setStates:{'aces-eights':{enabled:true,values:{}}},
  eventBonuses:[{id:'preset-wd',type:'wd',value:30,name:'Event',enabled:true},{id:'preset-hsd',type:'hsd',value:60,name:'Event',enabled:true}] as EventBonus[],armored:false,outside:true,headshots:100};
 }
+
+export function mantisPreset(){
+ const preset=primaDonnaPreset();const weapon=weapons.find(w=>w.name==='Mantis')!;
+ return {...preset,weaponId:weapon.id,weaponRolls:initialWeaponRolls(weapon.attributes,attributes),talentValues:[{},{previous:54751504},{mode:3}] as Record<string,number>[]};
+}
+export const CALCULATOR_PRESETS=[
+ {id:'prima-donna',en:'Prima Donna · Aces & Eights',ru:'Примадонна · Тузы и восьмёрки',headDamage:71541516.14,create:primaDonnaPreset},
+ {id:'mantis',en:'Mantis · Aces & Eights',ru:'Богомол · Тузы и восьмёрки',headDamage:54751525.80,create:mantisPreset},
+] as const;
