@@ -43,3 +43,14 @@ The Attributes page's Gear Mods / Вставки subsection reproduces the owner
 ## Prototype comparisons — 1 October 2026
 
 At the owner's request, all 15 gear core/secondary values show a purple prototype comparison using exactly base × 1.5. Fractional flat results are retained (4,925 → 7,387.5; 18,935 → 28,402.5), without rounding to a whole number. This is the supplied formula, not independent verification of in-game prototype rolls. Gear Mods are outside the supplied screenshot and retain their original values.
+
+## Admin damage calculator V1 — 1 October 2026
+
+- `data/weapons.json` is normalized from the seven existing `data/source` weapon CSVs, compiled by div2hub under CC BY 4.0. Regenerate with `python scripts/build-weapons.py`. The remote snapshot checked for weapon research was `9c9ff25552439aabe9f995f4ed66897040ac0cc0`. Values are provisional: weapon-level/patch metadata and shotgun pellet semantics are not explicitly documented by that source.
+- Gear stats/mods and brands/set bonuses use the same JSON as the archive. The prototype multiplier is shared with the Attributes page, not independently duplicated.
+- The user supplied the transcript of NYL's https://www.youtube.com/watch?v=WIEZ_qC9RgI. Regression tests reproduce the 38,300 base / 119% WD / 8% DTA / 10% DTOOC / 101% CHD example, including separate 50% and 30% amplifiers.
+- V1 is a PvE, optimal-range, fixed-buff calculation. Expected damage assumes the same crit chance for body/head hits, capped at 60%. Sustained DPS uses magazine/(magazine/RPS + reload), with continuous-fire cadence and full-magazine reloads. Partial reloads, burst/charge weapons and special firing cycles are not simulated.
+- Ordinary static brand/set bonuses are parsed only from exact numeric stat lines. Four-piece talents and set chest/backpack upgrades remain manual. Glass Cannon, Vigilance and Sadist read their actual percentage from the catalogue and require explicit activation; other talents are reference-only and visibly marked manual. No perfect/named/exotic talent automation in V1.
+- Weapon core damage, specialization, watch damage and expertise are explicit inputs. Other weapon attributes, attachments, character base CHD and watch crit stats must be entered in Additional stats. No implicit double-counting of those values.
+- Standard gear has three mod slots (mask/chest/backpack); improvised gloves/holster/kneepads add one each. Set gear has one minor; brand gear has two. Non-offensive selections do not directly affect bullet damage in V1.
+- The navigation, mounted tab and calculator component all require existing `canManage`. Signing out removes the calculator and returns to the public tab. It is lazy-loaded, but GitHub Pages is static hosting: this is an owner-only interface, not server-side secrecy for JavaScript or repository source. No private data is embedded or sent.

@@ -1,6 +1,6 @@
 "use client";
 import { ArchiveNavigation } from "./ArchiveNavigation";
-import { useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { OwnerProvider, OwnerAuth, useOwner } from "./OwnerAuth";
 import { assetPath } from "@/lib/supabase";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
@@ -13,10 +13,12 @@ import { Expertise } from "./Expertise";
 import { Traders } from "./Traders";
 import { Activities } from "./Activities";
 import { LocaleProvider, LanguageSwitch, useLocale } from "./Locale";
+const DamageCalculator = lazy(() => import("./DamageCalculator"));
 function ArchiveContent() {
   const { canManage } = useOwner();
   const { t } = useLocale();
   const [tab, setTab] = useState("sets");
+  useEffect(() => { if (!canManage && tab === "damage") setTab("sets"); }, [canManage, tab]);
   return (
     <div className="archive-app">
       <header className="masthead">
@@ -40,6 +42,7 @@ function ArchiveContent() {
       <main>
         <Tabs value={tab} onValueChange={setTab}>
           <ArchiveNavigation activeTab={tab} />
+          {canManage && <TabsContent value="damage"><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}><DamageCalculator /></Suspense></TabsContent>}
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>
