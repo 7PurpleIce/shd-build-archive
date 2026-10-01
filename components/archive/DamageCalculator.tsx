@@ -1,3 +1,5 @@
+import {EventBonuses} from './EventBonuses';
+import {eventBonusEffect,type EventBonus} from '@/lib/event-bonuses';
 import {SpecializationStats} from './SpecializationStats';
 import {blankSpecialization,specializationEffect} from '@/lib/specializations';
 import {formatGameText} from '@/lib/number-format';
@@ -50,8 +52,11 @@ function CalculatorBody(){
  const [armored,setArmored]=useState(true);const [outside,setOutside]=useState(true);const [headshots,setHeadshots]=useState(0);
  const factor=(n:number)=>new Intl.NumberFormat('en-US',{maximumFractionDigits:4}).format(n);
  const fmt=(n:number)=>new Intl.NumberFormat('en-US',{maximumFractionDigits:1}).format(n);
+ const [eventBonuses,setEventBonuses]=useState<EventBonus[]>([]);
+ const eventEffect=eventBonusEffect(eventBonuses);
  const totals=baseCalculatorBonuses();
  const add=(key:string,value:number)=>{totals[key]=(totals[key]||0)+value;};
+ Object.entries(eventEffect.bonuses).forEach(([key,value])=>add(key,value));
  const counts:Record<string,number>={};gear.forEach(g=>{if(g.brand&&g.brand!=='improvised')counts[g.brand]=(counts[g.brand]||0)+1;});
  const activeSets=catalog.sets.filter(s=>counts[s.id]);
  for(const s of activeSets)for(const b of s.bonuses)if(b.pieces<=counts[s.id])for(const v of staticBonus(b.text,weapon.type))add(v.key,v.value);
@@ -62,7 +67,7 @@ function CalculatorBody(){
  }
  const specEffect=specializationEffect(specialization,weapon.type);
  Object.entries(specEffect.bonuses).forEach(([key,value])=>add(key,value));
- const talentAmps:number[]=[...specEffect.amps];
+ const talentAmps:number[]=[...specEffect.amps,...eventEffect.amps];
  const talentAllowed=[true, catalog.sets.find(s=>s.id===gear[1].brand)?.kind!=='set'&&gear[1].brand!=='improvised', catalog.sets.find(s=>s.id===gear[2].brand)?.kind!=='set'&&gear[2].brand!=='improvised'];
  const selectedTalents=talents.map((id,i)=>i===0?weaponTalent(weapon.talentSlot,id):talentAllowed[i]?calculatorTalents.find(t=>t.id===id):undefined);
  const equippedMods=selectedWeaponMods(weapon.slots,attachments,weaponMods);
@@ -80,11 +85,12 @@ function CalculatorBody(){
  const wd=totals.wd+expertise;
  const cycle=effectiveWeaponCycle(weapon,totals);
  const {rpm}=cycle;const magBasePercent=talentEffects.reduce((sum,e)=>sum+(e?.magBasePercent||0),0);const magazine=cycle.magazine+Math.floor(weapon.mag*magBasePercent/100);const reload=noReload?0:cycle.reload;
- const result=talentDamage({base,wd,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:weapon.hsd+totals.hsd,armor:totals.armor,health:totals.health,out:totals.out,armored,outside,amps:[],rpm,magazine,reload,headshots},[...talentEffects,...setEffects,{bonuses:{},amps:specEffect.amps}].filter((e):e is NonNullable<typeof e>=>!!e));
+ const result=talentDamage({base,wd,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:weapon.hsd+totals.hsd,armor:totals.armor,health:totals.health,out:totals.out,armored,outside,amps:[],rpm,magazine,reload,headshots},[...talentEffects,...setEffects,{bonuses:{},amps:[...specEffect.amps,...eventEffect.amps]}].filter((e):e is NonNullable<typeof e>=>!!e));
  function changeWeapon(id:string){const next=weapons.find(w=>w.id===id)!;setWeaponId(id);setWeaponRolls(initialWeaponRolls(next.attributes,weaponAttributes));setOverride(null);setAttachments({});setQuery('');setTalents(old=>['',old[1],old[2]]);const state=initialTalentState(weaponTalent(next.talentSlot,''));setActive(old=>[state.active,old[1],old[2]]);setTalentValues(old=>[state.values,old[1],old[2]]);}
  function changeGear(i:number,patch:Partial<Gear>){if(patch.brand!==undefined&&(i===1||i===2)){const chosen=selectedTalents[i];if(chosen?.perfect&&!namedTalentGear(chosen.kind,chosen.name).some(g=>g.brand===patch.brand)){setTalents(old=>old.map((v,j)=>j===i?'':v));setActive(old=>old.map((v,j)=>j===i?false:v));setTalentValues(old=>old.map((v,j)=>j===i?{}:v));}}setGear(old=>old.map((g,j)=>{if(j!==i)return g;const next={...g,...patch};if(catalog.sets.find(s=>s.id===next.brand)?.kind==='set')next.minor=[next.minor[0],{id:'',proto:false}];if(!hasModSlot(i,next.brand))next.mod='';return next;}));}
  function modLabel(id:string){const names:Record<string,[string,string]>={'critical-hit-chance':['Critical Hit Chance','Шанс крита'],'critical-hit-damage':['Critical Hit Damage','Критический урон'],'headshot-damage':['Headshot Damage','Урон в голову'],'weapon-damage':['Weapon Damage','Урон оружия'],'weapon-handling':['Weapon Handling','Эргономичность'],'reload-speed':['Reload Speed','Скорость перезарядки'],'rate-of-fire':['Rate of Fire','Скорострельность'],'magazine-size':['Magazine Size','Размер магазина'],'accuracy':['Accuracy','Точность'],'stability':['Stability','Стабильность'],'optimal-range':['Optimal Range','Оптимальная дальность'],'swap-speed':['Swap Speed','Скорость смены'],'melee-damage':['Melee Damage','Урон в ближнем бою']};return names[id]?t(...names[id]):id;}
  function resetStats(){
+  setEventBonuses([]);
   setWeaponId(weapons.find(w=>w.name==='FAMAS 2010')!.id);setQuery('');setOverride(null);setAttachments({});
   setGear(blankGear().map(g=>({...g,core:{id:'',proto:false}})));
   setWeaponRolls(initialWeaponRolls(weapons.find(w=>w.name==='FAMAS 2010')!.attributes,weaponAttributes,true));setTalentValues([{},{},{}]);setSpecialization(blankSpecialization());setExpertise(0);setWatch({});setSetStates({});
@@ -144,9 +150,10 @@ function CalculatorBody(){
  })}
  </section>
  <WatchStats value={watch} onChange={setWatch}/>
+ <EventBonuses value={eventBonuses} onChange={setEventBonuses}/>
  </div>
 
- <aside className="damage-results"><div className="damage-panel"><CalculatorPanelHeading icon={ChartNoAxesCombined} label="06 / DPS" title={t('Damage output','Результат')}/><label>{t('Target','Цель')}<CalculatorSelect value={armored?'armor':'health'} onChange={e=>setArmored(e.target.value==='armor')}><option value="armor">{t('Armor','Броня')}</option><option value="health">{t('Health','Здоровье')}</option></CalculatorSelect></label><label className="damage-check"><input type="checkbox" checked={outside} onChange={e=>setOutside(e.target.checked)}/>{t('Out of cover','Вне укрытия')}</label>{numberField(t('Headshot share %','Доля попаданий в голову %'),headshots,setHeadshots,100)}
+ <aside className="damage-results"><div className="damage-panel"><CalculatorPanelHeading icon={ChartNoAxesCombined} label="07 / DPS" title={t('Damage output','Результат')}/><label>{t('Target','Цель')}<CalculatorSelect value={armored?'armor':'health'} onChange={e=>setArmored(e.target.value==='armor')}><option value="armor">{t('Armor','Броня')}</option><option value="health">{t('Health','Здоровье')}</option></CalculatorSelect></label><label className="damage-check"><input type="checkbox" checked={outside} onChange={e=>setOutside(e.target.checked)}/>{t('Out of cover','Вне укрытия')}</label>{numberField(t('Headshot share %','Доля попаданий в голову %'),headshots,setHeadshots,100)}
  <h3>{weapon.type==='shotgun'?t('Damage per shot (all pellets)','Урон за выстрел (все дробины)'):t('Damage per bullet','Урон за пулю')}</h3><div className="damage-hit-grid">{([
  ['Body hit','В тело',result.body],['Critical body hit','Крит в тело',result.crit],['Headshot','В голову',result.head],['Critical headshot','Крит в голову',result.critHead]
  ] as const).map(([en,ru,n])=><div key={en}><span>{t(en,ru)}</span><strong>{fmt(n)}</strong></div>)}</div>

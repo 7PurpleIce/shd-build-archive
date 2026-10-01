@@ -109,3 +109,25 @@ test('conditional specialization perks switch off when changing specialization',
  const tech=specializationEffect({...blankSpecialization(),id:'technician',conditions},'smg');assert.equal(tech.amps[0],12);assert.equal(tech.bonuses.handling,undefined);
  assert.equal(specializationEffect({...blankSpecialization(),id:'technician'},'smg').amps.length,0);
 });
+
+const {eventBonusEffect}=load('event-bonuses');
+const event=(type,value,enabled=true)=>({id:type+value,type,value,enabled,name:'Event'});
+test('event bonuses add within buckets and multiply independent amplifiers without double counting',()=>{
+ const effect=eventBonusEffect([event('wd',20),event('wd',30),event('twd',10),event('out',5),event('amp',20),event('amp',30)]);
+ assert.equal(effect.bonuses.wd,50);assert.equal(effect.bonuses.twd,10);assert.equal(effect.bonuses.out,5);
+ const r=talentDamage({...input,wd:50,twd:10,out:5,outside:true},[{bonuses:{},amps:effect.amps}]);
+ close(r.body,input.base*1.5*1.1*1.1*1.05*1.2*1.3);
+});
+test('event headshot bonuses affect only head hits; target-specific bonuses follow target settings',()=>{
+ const e=eventBonusEffect([event('hsd',60),event('out',20),event('armor',10),event('health',15)]);
+ const base=talentDamage(input,[]),head=talentDamage({...input,hsd:input.hsd+e.bonuses.hsd},[]);
+ close(head.body,base.body);close(head.head-base.head,base.body*.6);
+ const covered=talentDamage({...input,outside:false,out:e.bonuses.out,armor:e.bonuses.armor,health:e.bonuses.health},[]);
+ close(covered.body,input.base*2*1.25*1.1);
+ close(talentDamage({...input,outside:false,armored:false,armor:e.bonuses.armor,health:e.bonuses.health},[]).body,input.base*2*1.25*1.15);
+});
+test('disabled, removed and invalid event rows do not leave bonuses behind',()=>{
+ const e=eventBonusEffect([event('wd',30,false),event('amp',NaN),event('hsd',-20),event('unknown',50)]);
+ assert.equal(e.bonuses.wd,undefined);assert.equal(e.bonuses.hsd,0);assert.equal(e.amps.length,0);
+ assert.equal(Object.keys(eventBonusEffect([]).bonuses).length,0);
+});
