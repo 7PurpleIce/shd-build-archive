@@ -108,3 +108,7 @@ Run `python scripts/sync-game-data.py SNAPSHOT_DIR COMMIT_SHA`, then `python scr
 '''
 (root/'data/ENGLISH-DATA-AUDIT.md').write_text(report)
 print(report)
+
+# Regenerate calculator specialization values after copying the source snapshot.
+import runpy
+runpy.run_path(str(root/'scripts/build-specializations.py'),run_name='__main__')

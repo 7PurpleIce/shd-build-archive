@@ -1,3 +1,5 @@
+import {SpecializationStats} from './SpecializationStats';
+import {blankSpecialization,specializationEffect} from '@/lib/specializations';
 import {formatGameText} from '@/lib/number-format';
 import {useState} from 'react';
 import {Crosshair, Shield, Sparkles, ChartNoAxesCombined, RotateCcw} from 'lucide-react';
@@ -42,7 +44,7 @@ function CalculatorBody(){
  const [gear,setGear]=useState<Gear[]>(blankGear);
  const [weaponRolls,setWeaponRolls]=useState(()=>initialWeaponRolls(weapon.attributes,weaponAttributes));
  const [talentValues,setTalentValues]=useState<Record<string,number>[]>([{},{},{}]);
- const [watch,setWatch]=useState<WatchPoints>({wd:50});const [specialization,setSpecialization]=useState(15);const [expertise,setExpertise]=useState(0);
+ const [watch,setWatch]=useState<WatchPoints>({wd:50});const [specialization,setSpecialization]=useState(blankSpecialization);const [expertise,setExpertise]=useState(0);
  const [setStates,setSetStates]=useState<Record<string,{enabled:boolean;values:Record<string,number>}>>({});
  const [talents,setTalents]=useState(['','','']);const [active,setActive]=useState([false,false,false]);
  const [armored,setArmored]=useState(true);const [outside,setOutside]=useState(true);const [headshots,setHeadshots]=useState(0);
@@ -58,7 +60,9 @@ function CalculatorBody(){
   for(const roll of [g.core,...g.minor.slice(0,isSet?1:2)]){const a=attributes.find(a=>a.id===roll.id);if(a&&statKey[a.id])add(statKey[a.id],attributeRollAmount(a,roll));}
   const mod=hasModSlot(i,g.brand)?mods.find(m=>m.id===g.mod):undefined;if(mod&&statKey[mod.id])add(statKey[mod.id],Math.max(0,Math.min(numericStat(mod.value),g.modValue??numericStat(mod.value))));
  }
- const talentAmps:number[]=[];
+ const specEffect=specializationEffect(specialization,weapon.type);
+ Object.entries(specEffect.bonuses).forEach(([key,value])=>add(key,value));
+ const talentAmps:number[]=[...specEffect.amps];
  const talentAllowed=[true, catalog.sets.find(s=>s.id===gear[1].brand)?.kind!=='set'&&gear[1].brand!=='improvised', catalog.sets.find(s=>s.id===gear[2].brand)?.kind!=='set'&&gear[2].brand!=='improvised'];
  const selectedTalents=talents.map((id,i)=>i===0?weaponTalent(weapon.talentSlot,id):talentAllowed[i]?calculatorTalents.find(t=>t.id===id):undefined);
  const equippedMods=selectedWeaponMods(weapon.slots,attachments,weaponMods);
@@ -73,17 +77,17 @@ function CalculatorBody(){
  const talentEffects=selectedTalents.map((talent,i)=>talent?evaluateTalent(talent,active[i],talentValues[i],talentContext):undefined);
  [...talentEffects,...setEffects].forEach(effect=>{if(!effect)return;Object.entries(effect.bonuses).forEach(([key,value])=>add(key,value));talentAmps.push(...effect.amps);noReload ||= !!effect.noReload;});
  const base=override??weapon.damage;
- const wd=totals.wd+specialization+expertise;
+ const wd=totals.wd+expertise;
  const cycle=effectiveWeaponCycle(weapon,totals);
  const {rpm}=cycle;const magBasePercent=talentEffects.reduce((sum,e)=>sum+(e?.magBasePercent||0),0);const magazine=cycle.magazine+Math.floor(weapon.mag*magBasePercent/100);const reload=noReload?0:cycle.reload;
- const result=talentDamage({base,wd,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:weapon.hsd+totals.hsd,armor:totals.armor,health:totals.health,out:totals.out,armored,outside,amps:[],rpm,magazine,reload,headshots},[...talentEffects,...setEffects].filter((e):e is NonNullable<typeof e>=>!!e));
+ const result=talentDamage({base,wd,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:weapon.hsd+totals.hsd,armor:totals.armor,health:totals.health,out:totals.out,armored,outside,amps:[],rpm,magazine,reload,headshots},[...talentEffects,...setEffects,{bonuses:{},amps:specEffect.amps}].filter((e):e is NonNullable<typeof e>=>!!e));
  function changeWeapon(id:string){const next=weapons.find(w=>w.id===id)!;setWeaponId(id);setWeaponRolls(initialWeaponRolls(next.attributes,weaponAttributes));setOverride(null);setAttachments({});setQuery('');setTalents(old=>['',old[1],old[2]]);const state=initialTalentState(weaponTalent(next.talentSlot,''));setActive(old=>[state.active,old[1],old[2]]);setTalentValues(old=>[state.values,old[1],old[2]]);}
  function changeGear(i:number,patch:Partial<Gear>){if(patch.brand!==undefined&&(i===1||i===2)){const chosen=selectedTalents[i];if(chosen?.perfect&&!namedTalentGear(chosen.kind,chosen.name).some(g=>g.brand===patch.brand)){setTalents(old=>old.map((v,j)=>j===i?'':v));setActive(old=>old.map((v,j)=>j===i?false:v));setTalentValues(old=>old.map((v,j)=>j===i?{}:v));}}setGear(old=>old.map((g,j)=>{if(j!==i)return g;const next={...g,...patch};if(catalog.sets.find(s=>s.id===next.brand)?.kind==='set')next.minor=[next.minor[0],{id:'',proto:false}];if(!hasModSlot(i,next.brand))next.mod='';return next;}));}
  function modLabel(id:string){const names:Record<string,[string,string]>={'critical-hit-chance':['Critical Hit Chance','Шанс крита'],'critical-hit-damage':['Critical Hit Damage','Критический урон'],'headshot-damage':['Headshot Damage','Урон в голову'],'weapon-damage':['Weapon Damage','Урон оружия'],'weapon-handling':['Weapon Handling','Эргономичность'],'reload-speed':['Reload Speed','Скорость перезарядки'],'rate-of-fire':['Rate of Fire','Скорострельность'],'magazine-size':['Magazine Size','Размер магазина'],'accuracy':['Accuracy','Точность'],'stability':['Stability','Стабильность'],'optimal-range':['Optimal Range','Оптимальная дальность'],'swap-speed':['Swap Speed','Скорость смены'],'melee-damage':['Melee Damage','Урон в ближнем бою']};return names[id]?t(...names[id]):id;}
  function resetStats(){
   setWeaponId(weapons.find(w=>w.name==='FAMAS 2010')!.id);setQuery('');setOverride(null);setAttachments({});
   setGear(blankGear().map(g=>({...g,core:{id:'',proto:false}})));
-  setWeaponRolls(initialWeaponRolls(weapons.find(w=>w.name==='FAMAS 2010')!.attributes,weaponAttributes,true));setTalentValues([{},{},{}]);setSpecialization(0);setExpertise(0);setWatch({});setSetStates({});
+  setWeaponRolls(initialWeaponRolls(weapons.find(w=>w.name==='FAMAS 2010')!.attributes,weaponAttributes,true));setTalentValues([{},{},{}]);setSpecialization(blankSpecialization());setExpertise(0);setWatch({});setSetStates({});
   setTalents(['','','']);setActive([false,false,false]);setHeadshots(0);setArmored(true);setOutside(false);
  }
  function numberField(label:string,value:number,onChange:(v:number)=>void,max=10000){return <CalculatorNumber label={label} value={value} onChange={onChange} max={max}/>;}
@@ -99,11 +103,12 @@ function CalculatorBody(){
  <section className="damage-panel"><CalculatorPanelHeading icon={Crosshair} label="01 / WEAPON" title={t('Weapon','Оружие')}/>
  <div className="damage-fields"><label>{t('Class','Класс')}<CalculatorSelect value={weapon.type} onChange={e=>changeWeapon(weapons.find(w=>w.type===e.target.value)!.id)}>{types.map(([id,en,ru])=><option key={id} value={id}>{t(en,ru)}</option>)}</CalculatorSelect></label><label>{t('Search weapon','Поиск оружия')}<input value={query} onChange={e=>setQuery(e.target.value)} placeholder={t('Weapon name','Название оружия')}/></label></div>
  <label>{t('Weapon','Оружие')}<CalculatorSelect value={weaponId} onChange={e=>changeWeapon(e.target.value)}>{weapons.filter(w=>w.type===weapon.type&&(w.id===weaponId||w.name.toLowerCase().includes(query.toLowerCase()))).map(w=><option key={w.id} value={w.id}>{w.name}{w.exotic?' · Exotic':w.named?' · Named':''}</option>)}</CalculatorSelect></label>
- <div className="damage-fields">{numberField(t('Base damage','Базовый урон'),base,setOverride,10000000)}{numberField(t('Specialization damage %','Урон специализации %'),specialization,setSpecialization,100)}{numberField(t('Expertise damage %','Урон мастерства %'),expertise,setExpertise,30)}</div>
+ <div className="damage-fields">{numberField(t('Base damage','Базовый урон'),base,setOverride,10000000)}{numberField(t('Expertise damage %','Урон мастерства %'),expertise,setExpertise,30)}</div>
  <p className="damage-help">{t('RPM / magazine / reload','Скорострельность / магазин / перезарядка')}: {fmt(weapon.rpm)} / {weapon.mag} / {fmt(weapon.reload)} {t('s','с')}. <button type="button" onClick={()=>setOverride(null)}>{t('Restore base damage','Вернуть базовый урон')}</button></p>
  <WeaponAttributes specs={weapon.attributes} value={weaponRolls} onChange={setWeaponRolls}/>
  <p className="damage-help">{t('Weapon attributes and supported talents are included automatically. Base character critical damage (+25%) is included automatically. Shotgun damage is per whole shot.','Атрибуты оружия и поддерживаемые таланты учитываются автоматически. Базовый критический урон персонажа (+25%) учитывается автоматически. Урон дробовика считается за весь выстрел.')}</p>
  </section>
+ <SpecializationStats value={specialization} onChange={setSpecialization} weaponType={weapon.type}/>
  <section className="damage-panel damage-attachments"><CalculatorPanelHeading icon={Crosshair} label="02 / MODS" title={t('Weapon attachments','Модификации оружия')}/>
  <p className="damage-help">{t('Compatible attachments only. Fixed attachments are included automatically. All listed bonuses and penalties affecting damage, fire rate, reload or magazine size are included below.','Только совместимые модификации. Фиксированные обвесы установлены автоматически. Бонусы и штрафы к урону, скорострельности, перезарядке и магазину учитываются в результате.')}</p>
  <div className="damage-gear-grid">{WEAPON_MOD_SLOTS.map(slot=>{const spec=weapon.slots[slot];const fixed=spec.startsWith('fixed:');const current=equippedMods.find(m=>m.category===slot);const labels={optics:['Optics','Прицел'],magazine:['Magazine','Магазин'],muzzle:['Muzzle','Дульная модификация'],underbarrel:['Underbarrel','Подствольная модификация']} as const;
@@ -142,9 +147,11 @@ function CalculatorBody(){
  </div>
 
  <aside className="damage-results"><div className="damage-panel"><CalculatorPanelHeading icon={ChartNoAxesCombined} label="06 / DPS" title={t('Damage output','Результат')}/><label>{t('Target','Цель')}<CalculatorSelect value={armored?'armor':'health'} onChange={e=>setArmored(e.target.value==='armor')}><option value="armor">{t('Armor','Броня')}</option><option value="health">{t('Health','Здоровье')}</option></CalculatorSelect></label><label className="damage-check"><input type="checkbox" checked={outside} onChange={e=>setOutside(e.target.checked)}/>{t('Out of cover','Вне укрытия')}</label>{numberField(t('Headshot share %','Доля попаданий в голову %'),headshots,setHeadshots,100)}
- <div className="damage-hero"><span>{t('Average hit','Среднее попадание')}</span><strong>{fmt(result.average)}</strong></div><dl>{([
- ['Body','В тело',result.body],['Critical body','Крит в тело',result.crit],['Headshot','В голову',result.head],['Critical headshot','Крит в голову',result.critHead],['Burst DPS','DPS без перезарядки',result.burst],['Sustained DPS','DPS с перезарядкой',result.sustained]
- ] as const).map(([en,ru,value])=><div key={en}><dt>{t(en,ru)}</dt><dd>{fmt(value)}</dd></div>)}</dl>
+ <h3>{weapon.type==='shotgun'?t('Damage per shot (all pellets)','Урон за выстрел (все дробины)'):t('Damage per bullet','Урон за пулю')}</h3><div className="damage-hit-grid">{([
+ ['Body hit','В тело',result.body],['Critical body hit','Крит в тело',result.crit],['Headshot','В голову',result.head],['Critical headshot','Крит в голову',result.critHead]
+ ] as const).map(([en,ru,n])=><div key={en}><span>{t(en,ru)}</span><strong>{fmt(n)}</strong></div>)}</div>
+ <div className="damage-average"><span>{t('Average hit (probability-weighted)','Средний урон (с учётом вероятностей)')}</span><strong>{fmt(result.average)}</strong></div>
+ <dl>{([['Burst DPS','DPS без перезарядки',result.burst],['Sustained DPS','DPS с перезарядкой',result.sustained]] as const).map(([en,ru,n])=><div key={en}><dt>{t(en,ru)}</dt><dd>{fmt(n)}</dd></div>)}</dl>
  <p className="damage-help">{t('Expected damage uses crit chance and headshot share. Sustained DPS assumes continuous fire, fixed buffs and full-magazine reloads.','Средний урон учитывает шанс крита и долю попаданий в голову. DPS предполагает непрерывную стрельбу, постоянные баффы и перезарядку полного магазина.')}</p>
  {result.singleShot&&<p className="damage-notice">{t('Hit values include the next-shot effect. DPS excludes one-shot effects and their unmodeled activation cycle.','Урон попаданий учитывает эффект следующего выстрела. DPS не включает разовые эффекты и их цикл активации.')}</p>}
  {result.additive>0&&<p className="damage-help">Headhunter: +{fmt(result.additive)}</p>}

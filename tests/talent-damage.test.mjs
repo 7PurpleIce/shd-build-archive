@@ -84,3 +84,28 @@ test('all modeled source set variants produce finite values and next-shot sets d
  close(talentDamage(input,[aces]).sustained,talentDamage(input,[]).sustained);
  assert.equal(evaluateSetRule(setRule('breaking-point'),true,{}, {...context,weaponType:'smg'}).bonuses.wd,undefined);
 });
+
+const {specializationEffect,blankSpecialization,SPECIALIZATIONS}=load('specializations');
+test('specializations use source weapon tiers and restrict personal headshot damage to rifles',()=>{
+ for(const [id] of SPECIALIZATIONS)for(const weaponType of ['rifle','marksman-rifle','assault-rifle','smg','lmg','shotgun','pistol'])for(let tier=0;tier<=3;tier++){
+  const effect=specializationEffect({...blankSpecialization(),id,weaponTier:tier},weaponType);
+  assert.equal(effect.bonuses.wd||0,tier*5);
+  assert.equal(effect.bonuses.hsd||0,id==='sharpshooter'&&['rifle','marksman-rifle'].includes(weaponType)?15:0);
+ }
+ assert.equal(Object.keys(specializationEffect(blankSpecialization(),'rifle').bonuses).length,0);
+});
+test('own tactical links never apply to self; allied links use distinct damage buckets and target conditions',()=>{
+ const own=specializationEffect({...blankSpecialization(),id:'demolitionist'},'rifle');assert.equal(own.bonuses.out,undefined);
+ const team=specializationEffect({...blankSpecialization(),team:{demolitionist:true,sharpshooter:true,survivalist:true,firewall:true}},'rifle');
+ assert.equal(team.bonuses.out,5);assert.equal(team.bonuses.hsd,10);assert.equal(team.amps.length,2);assert.equal(team.amps[0],10);
+ const a=talentDamage({...input,out:team.bonuses.out,outside:false},[]).body;
+ close(a,talentDamage({...input,out:0,outside:false},[]).body);
+ close(talentDamage({...input,out:5,outside:true},[]).body/a,1.05);
+});
+test('conditional specialization perks switch off when changing specialization',()=>{
+ const conditions={kill:true,still:true,kit:true,robot:true};
+ const gunner=specializationEffect({...blankSpecialization(),id:'gunner',conditions},'smg');assert.equal(gunner.bonuses.rof,5);assert.equal(gunner.bonuses.handling,10);assert.equal(gunner.amps.length,0);
+ const demo=specializationEffect({...blankSpecialization(),id:'demolitionist',conditions},'smg');assert.equal(demo.bonuses.handling,30);assert.equal(demo.bonuses.rof,undefined);
+ const tech=specializationEffect({...blankSpecialization(),id:'technician',conditions},'smg');assert.equal(tech.amps[0],12);assert.equal(tech.bonuses.handling,undefined);
+ assert.equal(specializationEffect({...blankSpecialization(),id:'technician'},'smg').amps.length,0);
+});

@@ -90,3 +90,11 @@ Removed the free-entry Other bonuses and independent-amplifier panels. Supported
 Intrinsic character CHD is 25%, separate from gear and watch and retained after reset. This is a character baseline, not an item value in div2hub. Supporting stripped-gear player measurement: https://www.reddit.com/r/thedivision/comments/hhu0ra . Weapon-specific HSD remains sourced from weapon data, without adding a second character HSD baseline.
 
 Gear cards align content at the top, preventing fewer green-set fields from distributing large gaps throughout a stretched card.
+
+## Specializations and per-bullet output — 2026-10-01
+
+Source: `div2hub/game-data/specializations/specialization_talents.csv`, with specialization trees checked for perk ownership. Raw CSV and generated `data/specialization-talents.json` are retained; weekly snapshot sync regenerates the JSON through `scripts/build-specializations.py`.
+
+Replaced the arbitrary specialization damage slider with six specializations and current weapon-class damage node tiers 0–3 (0/5/10/15%). Other personal perks assume full unlock. Sharpshooter's personal +15% HSD only applies to rifles/MMRs. Gunner kill/stationary conditions, Demolitionist armor-kit handling and Technician robot-target damage are explicit toggles. Tactical links are separately received from allies: Sharpshooter HSD, Demolitionist OOC, Survivalist status-target amplification and Firewall proximity amplification. Own tactical links never auto-apply to self. Conditional links default off; same links do not stack. Technician robot damage and Survivalist/Firewall links are modeled as independent conditional multipliers. Coupler's reload cycle, Firewall shield and skill-dependent interactions remain explicitly outside the model.
+
+Results now prominently separate deterministic body, critical-body, head and critical-head hit damage from probability-weighted average damage and DPS. Shotgun output is explicitly a whole shot, not a single pellet.

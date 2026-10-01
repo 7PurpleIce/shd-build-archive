@@ -19,3 +19,5 @@
 .damage-roll-editor{display:grid;gap:10px;padding-top:10px;border-top:1px solid #29313c}.calculator-number{min-width:0}.calculator-number-limit{display:flex;justify-content:space-between;align-items:center;color:#7f8e9f;font-size:11px;margin-top:8px}.damage-amp>.calculator-number{flex:1}
 
 .damage-set-effect{border:1px solid #3b4940;border-left:3px solid #72b987;border-radius:8px;padding:14px;margin-top:14px;background:#72b98708}
+
+.damage-hit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.damage-hit-grid>div{padding:12px;border:1px solid #63482f;background:#ff863908;border-radius:8px;min-width:0}.damage-hit-grid span,.damage-average span{display:block;font-size:11px;color:#aeb9c7}.damage-hit-grid strong{display:block;color:#ffad70;font-size:22px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums;margin-top:6px}.damage-average{padding:16px 0;border-bottom:1px solid #343a43}.damage-average strong{display:block;color:#d8dfe9;font-size:20px;margin-top:6px}.damage-specialization-tier{margin-top:14px}
