@@ -1,0 +1,812 @@
+[
+  {
+    "id": "assault-rifle-damage-weapon-core",
+    "stat_id": "assault-rifle-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "lmg-damage-weapon-core",
+    "stat_id": "lmg-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "smg-damage-weapon-core",
+    "stat_id": "smg-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "rifle-damage-weapon-core",
+    "stat_id": "rifle-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "marksman-rifle-damage-weapon-core",
+    "stat_id": "marksman-rifle-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "shotgun-damage-weapon-core",
+    "stat_id": "shotgun-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-weapon-core",
+    "stat_id": "pistol-damage",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "health-damage-weapon-core",
+    "stat_id": "health-damage",
+    "range_min": "0.5%",
+    "range_max": "21%",
+    "proto_max": "31.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "dtoc-weapon-core",
+    "stat_id": "dtoc",
+    "range_min": "0.5%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-chance-weapon-core",
+    "stat_id": "critical-hit-chance",
+    "range_min": "0.5%",
+    "range_max": "21%",
+    "proto_max": "31.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "damage-to-armor-weapon-core",
+    "stat_id": "damage-to-armor",
+    "range_min": "0.5%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-damage-weapon-core",
+    "stat_id": "critical-hit-damage",
+    "range_min": "0.5%",
+    "range_max": "17%",
+    "proto_max": "26%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-weapon-core",
+    "stat_id": "headshot-damage",
+    "range_min": "0.5%",
+    "range_max": "111%",
+    "proto_max": "166.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "damage-to-armor-weapon-minor",
+    "stat_id": "damage-to-armor",
+    "range_min": "0.5%",
+    "range_max": "6%",
+    "proto_max": "9%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-chance-weapon-minor",
+    "stat_id": "critical-hit-chance",
+    "range_min": "0.5%",
+    "range_max": "9.5%",
+    "proto_max": "14.5%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "health-damage-weapon-minor",
+    "stat_id": "health-damage",
+    "range_min": "0.5%",
+    "range_max": "10%",
+    "proto_max": "14.5%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "dtoc-weapon-minor",
+    "stat_id": "dtoc",
+    "range_min": "0.5%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-weapon-minor",
+    "stat_id": "headshot-damage",
+    "range_min": "0.5%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-damage-weapon-minor",
+    "stat_id": "critical-hit-damage",
+    "range_min": "0.5%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "reload-speed-weapon-minor",
+    "stat_id": "reload-speed",
+    "range_min": "0.5%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "weapon-minor|weapon-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "stability-weapon-minor",
+    "stat_id": "stability",
+    "range_min": "0.5%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "weapon-minor|weapon-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "accuracy-weapon-minor",
+    "stat_id": "accuracy",
+    "range_min": "0.5%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "weapon-minor|weapon-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "optimal-range-weapon-minor",
+    "stat_id": "optimal-range",
+    "range_min": "0.5%",
+    "range_max": "24%",
+    "proto_max": "36%",
+    "compatibility": "weapon-minor|weapon-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "magazine-size-weapon-minor",
+    "stat_id": "magazine-size",
+    "range_min": "0.5%",
+    "range_max": "12.5%",
+    "proto_max": "18.75%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "rate-of-fire-weapon-minor",
+    "stat_id": "rate-of-fire",
+    "range_min": "0.5%",
+    "range_max": "5%",
+    "proto_max": "7.5%",
+    "compatibility": "weapon-minor|weapon-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "swap-speed-weapon-minor",
+    "stat_id": "swap-speed",
+    "range_min": "0.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "weapon-minor|weapon-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "armor-gear-core",
+    "stat_id": "armor",
+    "range_min": "16594",
+    "range_max": "170000",
+    "proto_max": "255000",
+    "compatibility": "gear-core|gear-defensive-core",
+    "category": "defensive",
+    "fidelity": "1"
+  },
+  {
+    "id": "weapon-damage-gear-core",
+    "stat_id": "weapon-damage",
+    "range_min": "1.5%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "gear-core|gear-offensive-core",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "skill-tier-gear-core",
+    "stat_id": "skill-tier",
+    "range_min": "1",
+    "range_max": "1",
+    "proto_max": "1.5",
+    "compatibility": "gear-core|gear-skill-core",
+    "category": "skill",
+    "fidelity": "0.5"
+  },
+  {
+    "id": "weapon-handling-gear-minor",
+    "stat_id": "weapon-handling",
+    "range_min": "1%",
+    "range_max": "8%",
+    "proto_max": "12%",
+    "compatibility": "gear-minor|gear-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-chance-gear-minor",
+    "stat_id": "critical-hit-chance",
+    "range_min": "1.2%",
+    "range_max": "6%",
+    "proto_max": "9%",
+    "compatibility": "gear-minor|gear-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-damage-gear-minor",
+    "stat_id": "critical-hit-damage",
+    "range_min": "6%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "gear-minor|gear-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-gear-minor",
+    "stat_id": "headshot-damage",
+    "range_min": "1.3%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-offensive-minor",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "armor-regeneration-gear-minor",
+    "stat_id": "armor-regeneration",
+    "range_min": "1689",
+    "range_max": "4925",
+    "proto_max": "7388",
+    "compatibility": "gear-minor|gear-defensive-minor",
+    "category": "defensive",
+    "fidelity": "1"
+  },
+  {
+    "id": "hazard-protection-gear-minor",
+    "stat_id": "hazard-protection",
+    "range_min": "5%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-defensive-minor",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "health-gear-minor",
+    "stat_id": "health",
+    "range_min": "8405",
+    "range_max": "18935",
+    "proto_max": "28403",
+    "compatibility": "gear-minor|gear-defensive-minor",
+    "category": "defensive",
+    "fidelity": "1"
+  },
+  {
+    "id": "explosive-resistance-gear-minor",
+    "stat_id": "explosive-resistance",
+    "range_min": "1%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-defensive-minor",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "skill-haste-gear-minor",
+    "stat_id": "skill-haste",
+    "range_min": "6%",
+    "range_max": "12%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "skill-damage-gear-minor",
+    "stat_id": "skill-damage",
+    "range_min": "1.3%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "repair-skills-gear-minor",
+    "stat_id": "repair-skills",
+    "range_min": "7.8%",
+    "range_max": "20%",
+    "proto_max": "30%",
+    "compatibility": "gear-minor|gear-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "status-effects-gear-minor",
+    "stat_id": "status-effects",
+    "range_min": "5%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "gear-minor|gear-skill-minor",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "incoming-repairs-gear-minor",
+    "stat_id": "incoming-repairs",
+    "range_min": "7.8%",
+    "range_max": "20%",
+    "proto_max": "30%",
+    "compatibility": "N/A",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-sharpshooters-93r",
+    "stat_id": "pistol-damage",
+    "range_min": "11.6%",
+    "range_max": "11.6%",
+    "proto_max": "17.4%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "reload-speed-sharpshooters-93r",
+    "stat_id": "reload-speed",
+    "range_min": "9.3%",
+    "range_max": "9.3%",
+    "proto_max": "14%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-survivalist-d50",
+    "stat_id": "pistol-damage",
+    "range_min": "11.6%",
+    "range_max": "11.6%",
+    "proto_max": "17.4%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "dtoc-survivalist-d50",
+    "stat_id": "dtoc",
+    "range_min": "8%",
+    "range_max": "8%",
+    "proto_max": "12%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-maxim-9",
+    "stat_id": "pistol-damage",
+    "range_min": "11.6%",
+    "range_max": "11.6%",
+    "proto_max": "17.4%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-maxim-9",
+    "stat_id": "headshot-damage",
+    "range_min": "9%",
+    "range_max": "9%",
+    "proto_max": "13.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-p320-xcompact",
+    "stat_id": "pistol-damage",
+    "range_min": "11.6%",
+    "range_max": "11.6%",
+    "proto_max": "17.4%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "damage-to-armor-p320-xcompact",
+    "stat_id": "damage-to-armor",
+    "range_min": "5%",
+    "range_max": "5%",
+    "proto_max": "7.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "skill-tier-tdi-kard-custom",
+    "stat_id": "skill-tier",
+    "range_min": "1",
+    "range_max": "1",
+    "proto_max": "1.5",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.5"
+  },
+  {
+    "id": "shotgun-damage-firestarter",
+    "stat_id": "shotgun-damage",
+    "range_min": "11.6%",
+    "range_max": "11.6%",
+    "proto_max": "17.4%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "health-damage-firestarter",
+    "stat_id": "health-damage",
+    "range_min": "7.5%",
+    "range_max": "7.5%",
+    "proto_max": "11.3%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "shotgun-damage-backup-boomstick",
+    "stat_id": "shotgun-damage",
+    "range_min": "17%",
+    "range_max": "17%",
+    "proto_max": "25.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "armor-on-kill-the-mop",
+    "stat_id": "armor-on-kill",
+    "range_min": "10%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "N/A",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-oh-carol",
+    "stat_id": "headshot-damage",
+    "range_min": "137%",
+    "range_max": "137%",
+    "proto_max": "205.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-the-white-death",
+    "stat_id": "headshot-damage",
+    "range_min": "137%",
+    "range_max": "137%",
+    "proto_max": "205.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "headshot-damage-punch-drunk",
+    "stat_id": "headshot-damage",
+    "range_min": "20%",
+    "range_max": "20%",
+    "proto_max": "30%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "scanner-pulse-haste-nightwatcher",
+    "stat_id": "scanner-pulse-haste",
+    "range_min": "100%",
+    "range_max": "100%",
+    "proto_max": "150%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "optimal-range-visionario",
+    "stat_id": "optimal-range",
+    "range_min": "50%",
+    "range_max": "50%",
+    "proto_max": "75%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "health-damage-the-hollow-man",
+    "stat_id": "health-damage",
+    "range_min": "14%",
+    "range_max": "14%",
+    "proto_max": "21%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "shield-health-forge",
+    "stat_id": "shield-health",
+    "range_min": "50%",
+    "range_max": "50%",
+    "proto_max": "75%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "ammo-capacity-ammo-dump",
+    "stat_id": "ammo-capacity",
+    "range_min": "10%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "weapon-damage-picaros-holster",
+    "stat_id": "weapon-damage",
+    "range_min": "10%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "accuracy-spot-on",
+    "stat_id": "accuracy",
+    "range_min": "38%",
+    "range_max": "38%",
+    "proto_max": "57%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "rate-of-fire-salvo",
+    "stat_id": "rate-of-fire",
+    "range_min": "5%",
+    "range_max": "5%",
+    "proto_max": "7.5%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "melee-damage-claws-out",
+    "stat_id": "melee-damage",
+    "range_min": "500%",
+    "range_max": "500%",
+    "proto_max": "750%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "pistol-damage-claws-out",
+    "stat_id": "pistol-damage",
+    "range_min": "10%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "armor-on-kill-deathgrips",
+    "stat_id": "armor-on-kill",
+    "range_min": "10%",
+    "range_max": "10%",
+    "proto_max": "15%",
+    "compatibility": "N/A",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "damage-to-armor-contractors-gloves",
+    "stat_id": "damage-to-armor",
+    "range_min": "8%",
+    "range_max": "8%",
+    "proto_max": "12%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "skill-health-motherly-love",
+    "stat_id": "skill-health",
+    "range_min": "25%",
+    "range_max": "25%",
+    "proto_max": "37.5%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "weapon-handling-eagles-grasp",
+    "stat_id": "weapon-handling",
+    "range_min": "15%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "status-effects-firm-handshake",
+    "stat_id": "status-effects",
+    "range_min": "16%",
+    "range_max": "16%",
+    "proto_max": "24%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "dtoc-foxs-prayer",
+    "stat_id": "dtoc",
+    "range_min": "8%",
+    "range_max": "8%",
+    "proto_max": "12%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "weapon-damage-turmoil",
+    "stat_id": "weapon-damage",
+    "range_min": "15%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-chance-turmoil",
+    "stat_id": "critical-hit-chance",
+    "range_min": "6%",
+    "range_max": "6%",
+    "proto_max": "9%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "critical-hit-damage-turmoil",
+    "stat_id": "critical-hit-damage",
+    "range_min": "12%",
+    "range_max": "12%",
+    "proto_max": "18%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "armor-regeneration-emperors-guard",
+    "stat_id": "armor-regeneration",
+    "range_min": "1%",
+    "range_max": "1%",
+    "proto_max": "1.5%",
+    "compatibility": "N/A",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "status-effects-grease",
+    "stat_id": "status-effects",
+    "range_min": "16%",
+    "range_max": "16%",
+    "proto_max": "24%",
+    "compatibility": "N/A",
+    "category": "skill",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "weapon-damage-cloak",
+    "stat_id": "weapon-damage",
+    "range_min": "15%",
+    "range_max": "15%",
+    "proto_max": "22.5%",
+    "compatibility": "N/A",
+    "category": "offensive",
+    "fidelity": "0.1%"
+  },
+  {
+    "id": "reduced-threat-cloak",
+    "stat_id": "reduced-threat",
+    "range_min": "50%",
+    "range_max": "50%",
+    "proto_max": "75%",
+    "compatibility": "N/A",
+    "category": "defensive",
+    "fidelity": "0.1%"
+  }
+]

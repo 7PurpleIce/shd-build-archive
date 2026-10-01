@@ -10,6 +10,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -28,6 +37,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -46,6 +64,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Ranger",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -64,6 +91,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -82,6 +118,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -100,6 +145,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -118,6 +172,15 @@
     "hsd": 85.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -136,6 +199,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Overflowing",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -154,6 +226,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -172,6 +253,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Allegro",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -190,6 +280,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Big Game Hunter",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Fire Select Scope",
       "magazine": "fixed:Tension Spring Magazine",
@@ -208,6 +307,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -226,6 +334,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Precision Strike",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -244,6 +361,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -262,6 +388,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Optimist",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -280,6 +415,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Perturb",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Agitator Scope",
       "magazine": "fixed:Agitator Magazine",
@@ -298,6 +442,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -316,6 +469,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -334,6 +496,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -352,6 +523,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Pressure Point",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -370,6 +550,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Unnerve",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Strega Optic",
       "magazine": "fixed:Strega Magazine",
@@ -388,6 +577,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -406,6 +604,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Frenzy",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -424,6 +631,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect On Empty",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -442,6 +658,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -460,6 +685,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -478,6 +712,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -496,6 +739,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Killer",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -514,6 +766,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Stabilize",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -532,6 +793,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -550,6 +820,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Close & Personal",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -568,6 +847,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -586,6 +874,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Ignited",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -604,6 +901,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -622,6 +928,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Actum Est",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Conductor Rail",
       "magazine": "fixed:Insulated Magazine",
@@ -640,6 +955,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -658,6 +982,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -676,6 +1009,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -694,6 +1036,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Streamline",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -712,6 +1063,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Boiling Point",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -730,6 +1090,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Caduceus",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Caduceus Optics",
       "magazine": "fixed:Caduceus Magazine",
@@ -748,6 +1117,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -766,6 +1144,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -784,6 +1171,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Near Sighted",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -802,6 +1198,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Eagle's Strike / Tenacity",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Eagle Eye Sight",
       "magazine": "fixed:Bullet Eyrie",
@@ -820,6 +1225,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -838,6 +1252,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect In Sync",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -856,6 +1279,15 @@
     "hsd": 55.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Capacitance",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Conductive Focal",
       "magazine": "fixed:Voltage Generator",
@@ -874,6 +1306,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Blossom Harvest",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -892,6 +1333,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -910,6 +1360,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Future Perfection",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -928,6 +1387,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -946,6 +1414,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Flatline",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -964,6 +1441,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:assault-rifle",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -982,6 +1468,15 @@
     "hsd": 55.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Accurate",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -1000,6 +1495,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Adaptive Instincts",
+    "attributes": {
+      "core_1": "fixed:assault-rifle-damage-weapon-core",
+      "core_2": "fixed:health-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Chameleon Optics",
       "magazine": "fixed:Chameleon ActivCamo",
@@ -1018,6 +1522,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1036,6 +1549,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1054,6 +1576,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Streamline",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1072,6 +1603,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1090,6 +1630,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-9mm",
@@ -1108,6 +1657,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1126,6 +1684,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Thunder Strike",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1144,6 +1711,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1162,6 +1738,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Vindictive",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1180,6 +1765,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Breathe Free",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Gaze of Death",
       "magazine": "fixed:Death's Hand",
@@ -1198,6 +1792,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -1216,6 +1819,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -1234,6 +1846,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Strained",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -1252,6 +1873,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1270,6 +1900,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1288,6 +1927,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1306,6 +1954,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Back and Forth",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1324,6 +1981,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-45-acp",
@@ -1342,6 +2008,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1360,6 +2035,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1378,6 +2062,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Immobilize",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-9mm",
@@ -1396,6 +2089,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Killer",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-45-acp",
@@ -1414,6 +2116,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Rule Them All",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Infinity Sights",
       "magazine": "fixed:Serpent Magazine",
@@ -1432,6 +2143,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -1450,6 +2170,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Unwavering",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -1468,6 +2197,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Symbiosis",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Oxpecker Optic",
       "magazine": "N/A",
@@ -1486,6 +2224,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1504,6 +2251,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1522,6 +2278,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Close & Personal",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-9mm",
@@ -1540,6 +2305,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-45-acp",
@@ -1558,6 +2332,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-45-acp",
@@ -1576,6 +2359,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-45-acp",
@@ -1594,6 +2386,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-45-acp",
@@ -1612,6 +2413,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -1630,6 +2440,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Hidden Rock",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -1648,6 +2467,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Stabilize",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -1666,6 +2494,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Gangland Hit",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Underboss Optics",
       "magazine": "N/A",
@@ -1684,6 +2521,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -1702,6 +2548,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Preservation",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -1720,6 +2575,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Incessant Chatter",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Modified Optics",
       "magazine": "fixed:Chatterbox Magazine",
@@ -1738,6 +2602,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:smg",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-9mm",
@@ -1756,6 +2629,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Outsider",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-9mm",
@@ -1774,6 +2656,15 @@
     "hsd": 50.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Measured",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-9mm",
@@ -1792,6 +2683,15 @@
     "hsd": 50.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Payment in Kind",
+    "attributes": {
+      "core_1": "fixed:smg-damage-weapon-core",
+      "core_2": "fixed:critical-hit-chance-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Quick Sight",
       "magazine": "fixed:Barbed Grip Magazine",
@@ -1810,6 +2710,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -1828,6 +2737,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Overwhelm",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -1846,6 +2764,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Disruptor Rounds",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Lightning Sight",
       "magazine": "fixed:Deauthentication Frame",
@@ -1864,6 +2791,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -1882,6 +2818,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -1900,6 +2845,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Steady Handed",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -1918,6 +2872,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Head Scratcher",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -1936,6 +2899,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:GR9 Built-in scope (8x)",
       "magazine": "type:mag-belt",
@@ -1954,6 +2926,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Flatline",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:GR9 Built-in scope (8x)",
       "magazine": "type:mag-belt",
@@ -1972,6 +2953,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Precision Strike",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:GR9 Built-in scope (8x)",
       "magazine": "type:mag-belt",
@@ -1990,6 +2980,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Startling",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Vertigo Optics",
       "magazine": "fixed:Vertigo Magazine",
@@ -2008,6 +3007,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2026,6 +3034,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2044,6 +3061,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2062,6 +3088,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Unhinged",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2080,6 +3115,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Swift",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2098,6 +3142,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Measured",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2116,6 +3169,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Plague of the Outcasts",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Plagued Magazine",
@@ -2134,6 +3196,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2152,6 +3223,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2170,6 +3250,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2188,6 +3277,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Fast Hands",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2206,6 +3304,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Strained",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2224,6 +3331,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2242,6 +3358,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2260,6 +3385,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2278,6 +3412,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Thunder Strike",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2296,6 +3439,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Frenzy",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-belt",
@@ -2314,6 +3466,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Ardent",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Bellows",
@@ -2332,6 +3493,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-belt",
@@ -2350,6 +3520,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Sadist",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-belt",
@@ -2368,6 +3547,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Bullet Hell",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Mag of Holding",
@@ -2386,6 +3574,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2404,6 +3601,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2422,6 +3628,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:lmg",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2440,6 +3655,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Pressure Point",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2458,6 +3682,15 @@
     "hsd": 65.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Optimized",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2476,6 +3709,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Pakhan",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Pakhan Optic",
       "magazine": "fixed:Pakhan Magazine",
@@ -2494,6 +3736,15 @@
     "hsd": 65.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Cover Shooter",
+    "attributes": {
+      "core_1": "fixed:lmg-damage-weapon-core",
+      "core_2": "fixed:dtoc-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -2512,6 +3763,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2530,6 +3790,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Back and Forth",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2548,6 +3817,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Shakedown",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Clean Cut Optics",
       "magazine": "fixed:Harness Buckle Magazine",
@@ -2566,6 +3844,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Binary Trigger",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Merciless Optics",
       "magazine": "fixed:Merciless Magazine",
@@ -2584,6 +3871,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -2602,6 +3898,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Precision Strike",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-5.56",
@@ -2620,6 +3925,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -2638,6 +3952,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Behind You",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-5.56",
@@ -2656,6 +3979,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -2674,6 +4006,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -2692,6 +4033,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -2710,6 +4060,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Lucky Shot",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -2728,6 +4087,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Sledgehammer",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -2746,6 +4114,15 @@
     "hsd": 70.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Transfusion",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Bittersweet Scope",
       "magazine": "fixed:Bittersweet Magazine",
@@ -2764,6 +4141,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Doctor Home",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Doctor's Sight",
       "magazine": "fixed:Home's Magazine",
@@ -2782,6 +4168,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -2800,6 +4195,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -2818,6 +4222,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Spike",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -2836,6 +4249,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Boiling Point",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-5.56",
@@ -2854,6 +4276,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2872,6 +4303,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Head Scratcher",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2890,6 +4330,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Ortiz Assault Interface",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:AR Scope",
       "magazine": "fixed:Simulation Magazine",
@@ -2908,6 +4357,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2926,6 +4384,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2944,6 +4411,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Perpetuation",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2962,6 +4438,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2980,6 +4465,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -2998,6 +4492,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Rifleman",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -3016,6 +4519,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Geri and Freki",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Predatory Optics",
       "magazine": "fixed:Gluttonous Magazines",
@@ -3034,6 +4546,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-45-acp",
@@ -3052,6 +4573,15 @@
     "hsd": 61.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Soft Spot",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-45-acp",
@@ -3070,6 +4600,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -3088,6 +4627,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect In Sync",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -3106,6 +4654,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:rifle",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-tubular",
@@ -3124,6 +4681,15 @@
     "hsd": 60.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Boomerang",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-tubular",
@@ -3142,6 +4708,15 @@
     "hsd": 60.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Agonizing Bite",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Diamondback Dot Sight",
       "magazine": "fixed:Diamondback Lever",
@@ -3160,6 +4735,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Refreshing",
+    "attributes": {
+      "core_1": "fixed:rifle-damage-weapon-core",
+      "core_2": "fixed:critical-hit-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3178,6 +4762,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-7.62",
@@ -3196,6 +4789,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Eyeless",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-7.62",
@@ -3214,6 +4816,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -3232,6 +4843,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Determined",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-7.62",
@@ -3250,6 +4870,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:The Trap",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Sacrum Sight",
       "magazine": "fixed:Sacrum Magazine",
@@ -3268,6 +4897,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3286,6 +4924,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3304,6 +4951,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-integrated",
@@ -3322,6 +4978,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Behind You",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3340,6 +5005,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Ranger",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-integrated",
@@ -3358,6 +5032,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:High Priority Target",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Shroud Scope",
       "magazine": "fixed:Shroud Magazine",
@@ -3376,6 +5059,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3394,6 +5086,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3412,6 +5113,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Naked",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3430,6 +5140,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3448,6 +5167,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Full Stop",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Judgement's Glare",
       "magazine": "fixed:Tuned-tension Spring",
@@ -3466,6 +5194,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3484,6 +5221,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3502,6 +5248,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Lucky Shot",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3520,6 +5275,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect First Blood",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3538,6 +5302,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:In Plain Sight",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Anti-Glint Coated Sight",
       "magazine": "fixed:Well-Oiled Machine",
@@ -3556,6 +5329,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-integrated",
@@ -3574,6 +5356,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-integrated",
@@ -3592,6 +5383,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3610,6 +5410,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Soft Spot",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3628,6 +5437,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-oh-carol",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:VX1 Scope  (12x)",
       "magazine": "N/A",
@@ -3646,6 +5464,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-the-white-death",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-integrated",
@@ -3664,6 +5491,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:You can look...but you can't touch",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Prima Donna Scope",
       "magazine": "fixed:Prima Donna Magazine",
@@ -3682,6 +5518,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3700,6 +5545,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3718,6 +5572,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Reformation",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-normal",
       "magazine": "type:mag-mmr-7.62",
@@ -3736,6 +5599,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:marksman-rifle",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3754,6 +5626,15 @@
     "hsd": 0.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Future Perfection",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-mmr-7.62",
@@ -3772,6 +5653,15 @@
     "hsd": 0.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Electromagnetic Accelerator",
+    "attributes": {
+      "core_1": "fixed:marksman-rifle-damage-weapon-core",
+      "core_2": "fixed:headshot-damage-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Nemesis Digital Scope",
       "magazine": "fixed:Nemesis Bolt",
@@ -3790,6 +5680,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -3808,6 +5707,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -3826,6 +5734,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Sledgehammer",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -3844,6 +5761,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Extra",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -3862,6 +5788,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3880,6 +5815,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Pumped Up",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3898,6 +5842,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3916,6 +5869,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Primer Rounds",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-firestarter",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "fixed:health-damage-firestarter",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3934,6 +5896,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-backup-boomstick",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -3952,6 +5923,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -3970,6 +5950,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Distance",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -3988,6 +5977,15 @@
     "hsd": 45.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Capitulate",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Ballistic Rail",
       "magazine": "fixed:Riot Magazine",
@@ -4006,6 +6004,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4024,6 +6031,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4042,6 +6058,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -4060,6 +6085,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Immobilize",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4078,6 +6112,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Jazz Hands",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -4096,6 +6139,15 @@
     "hsd": 45.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Dragon's Breath",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Fafnir Optics",
       "magazine": "fixed:Fafnir Magazine",
@@ -4114,6 +6166,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "N/A",
@@ -4132,6 +6193,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4150,6 +6220,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4168,6 +6247,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Pummel",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4186,6 +6274,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-tubular",
@@ -4204,6 +6301,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Brazen",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-tubular",
@@ -4222,6 +6328,15 @@
     "hsd": 25.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Sandman",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Outcast Optics",
       "magazine": "fixed:Modified Feed System",
@@ -4240,6 +6355,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4258,6 +6382,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4276,6 +6409,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4294,6 +6436,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Brazen",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-long",
       "magazine": "type:mag-tubular",
@@ -4312,6 +6463,15 @@
     "hsd": 45.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Autentico",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "N/A",
@@ -4330,6 +6490,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Pummel",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -4348,6 +6517,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -4366,6 +6544,15 @@
     "hsd": 45.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:shotgun",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "fixed:armor-on-kill-the-mop",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-tubular",
@@ -4384,6 +6571,15 @@
     "hsd": 45.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Septic Shock",
+    "attributes": {
+      "core_1": "fixed:shotgun-damage-weapon-core",
+      "core_2": "fixed:damage-to-armor-weapon-core",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Starlight Receptors",
       "magazine": "fixed:Venom Glands",
@@ -4402,6 +6598,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4420,6 +6625,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Unwavering",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-sharpshooters-93r",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "fixed:reload-speed-sharpshooters-93r",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4438,6 +6652,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Restrained",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Tempest Magazine",
@@ -4456,6 +6679,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4474,6 +6706,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Sadist",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-survivalist-d50",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "fixed:dtoc-survivalist-d50",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4492,6 +6733,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Liberty or Death",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Liberty Sight",
       "magazine": "fixed:Liberty Grip",
@@ -4510,6 +6760,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Foam at the Mouth",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "N/A",
@@ -4528,6 +6787,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4546,6 +6814,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4564,6 +6841,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4582,6 +6868,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Sport Mode",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4600,6 +6895,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Breadbasket",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4618,6 +6922,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Spike",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-maxim-9",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "fixed:headshot-damage-maxim-9",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4636,6 +6949,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4654,6 +6976,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4672,6 +7003,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Mosquito Song",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Mosquito Magazine",
@@ -4690,6 +7030,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Preservation",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-p320-xcompact",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "fixed:damage-to-armor-p320-xcompact",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4708,6 +7057,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4726,6 +7084,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4744,6 +7111,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Salvage",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -4762,6 +7138,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Busy Little Bee",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Bee's Focus",
       "magazine": "fixed:Bee's Speed",
@@ -4780,6 +7165,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4798,6 +7192,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -4816,6 +7219,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-drum",
@@ -4834,6 +7246,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-drum",
@@ -4852,6 +7273,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Optimist",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4870,6 +7300,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Faster Than Reloading",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "fixed:Whiplash Optics",
       "magazine": "fixed:Whiplash Magazine",
@@ -4888,6 +7327,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4906,6 +7354,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4924,6 +7381,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Finisher",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4942,6 +7408,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "fixed:Perfect Determined",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4960,6 +7435,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-short",
       "magazine": "type:mag-drum",
@@ -4978,6 +7462,15 @@
     "hsd": 100.0,
     "exotic": true,
     "named": false,
+    "talentSlot": "fixed:Regicide",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "fixed:Engraved Drum",
@@ -4996,6 +7489,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -5014,6 +7516,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "N/A",
       "magazine": "type:mag-pistol",
@@ -5032,6 +7543,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": false,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "N/A",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",
@@ -5050,6 +7570,15 @@
     "hsd": 100.0,
     "exotic": false,
     "named": true,
+    "talentSlot": "type:pistol",
+    "attributes": {
+      "core_1": "fixed:pistol-damage-weapon-core",
+      "core_2": "fixed:skill-tier-tdi-kard-custom",
+      "core_3": "N/A",
+      "minor_1": "type:weapon-minor",
+      "minor_2": "N/A",
+      "minor_3": "N/A"
+    },
     "slots": {
       "optics": "type:optics-micro",
       "magazine": "type:mag-pistol",

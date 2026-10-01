@@ -13,3 +13,5 @@
 @media(max-width:600px){.damage-toolbar{align-items:flex-start;gap:12px}.damage-toolbar .damage-help{font-size:11px}.damage-block-title{gap:10px}.damage-block-title h2{font-size:18px}}
 
 .damage-attachments .calculator-select-trigger [data-slot=select-value]{white-space:normal;overflow-wrap:anywhere}
+
+.weapon-roll-actions{display:flex;justify-content:space-between;align-items:center;gap:10px}.damage-talent details{margin:10px 0;color:#aeb6c1;font-size:12px}.damage-talent summary{cursor:pointer;color:#ff9b5b}.damage-talent>small{display:block;margin-top:8px;color:#9da7b4}

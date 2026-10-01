@@ -15,6 +15,8 @@ for file, kind in classes.items():
                             'mag': float(row['base_mag_size']), 'reload': float(row['base_reload_time']),
                             'hsd': float(row['hsd']), 'exotic': row['is_exotic'] == 'TRUE',
                             'named': row['is_named'] == 'TRUE',
+                            'talentSlot': row['talent_slot'],
+                            'attributes': {slot: row[slot] for slot in ['core_1','core_2','core_3','minor_1','minor_2','minor_3']},
                             'slots': {slot: ('fixed:'+row[slot][6:].strip() if row[slot].startswith('fixed:') else row[slot]) for slot in ['optics','magazine','muzzle','underbarrel']}})
 # Upstream Bluescreen muzzle/underbarrel references are transposed; use attachment categories.
 for weapon in weapons:
@@ -33,3 +35,12 @@ for weapon in weapons:
         if spec.startswith('fixed:'):
             assert any(m['name'] == spec[6:] and m['category'] == slot for m in mods), (weapon['name'], spec)
 print(f'Normalized {len(mods)} attachments; fixed slots verified.')
+
+with (root / 'data/source/attributes.csv').open() as source:
+    attributes = list(csv.DictReader(source))
+(root / 'data/weapon-attributes.json').write_text(json.dumps(attributes, ensure_ascii=False, indent=2) + '\n')
+for weapon in weapons:
+    for spec in weapon['attributes'].values():
+        if spec.startswith('fixed:'):
+            assert any(a['id'] == spec.split(':')[1] for a in attributes), spec
+print('Weapon attribute references verified.')

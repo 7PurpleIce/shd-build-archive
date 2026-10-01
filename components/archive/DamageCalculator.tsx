@@ -3,6 +3,11 @@ import {Crosshair, Shield, Sparkles, SlidersHorizontal, Zap, ChartNoAxesCombined
 import {CalculatorPanelHeading} from './CalculatorPanelHeading';
 import {CalculatorSelect} from './CalculatorSelect';
 import {WatchStats} from './WatchStats';
+import {WeaponAttributes} from './WeaponAttributes';
+import weaponAttributes from '@/data/weapon-attributes.json';
+import {initialWeaponRolls,weaponAttributeBonuses} from '@/lib/weapon-attributes';
+import {calculatorTalents,weaponTalent} from '@/lib/calculator-talents';
+import {talentRule,evaluateTalent} from '@/lib/talent-effects';
 import {watchDamageBonuses,type WatchPoints} from '@/lib/shd-watch';
 import weapons from '@/data/weapons.json';
 import attributes from '@/data/attributes.json';
@@ -22,7 +27,6 @@ type Roll={id:string;proto:boolean};
 type Gear={brand:string;core:Roll;minor:Roll[];mod:string};
 const blankGear=():Gear[]=>slots.map(()=>({brand:'',core:{id:'weapon-damage',proto:false},minor:[{id:'',proto:false},{id:'',proto:false}],mod:''}));
 const statKey:Record<string,string>={'weapon-damage':'wd','critical-hit-chance':'chc','critical-hit-damage':'chd','headshot-damage':'hsd','weapon-handling':'handling'};
-const supportedTalents={'chest-glass-cannon':'amp','backpack-vigilance':'twd','weapon-sadist':'amp'} as const;
 const emptyExtra={wd:0,twd:0,chc:0,chd:0,hsd:0,armor:0,health:0,out:0,rof:0,reload:0,mag:0};
 export default function DamageCalculator(){const {canManage}=useOwner();return canManage?<CalculatorBody/>:null;}
 function CalculatorBody(){
@@ -32,7 +36,9 @@ function CalculatorBody(){
  const [attachments,setAttachments]=useState<Partial<Record<WeaponModSlot,string>>>({});
  const [query,setQuery]=useState('');const [override,setOverride]=useState<number|null>(null);
  const [gear,setGear]=useState<Gear[]>(blankGear);
- const [weaponDamage,setWeaponDamage]=useState(15);const [watch,setWatch]=useState<WatchPoints>({wd:50});const [specialization,setSpecialization]=useState(15);const [expertise,setExpertise]=useState(0);
+ const [weaponRolls,setWeaponRolls]=useState(()=>initialWeaponRolls(weapon.attributes,weaponAttributes));
+ const [talentValues,setTalentValues]=useState<Record<string,number>[]>([{},{},{}]);
+ const [watch,setWatch]=useState<WatchPoints>({wd:50});const [specialization,setSpecialization]=useState(15);const [expertise,setExpertise]=useState(0);
  const [extra,setExtra]=useState(emptyExtra);const [amps,setAmps]=useState<number[]>([]);
  const [talents,setTalents]=useState(['','','']);const [active,setActive]=useState([false,false,false]);
  const [armored,setArmored]=useState(true);const [outside,setOutside]=useState(true);const [headshots,setHeadshots]=useState(0);
@@ -49,23 +55,29 @@ function CalculatorBody(){
   const mod=hasModSlot(i,g.brand)?mods.find(m=>m.id===g.mod):undefined;if(mod&&statKey[mod.id])add(statKey[mod.id],numericStat(mod.value));
  }
  const talentAmps:number[]=[];
- const talentAllowed=[!weapon.exotic&&!weapon.named, catalog.sets.find(s=>s.id===gear[1].brand)?.kind!=='set'&&gear[1].brand!=='improvised', catalog.sets.find(s=>s.id===gear[2].brand)?.kind!=='set'&&gear[2].brand!=='improvised'];
- const selectedTalents=talents.map((id,i)=>talentAllowed[i]?catalog.talents.find(t=>t.id===id):undefined);
- selectedTalents.forEach((talent,i)=>{if(!talent||!active[i])return;const kind=supportedTalents[talent.id as keyof typeof supportedTalents];const value=Number(talent.description.match(/([\d.]+)%/)?.[1]);if(kind==='amp')talentAmps.push(value);else if(kind==='twd')add('twd',value);});
+ const talentAllowed=[true, catalog.sets.find(s=>s.id===gear[1].brand)?.kind!=='set'&&gear[1].brand!=='improvised', catalog.sets.find(s=>s.id===gear[2].brand)?.kind!=='set'&&gear[2].brand!=='improvised'];
+ const selectedTalents=talents.map((id,i)=>i===0?weaponTalent(weapon.talentSlot,id):talentAllowed[i]?calculatorTalents.find(t=>t.id===id):undefined);
  const equippedMods=selectedWeaponMods(weapon.slots,attachments,weaponMods);
  const modBonuses=attachmentBonuses(equippedMods);
  Object.entries(modBonuses).forEach(([key,value])=>add(key,value));
  Object.entries(watchDamageBonuses(watch)).forEach(([key,value])=>add(key,value));
+ Object.entries(weaponAttributeBonuses(weapon.attributes,weaponRolls,weaponAttributes)).forEach(([key,value])=>add(key,value));
+ const talentContext={weaponType:weapon.type,magazine:effectiveWeaponCycle(weapon,totals).magazine,armored};
+ let noReload=false;
+ const talentEffects=selectedTalents.map((talent,i)=>talent?evaluateTalent(talent,active[i],talentValues[i],talentContext):undefined);
+ talentEffects.forEach(effect=>{if(!effect)return;Object.entries(effect.bonuses).forEach(([key,value])=>add(key,value));talentAmps.push(...effect.amps);noReload ||= !!effect.noReload;});
  const base=override??weapon.damage;
- const wd=totals.wd+weaponDamage+specialization+expertise;
- const {rpm,magazine,reload}=effectiveWeaponCycle(weapon,totals);
+ const wd=totals.wd+specialization+expertise;
+ const cycle=effectiveWeaponCycle(weapon,totals);
+ const {rpm,magazine}=cycle;const reload=noReload?0:cycle.reload;
  const result=calculateDamage({base,wd,twd:totals.twd,chc:totals.chc,chd:totals.chd,hsd:weapon.hsd+totals.hsd,armor:totals.armor,health:totals.health,out:totals.out,armored,outside,amps:[...amps,...talentAmps],rpm,magazine,reload,headshots});
+ function changeWeapon(id:string){const next=weapons.find(w=>w.id===id)!;setWeaponId(id);setWeaponRolls(initialWeaponRolls(next.attributes,weaponAttributes));setOverride(null);setAttachments({});setQuery('');setTalents(old=>['',old[1],old[2]]);setActive(old=>[false,old[1],old[2]]);setTalentValues(old=>[{},old[1],old[2]]);}
  function changeGear(i:number,patch:Partial<Gear>){setGear(old=>old.map((g,j)=>{if(j!==i)return g;const next={...g,...patch};if(catalog.sets.find(s=>s.id===next.brand)?.kind==='set')next.minor=[next.minor[0],{id:'',proto:false}];if(!hasModSlot(i,next.brand))next.mod='';return next;}));}
  function modLabel(id:string){const names:Record<string,[string,string]>={'critical-hit-chance':['Critical Hit Chance','Шанс крита'],'critical-hit-damage':['Critical Hit Damage','Критический урон'],'headshot-damage':['Headshot Damage','Урон в голову'],'weapon-damage':['Weapon Damage','Урон оружия'],'weapon-handling':['Weapon Handling','Эргономичность'],'reload-speed':['Reload Speed','Скорость перезарядки'],'rate-of-fire':['Rate of Fire','Скорострельность'],'magazine-size':['Magazine Size','Размер магазина'],'accuracy':['Accuracy','Точность'],'stability':['Stability','Стабильность'],'optimal-range':['Optimal Range','Оптимальная дальность'],'swap-speed':['Swap Speed','Скорость смены'],'melee-damage':['Melee Damage','Урон в ближнем бою']};return names[id]?t(...names[id]):id;}
  function resetStats(){
   setWeaponId(weapons.find(w=>w.name==='FAMAS 2010')!.id);setQuery('');setOverride(null);setAttachments({});
   setGear(blankGear().map(g=>({...g,core:{id:'',proto:false}})));
-  setWeaponDamage(0);setSpecialization(0);setExpertise(0);setWatch({});setExtra({...emptyExtra});setAmps([]);
+  setWeaponRolls(initialWeaponRolls(weapons.find(w=>w.name==='FAMAS 2010')!.attributes,weaponAttributes,true));setTalentValues([{},{},{}]);setSpecialization(0);setExpertise(0);setWatch({});setExtra({...emptyExtra});setAmps([]);
   setTalents(['','','']);setActive([false,false,false]);setHeadshots(0);setArmored(true);setOutside(false);
  }
  function numberField(label:string,value:number,onChange:(v:number)=>void,max=10000){return <label className="damage-field">{label}<input type="number" min={0} max={max} step="any" value={value} onChange={e=>{const n=Number(e.target.value);onChange(Number.isFinite(n)?Math.min(max,Math.max(0,n)):0)}}/>{max<=100&&<input type="range" className="calculator-range" min={0} max={max} step={Number.isInteger(max)?1:0.5} value={value} aria-label={label} onChange={e=>onChange(Number(e.target.value))} style={{'--range-fill':`${value/max*100}%`} as CSSProperties}/>}</label>;}
@@ -76,11 +88,12 @@ function CalculatorBody(){
  <div className="damage-toolbar"><p className="damage-help">{t('Reset clears all selected bonuses, gear and watch points, and restores the starting weapon and its base damage.','Сброс обнуляет все выбранные бонусы, экипировку и часы, возвращает начальное оружие и его базовый урон.')}</p><button type="button" className="damage-action damage-reset" onClick={resetStats}><RotateCcw size={16}/>{t('RESET','СБРОС')}</button></div>
  <div className="damage-layout"><div className="damage-config">
  <section className="damage-panel"><CalculatorPanelHeading icon={Crosshair} label="01 / WEAPON" title={t('Weapon','Оружие')}/>
- <div className="damage-fields"><label>{t('Class','Класс')}<CalculatorSelect value={weapon.type} onChange={e=>{setWeaponId(weapons.find(w=>w.type===e.target.value)!.id);setOverride(null);setAttachments({});setQuery('');setTalents(old=>['',old[1],old[2]]);setActive(old=>[false,old[1],old[2]]);}}>{types.map(([id,en,ru])=><option key={id} value={id}>{t(en,ru)}</option>)}</CalculatorSelect></label><label>{t('Search weapon','Поиск оружия')}<input value={query} onChange={e=>setQuery(e.target.value)} placeholder={t('Weapon name','Название оружия')}/></label></div>
- <label>{t('Weapon','Оружие')}<CalculatorSelect value={weaponId} onChange={e=>{setWeaponId(e.target.value);setOverride(null);setAttachments({});setTalents(old=>['',old[1],old[2]]);setActive(old=>[false,old[1],old[2]]);}}>{weapons.filter(w=>w.type===weapon.type&&(w.id===weaponId||w.name.toLowerCase().includes(query.toLowerCase()))).map(w=><option key={w.id} value={w.id}>{w.name}{w.exotic?' · Exotic':w.named?' · Named':''}</option>)}</CalculatorSelect></label>
- <div className="damage-fields">{numberField(t('Base damage','Базовый урон'),base,setOverride,10000000)}{numberField(t('Weapon core damage %','Урон на оружии %'),weaponDamage,setWeaponDamage,22.5)}{numberField(t('Specialization damage %','Урон специализации %'),specialization,setSpecialization,100)}{numberField(t('Expertise damage %','Урон мастерства %'),expertise,setExpertise,30)}</div>
+ <div className="damage-fields"><label>{t('Class','Класс')}<CalculatorSelect value={weapon.type} onChange={e=>changeWeapon(weapons.find(w=>w.type===e.target.value)!.id)}>{types.map(([id,en,ru])=><option key={id} value={id}>{t(en,ru)}</option>)}</CalculatorSelect></label><label>{t('Search weapon','Поиск оружия')}<input value={query} onChange={e=>setQuery(e.target.value)} placeholder={t('Weapon name','Название оружия')}/></label></div>
+ <label>{t('Weapon','Оружие')}<CalculatorSelect value={weaponId} onChange={e=>changeWeapon(e.target.value)}>{weapons.filter(w=>w.type===weapon.type&&(w.id===weaponId||w.name.toLowerCase().includes(query.toLowerCase()))).map(w=><option key={w.id} value={w.id}>{w.name}{w.exotic?' · Exotic':w.named?' · Named':''}</option>)}</CalculatorSelect></label>
+ <div className="damage-fields">{numberField(t('Base damage','Базовый урон'),base,setOverride,10000000)}{numberField(t('Specialization damage %','Урон специализации %'),specialization,setSpecialization,100)}{numberField(t('Expertise damage %','Урон мастерства %'),expertise,setExpertise,30)}</div>
  <p className="damage-help">{t('RPM / magazine / reload','Скорострельность / магазин / перезарядка')}: {fmt(weapon.rpm)} / {weapon.mag} / {fmt(weapon.reload)} {t('s','с')}. <button type="button" onClick={()=>setOverride(null)}>{t('Restore base damage','Вернуть базовый урон')}</button></p>
- <p className="damage-help">{t('Enter weapon attributes, base character CHD and other bonuses in Other bonuses below; they are not added automatically. Exotic and named weapon talents are manual in V1. Shotgun damage is treated as a whole shot; pellet hits are not simulated.','Атрибуты оружия, базовый крит. урон персонажа и другие бонусы укажи ниже в блоке «Остальные бонусы» — автоматически они не прибавляются. Таланты экзотического и именного оружия в V1 вводятся вручную. Урон дробовика считается за весь выстрел, попадания отдельных дробин не моделируются.')}</p>
+ <WeaponAttributes specs={weapon.attributes} value={weaponRolls} onChange={setWeaponRolls}/>
+ <p className="damage-help">{t('Weapon attributes and supported talents are included automatically. Base character critical damage and external bonuses still belong in Other bonuses. Shotgun damage is per whole shot.','Атрибуты оружия и поддерживаемые таланты учитываются автоматически. Базовый критический урон персонажа и внешние бонусы пока указываются в «Остальных бонусах». Урон дробовика считается за весь выстрел.')}</p>
  </section>
  <section className="damage-panel damage-attachments"><CalculatorPanelHeading icon={Crosshair} label="02 / MODS" title={t('Weapon attachments','Модификации оружия')}/>
  <p className="damage-help">{t('Compatible attachments only. Fixed attachments are included automatically. All listed bonuses and penalties affecting damage, fire rate, reload or magazine size are included below.','Только совместимые модификации. Фиксированные обвесы установлены автоматически. Бонусы и штрафы к урону, скорострельности, перезарядке и магазину учитываются в результате.')}</p>
@@ -98,10 +111,23 @@ function CalculatorBody(){
  <p className="damage-notice">{t('Static damage, crit, handling, magazine and fire-rate bonuses are automatic. Four-piece set talents and chest/backpack upgrades are NOT automatic: add active effects below as separate modifiers.','Обычные бонусы урона, крита, эргономичности, магазина и скорострельности считаются автоматически. Таланты за 4 предмета и их усиления от брони/рюкзака НЕ автоматизированы: активные эффекты добавляй ниже отдельными модификаторами.')}</p>
  </section>
  <section className="damage-panel"><CalculatorPanelHeading icon={Sparkles} label="04 / TALENTS" title={t('Talents','Таланты')}/>
- {(['weapon','chest','backpack'] as const).map((kind,i)=>{const talent=selectedTalents[i];const supported=!!talent&&talent.id in supportedTalents;return <div className="damage-talent" key={kind}><label>{t(['Weapon','Chest','Backpack'][i],['Оружие','Броня','Рюкзак'][i])}<CalculatorSelect disabled={!talentAllowed[i]} value={talentAllowed[i]?talents[i]:''} onChange={e=>{setTalents(old=>old.map((v,j)=>i===j?e.target.value:v));setActive(old=>old.map((v,j)=>i===j?false:v));}}><option value="">{t('None','Нет')}</option>{catalog.talents.filter(x=>x.kind===kind&&!x.exotic&&(kind!=='weapon'||(!weapon.exotic&&!weapon.named&&x.weaponTypes.includes(weapon.type)))).map(x=><option key={x.id} value={x.id}>{t(x.name,x.ru?.name||x.name)}{x.id in supportedTalents?'':' · '+t('manual','вручную')}</option>)}</CalculatorSelect></label>{!talentAllowed[i]&&<p className="damage-help">{t("This item uses a fixed effect. See its description and enter the active modifier manually.","У этого предмета фиксированный эффект. Сверь описание и введи активный модификатор вручную.")}</p>}{talent&&<><p>{t(talent.description,talent.ru?.description||talent.description)}</p>{supported?<label className="damage-check"><input type="checkbox" checked={active[i]} onChange={e=>setActive(old=>old.map((v,j)=>i===j?e.target.checked:v))}/>{t('Condition met — apply bonus','Условие выполнено — применить бонус')}</label>:<p className="damage-notice">{t('Reference only. Enter this talent’s active effect manually below.','Только справка. Активный эффект этого таланта введи вручную ниже.')}</p>}</>}</div>})}
+ <p className="damage-help">{t('PvE only. Enable a conditional talent only while its stated conditions are met. Set the current stacks or phase; DPS assumes this state stays constant, not a full combat simulation. Fixed weapon talents are selected automatically.','Только PvE. Включай условный талант, когда выполнены условия его описания. Укажи текущие стаки или фазу: DPS предполагает постоянное состояние, а не симуляцию всего боя. Фиксированные таланты оружия выбираются автоматически. PvP-значения из описаний не используются.')}</p>
+ {(['weapon','chest','backpack'] as const).map((kind,i)=>{
+ const talent=selectedTalents[i];const rule=talent?talentRule(talent):undefined;const fixed=i===0&&weapon.talentSlot.startsWith('fixed:');
+ const options=fixed?calculatorTalents.filter(x=>x===talent):calculatorTalents.filter(x=>x.kind===kind&&!x.exotic&&!x.perfect&&(kind!=='weapon'||x.weaponTypes.includes(weapon.type)));
+ return <div className="damage-talent" key={kind}><label>{t(['Weapon','Chest','Backpack'][i],['Оружие','Броня','Рюкзак'][i])}<CalculatorSelect disabled={!talentAllowed[i]||fixed} value={talent?.id||''} onChange={e=>{setTalents(old=>old.map((v,j)=>i===j?e.target.value:v));setActive(old=>old.map((v,j)=>i===j?false:v));setTalentValues(old=>old.map((v,j)=>i===j?{}:v));}}><option value="">{t('None','Нет')}</option>{options.map(x=><option key={x.id} value={x.id}>{t(x.name,x.ru?.name||x.name)} · {talentRule(x)?t('auto','авто'):t('reference','справка')}</option>)}</CalculatorSelect></label>
+ {!talentAllowed[i]&&<p className="damage-help">{t('Set and improvised gear cannot select a normal talent here. Set effects remain manual.','У сетовой и кустарной экипировки здесь нельзя выбрать обычный талант. Эффекты сетов пока вводятся вручную.')}</p>}
+ {fixed&&<small>{t('Fixed weapon talent','Фиксированный талант оружия')}</small>}
+ {talent&&<><p>{t(talent.description,talent.ru?.description||talent.description)}</p>
+ {rule?<>{rule.passive?<p className="damage-help">{t('Passive bonus is automatic.','Пассивный бонус учитывается автоматически.')}</p>:<label className="damage-check"><input type="checkbox" checked={active[i]} onChange={e=>setActive(old=>old.map((v,j)=>i===j?e.target.checked:v))}/>{t('Condition met — apply PvE bonus','Условие выполнено — применить бонус PvE')}</label>}
+ <div className="damage-fields">{rule.controls.map(control=><label key={control.id}>{t(control.en,control.ru)}<input type="number" min={0} max={control.max} step={control.step||1} value={talentValues[i][control.id]||0} onChange={e=>{const n=Number(e.target.value);setTalentValues(old=>old.map((v,j)=>j===i?{...v,[control.id]:Number.isFinite(n)?Math.min(control.max,Math.max(0,n)):0}:v));}}/><button type="button" className="watch-max" onClick={()=>setTalentValues(old=>old.map((v,j)=>j===i?{...v,[control.id]:control.max}:v))}>MAX {control.max}</button></label>)}</div>
+ <ul className="damage-mod-stats">{Object.entries(talentEffects[i]?.bonuses||{}).map(([key,value])=><li key={key}>{({wd:t('Weapon Damage','Урон оружия'),twd:t('Total Weapon Damage','Общий урон оружия'),chc:t('Critical Hit Chance','Шанс крита'),chd:t('Critical Hit Damage','Критический урон'),hsd:t('Headshot Damage','Урон в голову'),handling:t('Weapon Handling','Эргономичность'),reload:t('Reload Speed','Скорость перезарядки'),rof:t('Rate of Fire','Скорострельность'),mag:t('Magazine Size','Размер магазина'),out:t('Damage out of Cover','Урон вне укрытия')} as Record<string,string>)[key]||key}<strong>{value>0?'+':''}{fmt(value)}%</strong></li>)}{talentEffects[i]?.amps.map((value,j)=><li key={'amp'+j}>{t('Independent amplifier','Отдельное усиление')}<strong>+{fmt(value)}%</strong></li>)}{talentEffects[i]?.noReload&&<li>{t('No reload','Без перезарядки')}</li>}</ul>
+ </>:<p className="damage-notice">{t('Not included automatically. Healing, defense and skill-only effects do not add bullet damage. Effects that change shot sequences, return ammunition or deal separate damage need a separate model; do not treat their first percentage as a damage bonus.','Автоматически не учитывается. Лечение, защита и эффекты только для навыков не добавляют урон пули. Изменение последовательности выстрелов, возврат патронов и отдельный урон требуют своей модели; первое число в описании не является универсальным бонусом урона.')}</p>}</>}
+ </div>;
+ })}
  </section>
  <WatchStats value={watch} onChange={setWatch}/>
- <section className="damage-panel"><CalculatorPanelHeading icon={SlidersHorizontal} label="06 / BONUSES" title={t('Other bonuses','Остальные бонусы')}/><p className="damage-help">{t('Only bonuses not already included above. Enter character base stats, weapon attributes and other unmodeled bonuses here. Selected attachments and watch stats are already included.','Только бонусы, ещё не учтённые выше. Здесь укажи базовые статы персонажа, атрибуты оружия и другие неучтённые бонусы. Выбранные обвесы и часы уже учтены.')}</p><div className="damage-fields">{([
+ <section className="damage-panel"><CalculatorPanelHeading icon={SlidersHorizontal} label="06 / BONUSES" title={t('Other bonuses','Остальные бонусы')}/><p className="damage-help">{t('Only bonuses not already included above. Enter character base stats and external or unmodeled bonuses here. Weapon attributes, active automatic talents, attachments and watch stats are already included.','Только бонусы, ещё не учтённые выше. Здесь укажи базовые статы персонажа, внешние и неучтённые бонусы. Атрибуты оружия, активные автоматические таланты, обвесы и часы уже учтены.')}</p><div className="damage-fields">{([
  ['wd','Weapon Damage','Урон от оружия'],['twd','Total Weapon Damage','Общий урон от оружия'],['chc','Critical Hit Chance','Шанс крит. попадания'],['chd','Critical Hit Damage','Крит. урон'],['hsd','Additional Headshot Damage','Доп. урон в голову'],['armor','Damage to Armor','Урон по броне'],['health','Damage to Health','Урон по здоровью'],['out','Damage out of Cover','Урон вне укрытия'],['rof','Rate of Fire','Скорострельность'],['reload','Reload Speed','Скорость перезарядки'],['mag','Magazine Size','Размер магазина']
  ] as const).map(([key,en,ru])=><div key={key}>{numberField(t(en,ru)+' %',extra[key],v=>setExtra(old=>({...old,[key]:v})))}</div>)}</div>
  </section><section className="damage-panel"><CalculatorPanelHeading icon={Zap} label="07 / AMPLIFIERS" title={t('Damage amplifiers','Усиления урона')}/><p className="damage-help">{t('One row per independent multiplier, including separately modeled set talents.','Одна строка на независимый множитель, включая отдельно рассчитываемые таланты сетов.')}</p>
