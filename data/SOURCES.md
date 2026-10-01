@@ -5,7 +5,7 @@
 - Additional talent icons: https://hi-dep.github.io/division2/ (asset map snapshot 2026-09-03).
 - Game artwork and game text belong to Ubisoft/Massive Entertainment. Fan reference project; not affiliated with Ubisoft.
 
-Reimport retained CSV data: python scripts/import-catalog.py.
+Reimport a pinned upstream snapshot: `python scripts/sync-game-data.py SNAPSHOT_DIR COMMIT_SHA`, then `python scripts/build-weapons.py`.
 
 Missing exact icon assets are explicitly marked in the interface. Detailed talent descriptions remain in the original English. No claim of patch-perfect completeness is made.
 
@@ -54,3 +54,9 @@ At the owner's request, all 15 gear core/secondary values show a purple prototyp
 - Weapon core damage, specialization, watch damage and expertise are explicit inputs. Other weapon attributes, attachments, character base CHD and watch crit stats must be entered in Additional stats. No implicit double-counting of those values.
 - Standard gear has three mod slots (mask/chest/backpack); improvised gloves/holster/kneepads add one each. Set gear has one minor; brand gear has two. Non-offensive selections do not directly affect bullet damage in V1.
 - The navigation, mounted tab and calculator component all require existing `canManage`. Signing out removes the calculator and returns to the public tab. It is lazy-loaded, but GitHub Pages is static hosting: this is an owner-only interface, not server-side secrecy for JavaScript or repository source. No private data is embedded or sent.
+
+## Source policy and full audit — 1 October 2026, later update
+
+Per the owner's latest instruction, https://github.com/div2hub/game-data is the authoritative source for English game data. Snapshot: `9c9ff25552439aabe9f995f4ed66897040ac0cc0` (27 September 2026), checked 1 October. Russian numerical values were also reconciled to matching English effects; independent Russian PvP values remain where upstream has no counterpart. This policy supersedes earlier blanket ×1.5 prototype calculations and screenshot values when an explicit upstream maximum exists. Skill Haste prototype is 15%; flat prototype Armor Regen/Health are 7,388 / 28,403. Disrupt Resistance replaces the earlier screenshot's Freeze Resistance label.
+
+See `ENGLISH-DATA-AUDIT.md` for coverage, exceptions and unresolved contradictory source text, and `source/ru-numeric-overrides.json` for reviewed translation edits. This dataset has no expertise material cost, trader timetable or activity schedule tables, so those sections keep their separately documented sources. Weapon attachments are now separately selectable in the admin calculator; weapon core/minor attributes still use the explicit additional-stat inputs. Calculation mechanics and source normalization fixes are documented in the audit.

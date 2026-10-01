@@ -6,7 +6,10 @@
     "ru": "Урон от оружия",
     "group": "offense",
     "core": true,
-    "value": "+15%"
+    "value": "+15%",
+    "enValue": "+15%",
+    "enPrototypeValue": "+22.5%",
+    "prototypeValue": "+22.5%"
   },
   {
     "id": "armor",
@@ -15,7 +18,10 @@
     "ru": "Броня",
     "group": "defense",
     "core": true,
-    "value": "+170,000"
+    "value": "+170,000",
+    "enValue": "+170000",
+    "enPrototypeValue": "+255000",
+    "prototypeValue": "+255000"
   },
   {
     "id": "skill-tier",
@@ -24,7 +30,10 @@
     "ru": "Уровень навыка",
     "group": "skill",
     "core": true,
-    "value": "+1"
+    "value": "+1",
+    "enValue": "+1",
+    "enPrototypeValue": "+1.5",
+    "prototypeValue": "+1.5"
   },
   {
     "id": "weapon-handling",
@@ -33,7 +42,10 @@
     "ru": "Эргономичность",
     "group": "offense",
     "core": false,
-    "value": "+8%"
+    "value": "+8%",
+    "enValue": "+8%",
+    "enPrototypeValue": "+12%",
+    "prototypeValue": "+12%"
   },
   {
     "id": "critical-hit-chance",
@@ -42,7 +54,10 @@
     "ru": "Шанс крит. попадания",
     "group": "offense",
     "core": false,
-    "value": "+6%"
+    "value": "+6%",
+    "enValue": "+6%",
+    "enPrototypeValue": "+9%",
+    "prototypeValue": "+9%"
   },
   {
     "id": "critical-hit-damage",
@@ -51,7 +66,10 @@
     "ru": "Урон от крит. попадания",
     "group": "offense",
     "core": false,
-    "value": "+12%"
+    "value": "+12%",
+    "enValue": "+12%",
+    "enPrototypeValue": "+18%",
+    "prototypeValue": "+18%"
   },
   {
     "id": "headshot-damage",
@@ -60,7 +78,10 @@
     "ru": "Урон от выстрела в голову",
     "group": "offense",
     "core": false,
-    "value": "+10%"
+    "value": "+10%",
+    "enValue": "+10%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   },
   {
     "id": "armor-regeneration",
@@ -69,7 +90,10 @@
     "ru": "Восст. брони",
     "group": "defense",
     "core": false,
-    "value": "+4,925"
+    "value": "+4,925",
+    "enValue": "+4925",
+    "enPrototypeValue": "+7388",
+    "prototypeValue": "+7388"
   },
   {
     "id": "hazard-protection",
@@ -78,7 +102,10 @@
     "ru": "Защита от факторов риска",
     "group": "defense",
     "core": false,
-    "value": "+10%"
+    "value": "+10%",
+    "enValue": "+10%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   },
   {
     "id": "health",
@@ -87,7 +114,10 @@
     "ru": "Здоровье",
     "group": "defense",
     "core": false,
-    "value": "+18,935"
+    "value": "+18,935",
+    "enValue": "+18935",
+    "enPrototypeValue": "+28403",
+    "prototypeValue": "+28403"
   },
   {
     "id": "explosive-resistance",
@@ -96,7 +126,10 @@
     "ru": "Сопротивление взрывам",
     "group": "defense",
     "core": false,
-    "value": "+10%"
+    "value": "+10%",
+    "enValue": "+10%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   },
   {
     "id": "skill-damage",
@@ -105,7 +138,10 @@
     "ru": "Урон от навыков",
     "group": "skill",
     "core": false,
-    "value": "+10%"
+    "value": "+10%",
+    "enValue": "+10%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   },
   {
     "id": "repair-skills",
@@ -114,7 +150,10 @@
     "ru": "Навыки ремонта",
     "group": "skill",
     "core": false,
-    "value": "+20%"
+    "value": "+20%",
+    "enValue": "+20%",
+    "enPrototypeValue": "+30%",
+    "prototypeValue": "+30%"
   },
   {
     "id": "skill-haste",
@@ -123,7 +162,10 @@
     "ru": "Убыстрение",
     "group": "skill",
     "core": false,
-    "value": "+12%"
+    "value": "+12%",
+    "enValue": "+12%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   },
   {
     "id": "status-effects",
@@ -132,6 +174,9 @@
     "ru": "Негативные эффекты",
     "group": "skill",
     "core": false,
-    "value": "+10%"
+    "value": "+10%",
+    "enValue": "+10%",
+    "enPrototypeValue": "+15%",
+    "prototypeValue": "+15%"
   }
 ]

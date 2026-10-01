@@ -9,7 +9,13 @@
     "reload": 1.91,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:ACR-E",
@@ -21,7 +27,13 @@
     "reload": 1.91,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:The Archivist",
@@ -33,7 +45,13 @@
     "reload": 1.91,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:AK-M",
@@ -45,7 +63,13 @@
     "reload": 2.26,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Military AK-M",
@@ -57,7 +81,13 @@
     "reload": 2.3,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Black Market AK-M",
@@ -69,7 +99,13 @@
     "reload": 2.3,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:First Sight",
@@ -81,7 +117,13 @@
     "reload": 2.8,
     "hsd": 85.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Manic",
@@ -93,7 +135,13 @@
     "reload": 2.3,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:AUG A3-CQC",
@@ -105,7 +153,13 @@
     "reload": 2.16,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Invisible Hand",
@@ -117,7 +171,13 @@
     "reload": 2.16,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:The Bighorn",
@@ -129,7 +189,13 @@
     "reload": 2.16,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Fire Select Scope",
+      "magazine": "fixed:Tension Spring Magazine",
+      "muzzle": "fixed:Carbon Steel Muzzle",
+      "underbarrel": "fixed:Bighorn Horn Grip"
+    }
   },
   {
     "id": "assault-rifle:Carbine 7",
@@ -141,7 +207,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:The Drill",
@@ -153,7 +225,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:F2000",
@@ -165,7 +243,13 @@
     "reload": 2.4,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Shield Splinterer",
@@ -177,7 +261,13 @@
     "reload": 2.4,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Agitator",
@@ -189,7 +279,13 @@
     "reload": 2.4,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Agitator Scope",
+      "magazine": "fixed:Agitator Magazine",
+      "muzzle": "fixed:Agitator Muzzle",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:FAL",
@@ -201,7 +297,13 @@
     "reload": 2.14,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:FAL SA-58",
@@ -213,7 +315,13 @@
     "reload": 2.14,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:FAL SA-58 Para",
@@ -225,7 +333,13 @@
     "reload": 2.14,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Goalie",
@@ -237,7 +351,13 @@
     "reload": 2.14,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Strega",
@@ -249,7 +369,13 @@
     "reload": 2.14,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Strega Optic",
+      "magazine": "fixed:Strega Magazine",
+      "muzzle": "fixed:Strega Muzzle",
+      "underbarrel": "fixed:Senate Grip"
+    }
   },
   {
     "id": "assault-rifle:FAMAS 2010",
@@ -261,7 +387,13 @@
     "reload": 2.49,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Huntsman",
@@ -273,7 +405,13 @@
     "reload": 2.49,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Burn Out",
@@ -285,7 +423,13 @@
     "reload": 2.49,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Military G36",
@@ -297,7 +441,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:G36 C",
@@ -309,7 +459,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:G36 Enhanced",
@@ -321,7 +477,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Caretaker",
@@ -333,7 +495,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Born Great",
@@ -345,7 +513,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Honey Badger",
@@ -357,7 +531,13 @@
     "reload": 2.06,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Savage Wolverine",
@@ -369,7 +549,13 @@
     "reload": 2.06,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Police M4",
@@ -381,7 +567,13 @@
     "reload": 2.24,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Pyromaniac",
@@ -393,7 +585,13 @@
     "reload": 2.24,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Lexington",
@@ -405,7 +603,13 @@
     "reload": 2.24,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:St. Elmo's Engine",
@@ -417,7 +621,13 @@
     "reload": 2.24,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Conductor Rail",
+      "magazine": "fixed:Insulated Magazine",
+      "muzzle": "fixed:Overcharged Muzzle",
+      "underbarrel": "fixed:Insulated Grip"
+    }
   },
   {
     "id": "assault-rifle:Mk16",
@@ -429,7 +639,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:SOCOM Mk16",
@@ -441,7 +657,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Tactical Mk 16",
@@ -453,7 +675,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Lud",
@@ -465,7 +693,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Steamer",
@@ -477,7 +711,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Caduceus",
@@ -489,7 +729,13 @@
     "reload": 2.02,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Caduceus Optics",
+      "magazine": "fixed:Caduceus Magazine",
+      "muzzle": "fixed:Caduceus Muzzle",
+      "underbarrel": "fixed:Caduceus Underbarrel"
+    }
   },
   {
     "id": "assault-rifle:Military P416",
@@ -501,7 +747,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Custom P416 G3",
@@ -513,7 +765,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Glory Daze",
@@ -525,7 +783,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Eagle Bearer",
@@ -537,7 +801,13 @@
     "reload": 2.34,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Eagle Eye Sight",
+      "magazine": "fixed:Bullet Eyrie",
+      "muzzle": "fixed:Jagged Beak",
+      "underbarrel": "fixed:Talon Grip"
+    }
   },
   {
     "id": "assault-rifle:PDR",
@@ -549,7 +819,13 @@
     "reload": 2.04,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Test Subject",
@@ -561,7 +837,13 @@
     "reload": 2.04,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Capacitor",
@@ -573,7 +855,13 @@
     "reload": 2.04,
     "hsd": 55.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Conductive Focal",
+      "magazine": "fixed:Voltage Generator",
+      "muzzle": "fixed:Discharge Electrode",
+      "underbarrel": "fixed:Dielectric Safety Grip"
+    }
   },
   {
     "id": "assault-rifle:First Bloom",
@@ -585,7 +873,13 @@
     "reload": 2.04,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "assault-rifle:Sig Sauer 556",
@@ -597,7 +891,13 @@
     "reload": 2.17,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:Mechanical Animal",
@@ -609,7 +909,13 @@
     "reload": 2.17,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "assault-rifle:TKB-408",
@@ -621,7 +927,13 @@
     "reload": 1.87,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:Kingbreaker",
@@ -633,7 +945,13 @@
     "reload": 1.87,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "assault-rifle:CTAR-21",
@@ -645,7 +963,13 @@
     "reload": 2.39,
     "hsd": 55.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-side"
+    }
   },
   {
     "id": "assault-rifle:The Railsplitter",
@@ -657,7 +981,13 @@
     "reload": 2.39,
     "hsd": 55.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-side"
+    }
   },
   {
     "id": "assault-rifle:Chameleon",
@@ -669,7 +999,13 @@
     "reload": 2.4,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Chameleon Optics",
+      "magazine": "fixed:Chameleon ActivCamo",
+      "muzzle": "fixed:Chameleon Dampener",
+      "underbarrel": "fixed:Chameleon Grip"
+    }
   },
   {
     "id": "smg:Converted SMG-9 A2",
@@ -681,7 +1017,13 @@
     "reload": 2.3,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Converted SMG-9",
@@ -693,7 +1035,13 @@
     "reload": 2.26,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Purist",
@@ -705,7 +1053,13 @@
     "reload": 2.3,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:MP5 ST",
@@ -717,7 +1071,13 @@
     "reload": 1.79,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:MP5A2",
@@ -729,7 +1089,13 @@
     "reload": 1.79,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:MP5-N",
@@ -741,7 +1107,13 @@
     "reload": 1.79,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Cabaret",
@@ -753,7 +1125,13 @@
     "reload": 1.79,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:CMMG Banshee",
@@ -765,7 +1143,13 @@
     "reload": 1.92,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:The Grudge",
@@ -777,7 +1161,13 @@
     "reload": 1.92,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Lady Death",
@@ -789,7 +1179,13 @@
     "reload": 1.92,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Gaze of Death",
+      "magazine": "fixed:Death's Hand",
+      "muzzle": "fixed:Death's Maw",
+      "underbarrel": "fixed:Kiss of Death"
+    }
   },
   {
     "id": "smg:PP-19",
@@ -801,7 +1197,13 @@
     "reload": 1.46,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Enhanced PP-19",
@@ -813,7 +1215,13 @@
     "reload": 1.46,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Cold Relations",
@@ -825,7 +1233,13 @@
     "reload": 1.46,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:AUG A3 Para XS",
@@ -837,7 +1251,13 @@
     "reload": 2.31,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Enhanced AUG A3P",
@@ -849,7 +1269,13 @@
     "reload": 2.31,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Tactical AUG A3P",
@@ -861,7 +1287,13 @@
     "reload": 2.31,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Interchange",
@@ -873,7 +1305,13 @@
     "reload": 2.31,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Vector SBR .45 ACP",
@@ -885,7 +1323,13 @@
     "reload": 2.06,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Vector SBR 9mm",
@@ -897,7 +1341,13 @@
     "reload": 2.38,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Tactical Vector SBR 9mm",
@@ -909,7 +1359,13 @@
     "reload": 1.69,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Froth",
@@ -921,7 +1377,13 @@
     "reload": 2.38,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Dark Winter",
@@ -933,7 +1395,13 @@
     "reload": 2.06,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Ouroboros",
@@ -945,7 +1413,13 @@
     "reload": 2.07,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Infinity Sights",
+      "magazine": "fixed:Serpent Magazine",
+      "muzzle": "fixed:Weather-Resistant Muzzle",
+      "underbarrel": "fixed:Light Heavy-Duty Grip"
+    }
   },
   {
     "id": "smg:MP7",
@@ -957,7 +1431,13 @@
     "reload": 1.59,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Swap Chain",
@@ -969,7 +1449,13 @@
     "reload": 1.59,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Oxpecker",
@@ -981,7 +1467,13 @@
     "reload": 1.59,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Oxpecker Optic",
+      "magazine": "N/A",
+      "muzzle": "fixed:Oxpecker Muzzle",
+      "underbarrel": "fixed:Oxpecker Underbarrel"
+    }
   },
   {
     "id": "smg:Police T821",
@@ -993,7 +1485,13 @@
     "reload": 1.47,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Black Market T821",
@@ -1005,7 +1503,13 @@
     "reload": 1.47,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Old Glory",
@@ -1017,7 +1521,13 @@
     "reload": 1.47,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Police UMP-45",
@@ -1029,7 +1539,13 @@
     "reload": 1.67,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Tactical UMP-45",
@@ -1041,7 +1557,13 @@
     "reload": 1.67,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:Slingshot",
@@ -1053,7 +1575,13 @@
     "reload": 1.67,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "smg:M1928",
@@ -1065,7 +1593,13 @@
     "reload": 1.46,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Tommy Gun",
@@ -1077,7 +1611,13 @@
     "reload": 1.54,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:The Sleigher",
@@ -1089,7 +1629,13 @@
     "reload": 1.54,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Grown Great",
@@ -1101,7 +1647,13 @@
     "reload": 1.54,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Underboss",
@@ -1113,7 +1665,13 @@
     "reload": 1.54,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Underboss Optics",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:P90",
@@ -1125,7 +1683,13 @@
     "reload": 1.57,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:Emeline's Guard",
@@ -1137,7 +1701,13 @@
     "reload": 1.57,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "smg:The Chatterbox",
@@ -1149,7 +1719,13 @@
     "reload": 1.57,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Modified Optics",
+      "magazine": "fixed:Chatterbox Magazine",
+      "muzzle": "fixed:Chatterbox Muzzle",
+      "underbarrel": "fixed:Chatterbox Canister"
+    }
   },
   {
     "id": "smg:SIG MPX",
@@ -1161,7 +1737,13 @@
     "reload": 2.09,
     "hsd": 50.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Safety Distance",
@@ -1173,7 +1755,13 @@
     "reload": 2.09,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:The Apartment",
@@ -1185,7 +1773,13 @@
     "reload": 2.09,
     "hsd": 50.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-9mm",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "smg:Backfire",
@@ -1197,7 +1791,13 @@
     "reload": 2.09,
     "hsd": 50.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Quick Sight",
+      "magazine": "fixed:Barbed Grip Magazine",
+      "muzzle": "fixed:Jagged Muzzle",
+      "underbarrel": "fixed:Barbed Frame"
+    }
   },
   {
     "id": "lmg:Stoner LAMG",
@@ -1209,7 +1809,13 @@
     "reload": 3.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "fixed:QDC Sound Suppressor",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Quiet Roar",
@@ -1221,7 +1827,13 @@
     "reload": 3.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "fixed:QDC Sound Suppressor",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Bluescreen",
@@ -1233,7 +1845,13 @@
     "reload": 3.1,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Lightning Sight",
+      "magazine": "fixed:Deauthentication Frame",
+      "muzzle": "fixed:Overclock Muzzle",
+      "underbarrel": "fixed:Dropkick Grip"
+    }
   },
   {
     "id": "lmg:Military L86 LSW",
@@ -1245,7 +1863,13 @@
     "reload": 3.18,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Custom L86 A2",
@@ -1257,7 +1881,13 @@
     "reload": 3.18,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Tabula Rasa",
@@ -1269,7 +1899,13 @@
     "reload": 3.18,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Insult To Injury",
@@ -1281,7 +1917,13 @@
     "reload": 3.18,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:GR9",
@@ -1293,7 +1935,13 @@
     "reload": 3.63,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:GR9 Built-in scope (8x)",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Dare",
@@ -1305,7 +1953,13 @@
     "reload": 3.63,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "fixed:GR9 Built-in scope (8x)",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-qdc",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Cricket",
@@ -1317,7 +1971,13 @@
     "reload": 3.63,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "fixed:GR9 Built-in scope (8x)",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Vertigo",
@@ -1329,7 +1989,13 @@
     "reload": 3.63,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Vertigo Optics",
+      "magazine": "fixed:Vertigo Magazine",
+      "muzzle": "fixed:Vertigo Muzzle",
+      "underbarrel": "fixed:Vertigo Underbarrel"
+    }
   },
   {
     "id": "lmg:M249 B",
@@ -1341,7 +2007,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Tactical M249 Para",
@@ -1353,7 +2025,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Military MK46",
@@ -1365,7 +2043,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Black Friday",
@@ -1377,7 +2061,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:The Stinger",
@@ -1389,7 +2079,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Gear Shift",
@@ -1401,7 +2097,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Pestilence",
@@ -1413,7 +2115,13 @@
     "reload": 4.54,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Plagued Magazine",
+      "muzzle": "fixed:Plagued Muzzle",
+      "underbarrel": "fixed:Caution Tape"
+    }
   },
   {
     "id": "lmg:Classic M60",
@@ -1425,7 +2133,13 @@
     "reload": 3.75,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Military M60 E4",
@@ -1437,7 +2151,13 @@
     "reload": 3.85,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Black Market M60 E6",
@@ -1449,7 +2169,13 @@
     "reload": 3.85,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Good Times",
@@ -1461,7 +2187,13 @@
     "reload": 3.85,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:The Headline-grabber",
@@ -1473,7 +2205,13 @@
     "reload": 3.85,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:MG5",
@@ -1485,7 +2223,13 @@
     "reload": 2.96,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Infantry MG5",
@@ -1497,7 +2241,13 @@
     "reload": 3.01,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Bellringer",
@@ -1509,7 +2259,13 @@
     "reload": 3.01,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Big Show",
@@ -1521,7 +2277,13 @@
     "reload": 2.96,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Sleipner",
@@ -1533,7 +2295,13 @@
     "reload": 2.96,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-belt",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "lmg:Iron Lung",
@@ -1545,7 +2313,13 @@
     "reload": 2.96,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Bellows",
+      "muzzle": "fixed:Dragon Horns",
+      "underbarrel": "fixed:Scales"
+    }
   },
   {
     "id": "lmg:IWI NEGEV",
@@ -1557,7 +2331,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Carnage",
@@ -1569,7 +2349,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-belt",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Bullet King",
@@ -1581,7 +2367,13 @@
     "reload": 0.0,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Mag of Holding",
+      "muzzle": "fixed:Gold Plated Muzzle",
+      "underbarrel": "fixed:Solid Gold Bipod"
+    }
   },
   {
     "id": "lmg:Classic RPK-74",
@@ -1593,7 +2385,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Military RPK-74",
@@ -1605,7 +2403,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Black Market RPK-74",
@@ -1617,7 +2421,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Rusty",
@@ -1629,7 +2439,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:New Reliable",
@@ -1641,7 +2457,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "lmg:Pakhan",
@@ -1653,7 +2475,13 @@
     "reload": 4.0,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Pakhan Optic",
+      "magazine": "fixed:Pakhan Magazine",
+      "muzzle": "fixed:Pakhan Muzzle",
+      "underbarrel": "fixed:Pakhan Underbarrel"
+    }
   },
   {
     "id": "lmg:Big Alejandro",
@@ -1665,7 +2493,13 @@
     "reload": 4.03,
     "hsd": 65.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "rifle:ACR SS",
@@ -1677,7 +2511,13 @@
     "reload": 2.63,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Trader",
@@ -1689,7 +2529,13 @@
     "reload": 2.63,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Steel & Sons ACR",
@@ -1701,7 +2547,13 @@
     "reload": 2.63,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Clean Cut Optics",
+      "magazine": "fixed:Harness Buckle Magazine",
+      "muzzle": "fixed:Sawtooth Muzzle",
+      "underbarrel": "fixed:Helve Underbarrel"
+    }
   },
   {
     "id": "rifle:Merciless",
@@ -1713,7 +2565,13 @@
     "reload": 2.17,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Merciless Optics",
+      "magazine": "fixed:Merciless Magazine",
+      "muzzle": "fixed:Merciless Muzzle",
+      "underbarrel": "fixed:Merciless Grip"
+    }
   },
   {
     "id": "rifle:UIC15 MOD2",
@@ -1725,7 +2583,13 @@
     "reload": 1.73,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:The Claw",
@@ -1737,7 +2601,13 @@
     "reload": 1.73,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:M16A2",
@@ -1749,7 +2619,13 @@
     "reload": 2.44,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "rifle:Whisper",
@@ -1761,7 +2637,13 @@
     "reload": 2.44,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "rifle:Classic M1A",
@@ -1773,7 +2655,13 @@
     "reload": 2.6,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Socom M1A",
@@ -1785,7 +2673,13 @@
     "reload": 2.32,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:M1A CQB",
@@ -1797,7 +2691,13 @@
     "reload": 2.32,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Baker's Dozen",
@@ -1809,7 +2709,13 @@
     "reload": 2.6,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Stage Left",
@@ -1821,7 +2727,13 @@
     "reload": 2.32,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Bittersweet",
@@ -1833,7 +2745,13 @@
     "reload": 2.6,
     "hsd": 70.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Bittersweet Scope",
+      "magazine": "fixed:Bittersweet Magazine",
+      "muzzle": "N/A",
+      "underbarrel": "fixed:Bittersweet Underbarrel"
+    }
   },
   {
     "id": "rifle:Doctor Home",
@@ -1845,7 +2763,13 @@
     "reload": 2.31,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Doctor's Sight",
+      "magazine": "fixed:Home's Magazine",
+      "muzzle": "fixed:Doctor's Perseverance",
+      "underbarrel": "fixed:Doctor's Grip"
+    }
   },
   {
     "id": "rifle:Lightweight M4",
@@ -1857,7 +2781,13 @@
     "reload": 2.03,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:LVOA-C",
@@ -1869,7 +2799,13 @@
     "reload": 2.08,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Surge",
@@ -1881,7 +2817,13 @@
     "reload": 2.08,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Teapot",
@@ -1893,7 +2835,13 @@
     "reload": 2.03,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-5.56",
+      "muzzle": "type:muzzle-5.56",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Urban MDR",
@@ -1905,7 +2853,13 @@
     "reload": 2.85,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Brain Break",
@@ -1917,7 +2871,13 @@
     "reload": 2.85,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Vindicator",
@@ -1929,7 +2889,13 @@
     "reload": 2.85,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:AR Scope",
+      "magazine": "fixed:Simulation Magazine",
+      "muzzle": "fixed:Velocity Amplifier",
+      "underbarrel": "fixed:Loop Grip"
+    }
   },
   {
     "id": "rifle:Military MK17",
@@ -1941,7 +2907,13 @@
     "reload": 2.45,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Police MK17",
@@ -1953,7 +2925,13 @@
     "reload": 2.45,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Everlasting Gaze",
@@ -1965,7 +2943,13 @@
     "reload": 2.45,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:SIG 716",
@@ -1977,7 +2961,13 @@
     "reload": 2.68,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:SIG 716 CQB",
@@ -1989,7 +2979,13 @@
     "reload": 2.63,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "rifle:Artist's Tool",
@@ -2001,7 +2997,13 @@
     "reload": 2.63,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "rifle:The Ravenous",
@@ -2013,7 +3015,13 @@
     "reload": 2.4,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Predatory Optics",
+      "magazine": "fixed:Gluttonous Magazines",
+      "muzzle": "fixed:Devouring Maw",
+      "underbarrel": "fixed:Wolf's Claw"
+    }
   },
   {
     "id": "rifle:USC .45 ACP",
@@ -2025,7 +3033,13 @@
     "reload": 2.88,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Achilles",
@@ -2037,7 +3051,13 @@
     "reload": 2.88,
     "hsd": 61.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-45-acp",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Resolute Mk47",
@@ -2049,7 +3069,13 @@
     "reload": 1.94,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:Harmony",
@@ -2061,7 +3087,13 @@
     "reload": 1.94,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "rifle:1886",
@@ -2073,7 +3105,13 @@
     "reload": 3.46,
     "hsd": 60.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "rifle:The Virginian",
@@ -2085,7 +3123,13 @@
     "reload": 3.46,
     "hsd": 60.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "rifle:Diamondback",
@@ -2097,7 +3141,13 @@
     "reload": 3.47,
     "hsd": 60.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Diamondback Dot Sight",
+      "magazine": "fixed:Diamondback Lever",
+      "muzzle": "fixed:Diamondback Ornamentation",
+      "underbarrel": "fixed:Diamondback Grip"
+    }
   },
   {
     "id": "rifle:Cooler",
@@ -2109,7 +3159,13 @@
     "reload": 3.0,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "marksman-rifle:SOCOM Mk20 SSR",
@@ -2121,7 +3177,13 @@
     "reload": 4.99,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:The Darkness",
@@ -2133,7 +3195,13 @@
     "reload": 4.99,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:G28",
@@ -2145,7 +3213,13 @@
     "reload": 3.6,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Relic",
@@ -2157,7 +3231,13 @@
     "reload": 3.6,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Sacrum Imperium",
@@ -2169,7 +3249,13 @@
     "reload": 3.6,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Sacrum Sight",
+      "magazine": "fixed:Sacrum Magazine",
+      "muzzle": "fixed:Sacrum Muzzle",
+      "underbarrel": "fixed:Sacrum Underbarrel"
+    }
   },
   {
     "id": "marksman-rifle:M700 Carbon",
@@ -2181,7 +3267,13 @@
     "reload": 3.98,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:M700 Tactical",
@@ -2193,7 +3285,13 @@
     "reload": 3.98,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-side"
+    }
   },
   {
     "id": "marksman-rifle:Model 700",
@@ -2205,7 +3303,13 @@
     "reload": 7.05,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-integrated",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "marksman-rifle:Brutus",
@@ -2217,7 +3321,13 @@
     "reload": 3.98,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Ekim's Long Stick",
@@ -2229,7 +3339,13 @@
     "reload": 7.05,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-integrated",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "marksman-rifle:Shroud",
@@ -2241,7 +3357,13 @@
     "reload": 3.98,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Shroud Scope",
+      "magazine": "fixed:Shroud Magazine",
+      "muzzle": "fixed:Shroud Muzzle",
+      "underbarrel": "fixed:Shroud Underbarrel"
+    }
   },
   {
     "id": "marksman-rifle:Paratrooper SVD",
@@ -2253,7 +3375,13 @@
     "reload": 2.85,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Surplus SVD",
@@ -2265,7 +3393,13 @@
     "reload": 2.85,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Commando",
@@ -2277,7 +3411,13 @@
     "reload": 2.85,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Handbasket",
@@ -2289,7 +3429,13 @@
     "reload": 3.15,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Dread Edict",
@@ -2301,7 +3447,13 @@
     "reload": 2.73,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Judgement's Glare",
+      "magazine": "fixed:Tuned-tension Spring",
+      "muzzle": "fixed:Punctuating Barrel",
+      "underbarrel": "fixed:Fearless Frame"
+    }
   },
   {
     "id": "marksman-rifle:Covert SRS",
@@ -2313,7 +3465,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:SRS A1",
@@ -2325,7 +3483,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Incendia",
@@ -2337,7 +3501,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Pinprick",
@@ -2349,7 +3519,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Mantis",
@@ -2361,7 +3537,13 @@
     "reload": 4.3,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Anti-Glint Coated Sight",
+      "magazine": "fixed:Well-Oiled Machine",
+      "muzzle": "fixed:Wrapped Suppressor",
+      "underbarrel": "fixed:Ghillie Frame"
+    }
   },
   {
     "id": "marksman-rifle:Classic M44 Carbine",
@@ -2373,7 +3555,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-integrated",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Hunting M44",
@@ -2385,7 +3573,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-integrated",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Custom M44",
@@ -2397,7 +3591,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Instigator",
@@ -2409,7 +3609,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Oh Carol",
@@ -2421,7 +3627,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "fixed:VX1 Scope  (12x)",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "marksman-rifle:The White Death",
@@ -2433,7 +3645,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-integrated",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Prima Donna",
@@ -2445,7 +3663,13 @@
     "reload": 4.29,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Prima Donna Scope",
+      "magazine": "fixed:Prima Donna Magazine",
+      "muzzle": "fixed:Prima Donna Muzzle",
+      "underbarrel": "fixed:Prima Donna Underbarrel"
+    }
   },
   {
     "id": "marksman-rifle:SR-1",
@@ -2457,7 +3681,13 @@
     "reload": 3.15,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Adrestia",
@@ -2469,7 +3699,13 @@
     "reload": 3.15,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Designated Hitter",
@@ -2481,7 +3717,13 @@
     "reload": 3.15,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-normal",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-short"
+    }
   },
   {
     "id": "marksman-rifle:Tactical .308",
@@ -2493,7 +3735,13 @@
     "reload": 3.04,
     "hsd": 0.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Scalpel",
@@ -2505,7 +3753,13 @@
     "reload": 3.04,
     "hsd": 0.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-mmr-7.62",
+      "muzzle": "type:muzzle-7.62",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "marksman-rifle:Nemesis",
@@ -2517,7 +3771,13 @@
     "reload": 3.2,
     "hsd": 0.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Nemesis Digital Scope",
+      "magazine": "fixed:Nemesis Bolt",
+      "muzzle": "fixed:Nemesis Barrel",
+      "underbarrel": "fixed:Nemesis Bipod"
+    }
   },
   {
     "id": "shotgun:ACS-12",
@@ -2529,7 +3789,13 @@
     "reload": 3.35,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Stack Broker",
@@ -2541,7 +3807,13 @@
     "reload": 3.35,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Lefty",
@@ -2553,7 +3825,13 @@
     "reload": 3.35,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Rock n' Roll",
@@ -2565,7 +3843,13 @@
     "reload": 3.35,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Double Barrel Shotgun",
@@ -2577,7 +3861,13 @@
     "reload": 3.89,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Boomstick",
@@ -2589,7 +3879,13 @@
     "reload": 3.89,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Sawed-Off Double Barrel",
@@ -2601,7 +3897,13 @@
     "reload": 2.51,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Firestarter",
@@ -2613,7 +3915,13 @@
     "reload": 2.51,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Backup Boomstick",
@@ -2625,7 +3933,13 @@
     "reload": 2.51,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:KSG Shotgun",
@@ -2637,7 +3951,13 @@
     "reload": 7.98,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:The Send-Off",
@@ -2649,7 +3969,13 @@
     "reload": 7.98,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Overlord",
@@ -2661,7 +3987,13 @@
     "reload": 7.99,
     "hsd": 45.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Ballistic Rail",
+      "magazine": "fixed:Riot Magazine",
+      "muzzle": "N/A",
+      "underbarrel": "fixed:Fortified Grip"
+    }
   },
   {
     "id": "shotgun:Custom M870 MCS",
@@ -2673,7 +4005,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:M870 Express",
@@ -2685,7 +4023,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Military M870",
@@ -2697,7 +4041,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Lockdown",
@@ -2709,7 +4059,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Cuelebre",
@@ -2721,7 +4077,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Fafnir",
@@ -2733,7 +4095,13 @@
     "reload": 3.34,
     "hsd": 45.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Fafnir Optics",
+      "magazine": "fixed:Fafnir Magazine",
+      "muzzle": "N/A",
+      "underbarrel": "fixed:Fafnir Underbarrel"
+    }
   },
   {
     "id": "shotgun:Black Market SASG-12 S",
@@ -2745,7 +4113,13 @@
     "reload": 3.05,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:SASG-12",
@@ -2757,7 +4131,13 @@
     "reload": 3.05,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Tactical SASG-12 K",
@@ -2769,7 +4149,13 @@
     "reload": 3.05,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Tsunami",
@@ -2781,7 +4167,13 @@
     "reload": 3.05,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:SPAS-12",
@@ -2793,7 +4185,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Thorn",
@@ -2805,7 +4203,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Sweet Dreams",
@@ -2817,7 +4221,13 @@
     "reload": 5.5,
     "hsd": 25.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Outcast Optics",
+      "magazine": "fixed:Modified Feed System",
+      "muzzle": "N/A",
+      "underbarrel": "fixed:Stunner"
+    }
   },
   {
     "id": "shotgun:Marine Super 90",
@@ -2829,7 +4239,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Super 90",
@@ -2841,7 +4257,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Tactical Super 90 SBS",
@@ -2853,7 +4275,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Like Glue",
@@ -2865,7 +4293,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-long",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Sheriff",
@@ -2877,7 +4311,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "shotgun:Enforcer",
@@ -2889,7 +4329,13 @@
     "reload": 4.65,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Six12",
@@ -2901,7 +4347,13 @@
     "reload": 3.0,
     "hsd": 45.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:The Mop",
@@ -2913,7 +4365,13 @@
     "reload": 3.0,
     "hsd": 45.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-tubular",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-long"
+    }
   },
   {
     "id": "shotgun:Scorpio",
@@ -2925,7 +4383,13 @@
     "reload": 3.0,
     "hsd": 45.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Starlight Receptors",
+      "magazine": "fixed:Venom Glands",
+      "muzzle": "fixed:Aculeus",
+      "underbarrel": "fixed:Chelae Grip"
+    }
   },
   {
     "id": "pistol:93R",
@@ -2937,7 +4401,13 @@
     "reload": 1.71,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Sharpshooter's 93R",
@@ -2949,7 +4419,13 @@
     "reload": 1.71,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Tempest",
@@ -2961,7 +4437,13 @@
     "reload": 2.38,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Tempest Magazine",
+      "muzzle": "fixed:Tempest Muzzle",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:D50",
@@ -2973,7 +4455,13 @@
     "reload": 2.24,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Survivalist D50",
@@ -2985,7 +4473,13 @@
     "reload": 2.24,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Liberty",
@@ -2997,7 +4491,13 @@
     "reload": 2.24,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Liberty Sight",
+      "magazine": "fixed:Liberty Grip",
+      "muzzle": "fixed:Liberty Customs",
+      "underbarrel": "fixed:Trigger Mechanism"
+    }
   },
   {
     "id": "pistol:Rabid D50",
@@ -3009,7 +4509,13 @@
     "reload": 2.24,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "N/A",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:M1911",
@@ -3021,7 +4527,13 @@
     "reload": 2.24,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:M45A1",
@@ -3033,7 +4545,13 @@
     "reload": 2.33,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Tactical M1911",
@@ -3045,7 +4563,13 @@
     "reload": 2.33,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Quickstep",
@@ -3057,7 +4581,13 @@
     "reload": 2.33,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Mozambique Special",
@@ -3069,7 +4599,13 @@
     "reload": 2.33,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Maxim 9",
@@ -3081,7 +4617,13 @@
     "reload": 1.39,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Military M9",
@@ -3093,7 +4635,13 @@
     "reload": 1.9,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Officer's M9 A1",
@@ -3105,7 +4653,13 @@
     "reload": 1.96,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Mosquito",
@@ -3117,7 +4671,13 @@
     "reload": 1.9,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Mosquito Magazine",
+      "muzzle": "fixed:Mosquito Muzzle",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:P320 XCompact",
@@ -3129,7 +4689,13 @@
     "reload": 1.77,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Custom PF45",
@@ -3141,7 +4707,13 @@
     "reload": 1.77,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:First Wave PF45",
@@ -3153,7 +4725,13 @@
     "reload": 1.74,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Lightning Rod",
@@ -3165,7 +4743,13 @@
     "reload": 1.77,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Busy Little Bee",
@@ -3177,7 +4761,13 @@
     "reload": 1.78,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Bee's Focus",
+      "magazine": "fixed:Bee's Speed",
+      "muzzle": "fixed:Bee's Purpose",
+      "underbarrel": "fixed:Bee's Strength"
+    }
   },
   {
     "id": "pistol:Px4 Storm Type F",
@@ -3189,7 +4779,13 @@
     "reload": 1.63,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Px4 Storm Type T",
@@ -3201,7 +4797,13 @@
     "reload": 1.63,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Diceros",
@@ -3213,7 +4815,13 @@
     "reload": 2.0,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Snubnosed Diceros",
@@ -3225,7 +4833,13 @@
     "reload": 1.98,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Diceros Special",
@@ -3237,7 +4851,13 @@
     "reload": 1.93,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Whiplash",
@@ -3249,7 +4869,13 @@
     "reload": 1.93,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "fixed:Whiplash Optics",
+      "magazine": "fixed:Whiplash Magazine",
+      "muzzle": "N/A",
+      "underbarrel": "fixed:Whiplash Underbarrel"
+    }
   },
   {
     "id": "pistol:586 Magnum",
@@ -3261,7 +4887,13 @@
     "reload": 2.54,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Police 686 Magnum",
@@ -3273,7 +4905,13 @@
     "reload": 2.54,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Orbit",
@@ -3285,7 +4923,13 @@
     "reload": 2.54,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Prophet",
@@ -3297,7 +4941,13 @@
     "reload": 2.54,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:The Harvest",
@@ -3309,7 +4959,13 @@
     "reload": 2.54,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-short",
+      "magazine": "type:mag-drum",
+      "muzzle": "N/A",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:Regulus",
@@ -3321,7 +4977,13 @@
     "reload": 2.78,
     "hsd": 100.0,
     "exotic": true,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "fixed:Engraved Drum",
+      "muzzle": "fixed:Engraved Muzzle",
+      "underbarrel": "N/A"
+    }
   },
   {
     "id": "pistol:X-45",
@@ -3333,7 +4995,13 @@
     "reload": 1.99,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:X-45 Tactical",
@@ -3345,7 +5013,13 @@
     "reload": 1.99,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "N/A",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-45",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:Kard-45",
@@ -3357,7 +5031,13 @@
     "reload": 1.71,
     "hsd": 100.0,
     "exotic": false,
-    "named": false
+    "named": false,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   },
   {
     "id": "pistol:TDI \"Kard\" Custom",
@@ -3369,6 +5049,12 @@
     "reload": 1.71,
     "hsd": 100.0,
     "exotic": false,
-    "named": true
+    "named": true,
+    "slots": {
+      "optics": "type:optics-micro",
+      "magazine": "type:mag-pistol",
+      "muzzle": "type:muzzle-9mm",
+      "underbarrel": "type:underbarrel-gadget"
+    }
   }
 ]

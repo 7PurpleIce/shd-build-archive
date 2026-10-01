@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/div2hub/game-data",
+  "commit": "9c9ff25552439aabe9f995f4ed66897040ac0cc0",
+  "checkedAt": "2026-10-01",
+  "copiedOrChanged": [
+    "augments.csv",
+    "known_gaps.csv",
+    "holsters.csv",
+    "gear_mods.csv"
+  ],
+  "policy": "English game data uses this pinned source. Russian numeric values align with English PvE; independent PvP values and translations are retained."
+}

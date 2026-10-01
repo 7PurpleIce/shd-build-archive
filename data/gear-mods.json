@@ -60,7 +60,7 @@
     "group": "defense",
     "en": "Armor on Kill",
     "ru": "Броня за убийство",
-    "value": "+18,935"
+    "value": "+18935"
   },
   {
     "id": "blind-deaf-resistance",
@@ -91,10 +91,10 @@
     "value": "+10%"
   },
   {
-    "id": "freeze-resistance",
+    "id": "disrupt-resistance",
     "group": "defense",
-    "en": "Freeze Resistance",
-    "ru": "Сопротивление заморозке",
+    "en": "Disrupt Resistance",
+    "ru": "Сопротивление ЭМИ",
     "value": "+10%"
   },
   {

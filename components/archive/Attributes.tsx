@@ -16,9 +16,9 @@ const coreDescriptions:Record<string,{en:string;ru:string}>={
  armor:{en:'Increases your armor pool.',ru:'Увеличивает запас брони.'},
  'skill-tier':{en:'Improves skills according to their tier bonuses.',ru:'Усиливает навыки в соответствии с бонусами их уровня.'},
 };
-function AttributeValues({value,perSecond=false}:{value:string;perSecond?:boolean}){
+function AttributeValues({value,perSecond=false,prototype}:{value:string;perSecond?:boolean;prototype?:string}){
  const {t,locale}=useLocale();const unit=perSecond?t('/s','/с'):'';
- return <span className="attribute-values"><span>{value}{unit}</span><span className="attribute-value-divider" aria-hidden="true"> / </span><span className="attribute-prototype" aria-label={t('Prototype: ','Прототип: ')+prototypeValue(value,locale)+unit}>{prototypeValue(value,locale)}{unit}</span></span>;
+ return <span className="attribute-values"><span>{value}{unit}</span><span className="attribute-value-divider" aria-hidden="true"> / </span><span className="attribute-prototype" aria-label={t('Prototype: ','Прототип: ')+prototypeValue(value,locale,prototype)+unit}>{prototypeValue(value,locale,prototype)}{unit}</span></span>;
 }
 export function Attributes(){
  const {t}=useLocale();
@@ -28,7 +28,7 @@ export function Attributes(){
   <SectionHeading section="attributes" eyebrow={t('ATTRIBUTE REFERENCE','СПРАВОЧНИК ХАРАКТЕРИСТИК')} title={t('Attributes','Статы')}>
    <p className="heading-note">{t('Gear attributes and their maximum rolls.','Характеристики экипировки и их максимальные значения.')}</p>
   </SectionHeading>
-  <p className="attributes-value-key">{t('Standard / ','Обычные / ')}<span className="attribute-prototype">{t('Prototype ×1.5','Прототипные ×1,5')}</span></p>
+  <p className="attributes-value-key">{t('Standard / ','Обычные / ')}<span className="attribute-prototype">{t('Prototype','Прототипные')}</span></p>
   <section aria-labelledby="core-attributes-title">
    <div className="attributes-section-title"><h2 id="core-attributes-title">{t('Core attributes','Основные статы')}</h2><span>{core.length}</span></div>
    <div className="attributes-core-grid">{core.map(item=>{
@@ -36,7 +36,7 @@ export function Attributes(){
     return <article key={item.id} className={`attribute-core attribute-${item.group}`}>
      <Icon size={28} aria-hidden="true"/>
      <h3>{t(item.en,item.ru)}</h3>
-     <strong className="attribute-core-value"><AttributeValues value={item.value}/></strong><p>{t(coreDescriptions[item.id].en,coreDescriptions[item.id].ru)}</p>
+     <strong className="attribute-core-value"><AttributeValues value={item.enValue||item.value} prototype={item.enPrototypeValue}/></strong><p>{t(coreDescriptions[item.id].en,coreDescriptions[item.id].ru)}</p>
     </article>;
    })}</div>
   </section>
@@ -46,7 +46,7 @@ export function Attributes(){
     const items=other.filter(item=>item.group===id);
     return <section className={`attribute-group attribute-${id}`} key={id} aria-labelledby={`attributes-${id}`}>
      <div className="attribute-group-heading"><Icon size={20} aria-hidden="true"/><h3 id={`attributes-${id}`}>{t(en,ru)}</h3><span>{items.length}</span></div>
-     <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong><AttributeValues value={item.value} perSecond={item.id==='armor-regeneration'}/></strong></li>)}</ul>
+     <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong><AttributeValues value={item.enValue||item.value} prototype={item.enPrototypeValue} perSecond={item.id==='armor-regeneration'}/></strong></li>)}</ul>
     </section>;
    })}</div>
   </section>

@@ -14,7 +14,7 @@
       4.0,
       4.3
     ],
-    "en": "Bullet hits may apply a random status effect. Cooldown: 5 seconds.",
+    "en": "Every bullet fired has a {} chance to apply a random Status Effect. Cooldown: 5 seconds",
     "ru": "Каждая пуля с шансом накладывает случайный статусный эффект (перезарядка 5 с)"
   },
   {
@@ -32,7 +32,7 @@
       8.0,
       8.5
     ],
-    "en": "Healing based on damage dealt by skills.",
+    "en": "Receive healing of {} of the damage dealt by your Skills",
     "ru": "Исцеление на основе урона от умений"
   },
   {
@@ -50,7 +50,7 @@
       20.5,
       21.5
     ],
-    "en": "Increases grenade radius and damage.",
+    "en": "Increases Grenade Radius and Damage by {}",
     "ru": "Увеличивает радиус и урон гранат"
   },
   {
@@ -68,7 +68,7 @@
       2.8,
       3.0
     ],
-    "en": "Chance to deal bullet damage a second time.",
+    "en": "Every bullet fired has a {} chance to deal its damage twice",
     "ru": "Шанс нанести урон второй раз"
   },
   {
@@ -86,7 +86,7 @@
       13.0,
       14.0
     ],
-    "en": "Adds health based on base armor.",
+    "en": "Health is increased by {} of your base Total Armor",
     "ru": "Увеличивает здоровье в зависимости от базовой брони"
   },
   {
@@ -104,7 +104,7 @@
       5.5,
       6.0
     ],
-    "en": "Chance to refill two rounds per shot.",
+    "en": "Provides a {} chance of refilling your Magazine by 2 for each bullet fired",
     "ru": "Шанс перезарядить 2 патрона за выстрел"
   },
   {
@@ -122,7 +122,7 @@
       4.0,
       4.3
     ],
-    "en": "Chance of damage immunity for 2 seconds.",
+    "en": "When taking damage, provides a {} chance of becoming immune to damage for 2s",
     "ru": "Шанс получить иммунитет к урону на 2 с"
   },
   {
@@ -140,7 +140,7 @@
       13.0,
       14.0
     ],
-    "en": "Chance to reduce skill cooldowns.",
+    "en": "Provides a {} chance of reducing Skill Cooldowns by 0.2s for each bullet hit",
     "ru": "Шанс сократить перезарядку умений"
   },
   {
@@ -158,7 +158,7 @@
       13.0,
       14.0
     ],
-    "en": "Increases status effect duration.",
+    "en": "Increases Status Effect Duration by {}",
     "ru": "Увеличивает длительность статусных эффектов"
   }
 ]

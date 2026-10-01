@@ -1,0 +1,1514 @@
+[
+  {
+    "name": "Acog Scope (4x)",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "552 Holo Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "C79 Scope (3.4x)",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "CQBSS Scope (8x)",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "headshot-damage:30%"
+  },
+  {
+    "name": "VX1 Scope  (12x)",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "headshot-damage:35%|reload-speed:-10%"
+  },
+  {
+    "name": "Digital Scope",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal",
+    "stats": "headshot-damage:45%|critical-hit-damage:-5%"
+  },
+  {
+    "name": "GR9 Built-in scope (8x)",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Small RDS Scope",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "stability:50%|accuracy:-20%"
+  },
+  {
+    "name": "T2 Micro Red Dot Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Russian Red dot Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "EXPS3 Holo Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "PRO Red Dot Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Reflex Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-normal|optics-short",
+    "stats": "weapon-handling:12%"
+  },
+  {
+    "name": "Rugged Mini Reflex Sight",
+    "category": "optics",
+    "compatibility": "optics-long|optics-micro|optics-normal|optics-short",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Low Reflex Sight",
+    "category": "optics",
+    "compatibility": "optics-micro|optics-short",
+    "stats": "headshot-damage:15%|optimal-range:-25%"
+  },
+  {
+    "name": "Open Iron Sights",
+    "category": "optics",
+    "compatibility": "optics-normal",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Streamlined Iron Sights",
+    "category": "optics",
+    "compatibility": "optics-normal",
+    "stats": "reload-speed:14%"
+  },
+  {
+    "name": "Weighted Iron Sights",
+    "category": "optics",
+    "compatibility": "optics-normal",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Counter-Clockwise Tubular Spring",
+    "category": "magazine",
+    "compatibility": "mag-tubular",
+    "stats": "headshot-damage:5%"
+  },
+  {
+    "name": "Hard Tubular Spring",
+    "category": "magazine",
+    "compatibility": "mag-tubular",
+    "stats": "rate-of-fire:5%"
+  },
+  {
+    "name": "Flexible tubular Spring",
+    "category": "magazine",
+    "compatibility": "mag-tubular",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Non-Disruptive Link",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Nimble Link Belt",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "rate-of-fire:5%"
+  },
+  {
+    "name": "Tactical Small Pouch",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Large Pouch",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "magazine-size:35"
+  },
+  {
+    "name": "Large Pouch (Gunner mag)",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "magazine-size:50"
+  },
+  {
+    "name": "Calibrated Link",
+    "category": "magazine",
+    "compatibility": "mag-belt",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Underbalanced Integrated Spring",
+    "category": "magazine",
+    "compatibility": "mag-integrated",
+    "stats": "rate-of-fire:5%"
+  },
+  {
+    "name": "Compensated Integrated Spring",
+    "category": "magazine",
+    "compatibility": "mag-integrated",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Overbalanced Integrated Spring",
+    "category": "magazine",
+    "compatibility": "mag-integrated",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Stiff Integrated Spring",
+    "category": "magazine",
+    "compatibility": "mag-integrated",
+    "stats": "weapon-damage:5%"
+  },
+  {
+    "name": "Mended Marksman Mag",
+    "category": "magazine",
+    "compatibility": "mag-mmr-7.62",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Lightweight Marksman Mag",
+    "category": "magazine",
+    "compatibility": "mag-mmr-7.62",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Tightly Packed Marksman Mag",
+    "category": "magazine",
+    "compatibility": "mag-mmr-7.62",
+    "stats": "magazine-size:5"
+  },
+  {
+    "name": "Sturdy Marksman Mag",
+    "category": "magazine",
+    "compatibility": "mag-mmr-7.62",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Precision 7.62 Mag",
+    "category": "magazine",
+    "compatibility": "mag-7.62",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "Thin 7.62 Mag",
+    "category": "magazine",
+    "compatibility": "mag-7.62",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Light Extended 7.62 Mag",
+    "category": "magazine",
+    "compatibility": "mag-7.62",
+    "stats": "magazine-size:15"
+  },
+  {
+    "name": "Sturdy Extended 7.62 Mag",
+    "category": "magazine",
+    "compatibility": "mag-7.62",
+    "stats": "magazine-size:20|reload-speed:-10%"
+  },
+  {
+    "name": "Weighted 7.62 Mag",
+    "category": "magazine",
+    "compatibility": "mag-7.62",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Tactical 5.56 Mag",
+    "category": "magazine",
+    "compatibility": "mag-5.56",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Infantry 5.56 Mag",
+    "category": "magazine",
+    "compatibility": "mag-5.56",
+    "stats": "optimal-range:70%"
+  },
+  {
+    "name": "Light Extended 5.56 Mag",
+    "category": "magazine",
+    "compatibility": "mag-5.56",
+    "stats": "magazine-size:15"
+  },
+  {
+    "name": "Sturdy Extended 5.56 Mag",
+    "category": "magazine",
+    "compatibility": "mag-5.56",
+    "stats": "magazine-size:20|reload-speed:-10%"
+  },
+  {
+    "name": "Balanced Spring 5.56 Mag",
+    "category": "magazine",
+    "compatibility": "mag-5.56",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Force Feed .45 ACP Mag",
+    "category": "magazine",
+    "compatibility": "mag-45-acp",
+    "stats": "rate-of-fire:5%"
+  },
+  {
+    "name": "Short Spring .45 ACP Mag",
+    "category": "magazine",
+    "compatibility": "mag-45-acp",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Extended .45 ACP Mag",
+    "category": "magazine",
+    "compatibility": "mag-45-acp",
+    "stats": "magazine-size:15"
+  },
+  {
+    "name": "Oversized .45 ACP Mag",
+    "category": "magazine",
+    "compatibility": "mag-45-acp",
+    "stats": "magazine-size:20|reload-speed:-10%"
+  },
+  {
+    "name": "Precision Feeding .45 Mag",
+    "category": "magazine",
+    "compatibility": "mag-45-acp",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Heavy Spring 9mm Mag",
+    "category": "magazine",
+    "compatibility": "mag-9mm",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Oversized 9mm Mag",
+    "category": "magazine",
+    "compatibility": "mag-9mm",
+    "stats": "magazine-size:15"
+  },
+  {
+    "name": "Extended 9mm Mag",
+    "category": "magazine",
+    "compatibility": "mag-9mm",
+    "stats": "magazine-size:20|reload-speed:-10%"
+  },
+  {
+    "name": "Segmented 9mm Mag",
+    "category": "magazine",
+    "compatibility": "mag-9mm",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Field Pistol Mag",
+    "category": "magazine",
+    "compatibility": "mag-pistol",
+    "stats": "optimal-range:30%"
+  },
+  {
+    "name": "Police Pistol Mag",
+    "category": "magazine",
+    "compatibility": "mag-pistol",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Extended Pistol Mag",
+    "category": "magazine",
+    "compatibility": "mag-pistol",
+    "stats": "magazine-size:11"
+  },
+  {
+    "name": "Speed Loading Revolver Drum",
+    "category": "magazine",
+    "compatibility": "mag-drum",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Large Suppressor 7.62",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Muzzle Brake 7.62",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Flash Hider 7.62",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Loud Vent Brake 7.62",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Compensator 7.62",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Omega 7.62 Rifle Suppresor",
+    "category": "muzzle",
+    "compatibility": "muzzle-7.62",
+    "stats": "stability:40%|optimal-range:-10%"
+  },
+  {
+    "name": "Large Suppressor 5.56",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Muzzle Brake 5.56",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Flash Hider 5.56",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Loud Vent Brake 5.56",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Compensator 5.56",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Omega 5.56 Rifle Suppressor",
+    "category": "muzzle",
+    "compatibility": "muzzle-5.56",
+    "stats": "stability:40%|optimal-range:-10%"
+  },
+  {
+    "name": "QDC Sound Suppressor",
+    "category": "muzzle",
+    "compatibility": "muzzle-qdc",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Small Suppressor .45",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Osprey 45 Suppressor",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Flash Hider .45",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Muzzle Brake .45",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "Loud Vent Brake .45",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Compensator .45",
+    "category": "muzzle",
+    "compatibility": "muzzle-45",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Small Suppressor 9mm",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Osprey 9 Suppressor",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Flash Hider 9mm",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Muzzle Brake 9mm",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "Loud Vent Brake 9mm",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Compensator 9mm",
+    "category": "muzzle",
+    "compatibility": "muzzle-9mm",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Short Grip",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Tactical Short Grip",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Handstop",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long",
+    "stats": "reload-speed:14%"
+  },
+  {
+    "name": "Vertical Grip",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long|underbarrel-short",
+    "stats": "accuracy:30%"
+  },
+  {
+    "name": "Angled Grip",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long|underbarrel-short",
+    "stats": "stability:30%"
+  },
+  {
+    "name": "Laser Pointer",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long|underbarrel-short|underbarrel-side",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Small Laser Pointer",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-long|underbarrel-short|underbarrel-side",
+    "stats": "critical-hit-chance:7%"
+  },
+  {
+    "name": "Compact Coupled Small  Laser Pointer",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-gadget",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Compact Coupled Laser Pointer",
+    "category": "underbarrel",
+    "compatibility": "underbarrel-gadget",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "Fire Select Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:40%"
+  },
+  {
+    "name": "Tension Spring Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Carbon Steel Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "accuracy:20%"
+  },
+  {
+    "name": "Bighorn Horn Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Strega Optic",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:5%"
+  },
+  {
+    "name": "Strega Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:20"
+  },
+  {
+    "name": "Strega Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Senate Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Conductor Rail",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Insulated Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:30"
+  },
+  {
+    "name": "Overcharged Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Insulated Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Eagle Eye Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Bullet Eyrie",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:30"
+  },
+  {
+    "name": "Jagged Beak",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:20%"
+  },
+  {
+    "name": "Talon Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Conductive Focal",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Voltage Generator",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:11"
+  },
+  {
+    "name": "Discharge Electrode",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:30%"
+  },
+  {
+    "name": "Dielectric Safety Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Chameleon Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Chameleon ActivCamo",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:20"
+  },
+  {
+    "name": "Chameleon Dampener",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "accuracy:20%"
+  },
+  {
+    "name": "Chameleon Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Built-in Scope (8x)",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Lightning Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Deauthentication Frame",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:20%"
+  },
+  {
+    "name": "Overclock Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "rate-of-fire:20%"
+  },
+  {
+    "name": "Dropkick Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Plagued Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "rate-of-fire:10%"
+  },
+  {
+    "name": "Plagued Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "accuracy:10%"
+  },
+  {
+    "name": "Caution Tape",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Bellows",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:35"
+  },
+  {
+    "name": "Dragon Horns",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Scales",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:20%"
+  },
+  {
+    "name": "Mag of Holding",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "N/A"
+  },
+  {
+    "name": "Gold Plated Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Solid Gold Bipod",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Pakhan Optic",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "weapon-damage:15%"
+  },
+  {
+    "name": "Pakhan Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:20"
+  },
+  {
+    "name": "Pakhan Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Pakhan Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Anti-Glint Coated Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:40%"
+  },
+  {
+    "name": "Well-Oiled Machine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Wrapped Suppressor",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Ghillie Frame",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Nemesis Digital Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:45%"
+  },
+  {
+    "name": "Nemesis Bolt",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Nemesis Barrel",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:5%"
+  },
+  {
+    "name": "Nemesis Bipod",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:5%"
+  },
+  {
+    "name": "Sacrum Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:20%"
+  },
+  {
+    "name": "Sacrum Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:10%"
+  },
+  {
+    "name": "Sacrum Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "optimal-range:20%"
+  },
+  {
+    "name": "Sacrum Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Shroud Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:25%"
+  },
+  {
+    "name": "Shroud Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:20%"
+  },
+  {
+    "name": "Shroud Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:20%"
+  },
+  {
+    "name": "Shroud Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:5%"
+  },
+  {
+    "name": "Judgement's Glare",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:40%"
+  },
+  {
+    "name": "Tuned-tension Spring",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:15%"
+  },
+  {
+    "name": "Punctuating Barrel",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Fearless Frame",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Tempest Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "stability:50%"
+  },
+  {
+    "name": "Tempest Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Engraved Drum",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Engraved Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "accuracy:20%"
+  },
+  {
+    "name": "Mosquito Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:15%"
+  },
+  {
+    "name": "Mosquito Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Liberty Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:5%"
+  },
+  {
+    "name": "Liberty Grip",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:15%"
+  },
+  {
+    "name": "Liberty Customs",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Trigger Mechanism",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "rate-of-fire:15%"
+  },
+  {
+    "name": "Bee's Focus",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "optimal-range:25%"
+  },
+  {
+    "name": "Bee's Speed",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Bee's Purpose",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Bee's Strength",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Bittersweet Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:5%"
+  },
+  {
+    "name": "Bittersweet Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:10"
+  },
+  {
+    "name": "Bittersweet Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:5%"
+  },
+  {
+    "name": "Doctor's Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:10%"
+  },
+  {
+    "name": "Home's Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Doctor's Perseverance",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Doctor's Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Merciless Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Merciless Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Merciless Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "stability:15%"
+  },
+  {
+    "name": "Merciless Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:15%"
+  },
+  {
+    "name": "Unid Custom Russian Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Ruthless Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:15%"
+  },
+  {
+    "name": "Mayhem's Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "stability:15%"
+  },
+  {
+    "name": "Ruthless Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:15%"
+  },
+  {
+    "name": "Predatory Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Gluttonous Magazines",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Devouring Maw",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:5%"
+  },
+  {
+    "name": "Wolf's Claw",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "AR Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Simulation Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:5"
+  },
+  {
+    "name": "Velocity Amplifier",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "optimal-range:10%"
+  },
+  {
+    "name": "Loop Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:15%"
+  },
+  {
+    "name": "Diamondback Dot Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:10%"
+  },
+  {
+    "name": "Diamondback Lever",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Diamondback Ornamentation",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Diamondback Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Ballistic Rail",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Riot Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:15%"
+  },
+  {
+    "name": "Fortified Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:20%"
+  },
+  {
+    "name": "Damaged Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Hardened Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "optimal-range:25%"
+  },
+  {
+    "name": "Outcast Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "accuracy:15%"
+  },
+  {
+    "name": "Modified Feed System",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:15%"
+  },
+  {
+    "name": "Stunner",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "optimal-range:25%"
+  },
+  {
+    "name": "Starlight Receptors",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Venom Glands",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Aculeus",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Chelae Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Quick Sight",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Barbed Grip Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:20"
+  },
+  {
+    "name": "Jagged Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Barbed Frame",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "stability:10%"
+  },
+  {
+    "name": "Gaze of Death",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Death's Hand",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Death's Maw",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Kiss of Death",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "melee-damage:500%"
+  },
+  {
+    "name": "Infinity Sights",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Serpent Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "reload-speed:25%"
+  },
+  {
+    "name": "Weather-Resistant Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "rate-of-fire:10%"
+  },
+  {
+    "name": "Light Heavy-Duty Grip",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Oxpecker Optic",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "optimal-range:50%"
+  },
+  {
+    "name": "Oxpecker Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "magazine-size:10"
+  },
+  {
+    "name": "Oxpecker Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Modified Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Chatterbox Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:10"
+  },
+  {
+    "name": "Chatterbox Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:15%"
+  },
+  {
+    "name": "Chatterbox Canister",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Agitator Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Agitator Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:20"
+  },
+  {
+    "name": "Agitator Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "swap-speed:50%"
+  },
+  {
+    "name": "Whiplash Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:10%"
+  },
+  {
+    "name": "Whiplash Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Whiplash Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "swap-speed:50%"
+  },
+  {
+    "name": "Caduceus Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:10%"
+  },
+  {
+    "name": "Caduceus Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:40"
+  },
+  {
+    "name": "Caduceus Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:5%"
+  },
+  {
+    "name": "Caduceus Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "critical-hit-damage:5%"
+  },
+  {
+    "name": "Underboss Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Prima Donna Scope",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:25%"
+  },
+  {
+    "name": "Prima Donna Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:7.5%"
+  },
+  {
+    "name": "Prima Donna Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "headshot-damage:20%"
+  },
+  {
+    "name": "Prima Donna Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:7.5%"
+  },
+  {
+    "name": "Fafnir Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Fafnir Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:5"
+  },
+  {
+    "name": "Fafnir Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Clean Cut Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Harness Buckle Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:10"
+  },
+  {
+    "name": "Sawtooth Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "reload-speed:10%"
+  },
+  {
+    "name": "Helve Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "weapon-handling:10%"
+  },
+  {
+    "name": "Vertigo Optics",
+    "category": "optics",
+    "compatibility": "N/A",
+    "stats": "critical-hit-chance:15%"
+  },
+  {
+    "name": "Vertigo Magazine",
+    "category": "magazine",
+    "compatibility": "N/A",
+    "stats": "magazine-size:50"
+  },
+  {
+    "name": "Vertigo Muzzle",
+    "category": "muzzle",
+    "compatibility": "N/A",
+    "stats": "rate-of-fire:10%"
+  },
+  {
+    "name": "Vertigo Underbarrel",
+    "category": "underbarrel",
+    "compatibility": "N/A",
+    "stats": "reload-speed:15%"
+  }
+]
