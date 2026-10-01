@@ -39,3 +39,7 @@ The owner's screenshot image(20261001-153459).png supersedes the broad stats reg
 ## Gear mods — 1 October 2026
 
 The Attributes page's Gear Mods / Вставки subsection reproduces the owner's screenshot image(20261001-154301).png: 17 entries with supplied values. Per the owner’s follow-up, Protection from Elites +12% is omitted; only +13% is displayed. The screenshot's «Сопротивление заморозке» is retained as supplied and translated literally as Freeze Resistance; these labels are not asserted to be official English localization. No database changes.
+
+## Prototype comparisons — 1 October 2026
+
+At the owner's request, all 15 gear core/secondary values show a purple prototype comparison using exactly base × 1.5. Fractional flat results are retained (4,925 → 7,387.5; 18,935 → 28,402.5), without rounding to a whole number. This is the supplied formula, not independent verification of in-game prototype rolls. Gear Mods are outside the supplied screenshot and retain their original values.
