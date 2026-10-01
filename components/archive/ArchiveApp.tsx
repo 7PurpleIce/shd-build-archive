@@ -8,6 +8,7 @@ import { useState } from "react";
 import { OwnerProvider, OwnerAuth, useOwner } from "./OwnerAuth";
 import { assetPath } from "@/lib/supabase";
 import {
+  SlidersHorizontal,
   Layers3,
   LayoutGrid,
   Zap,
@@ -18,6 +19,7 @@ import {
 } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Catalog } from "./Catalog";
+import { Attributes } from "./Attributes";
 import { Builds } from "./Builds";
 import { Talents } from "./Talents";
 import { Augments } from "./Augments";
@@ -29,6 +31,7 @@ const sectionIcons = {
   sets: Layers3,
   talents: Zap,
   builds: LayoutGrid,
+  attributes: SlidersHorizontal,
   augments: Atom,
   expertise: Calculator,
   traders: Store,
@@ -78,6 +81,7 @@ function ArchiveContent() {
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>
+          <TabsContent value="attributes"><Attributes /></TabsContent>
           <TabsContent value="builds">
             <Builds canManage={canManage} />
           </TabsContent>

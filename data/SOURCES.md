@@ -27,3 +27,7 @@ Expertise material costs for levels 1–30 are extracted from hi-dep's `data/ite
 ## SHD masthead emblem
 
 SHD phoenix emblem (Ubisoft / Massive), sourced from The Division Zone: https://division.zone/the-division-shd/ . Original image: https://division.zone/wp-content/uploads/2014/08/strategic-homeland-division-shd-logo-300x300.png . Transparent PNG derivative in public/shd-phoenix.png; background removed with the built-in image tool. Original embedded source retained in public/shd-phoenix.svg.
+
+## Attributes reference — 1 October 2026
+
+All 61 distinct stat IDs from div2hub/game-data `stats.csv` (blob 6fa841f026f6eae73be23567cd35e81afa24b633), CC BY 4.0. `attributes.csv` (blob 3e0d6ad619e8245f3a2b425a0b17377bfc4e6c05) retained for equipment context. Original snapshots retained in data/source. Display names expanded for DTOC and Health Damage; Russian labels are editorial translations, not a claim of verbatim official localization. Grouping is editorial, and only Weapon Damage, Armor and Skill Tier are presented as gear core attributes. The remaining list includes weapon, mod and bonus stats, not just recalibratable gear attributes; skill-variant-specific parameters and talent mechanics are not an exhaustive part of this upstream stat registry. No roll maxima or caps are asserted.

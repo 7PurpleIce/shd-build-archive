@@ -1,0 +1,490 @@
+[
+  {
+    "id": "weapon-damage",
+    "value_formats": "percent",
+    "en": "Weapon Damage",
+    "ru": "Урон от оружия",
+    "group": "offense",
+    "core": true
+  },
+  {
+    "id": "assault-rifle-damage",
+    "value_formats": "percent",
+    "en": "Assault Rifle Damage",
+    "ru": "Урон от штурмовых винтовок",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "lmg-damage",
+    "value_formats": "percent",
+    "en": "LMG Damage",
+    "ru": "Урон от пулемётов",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "smg-damage",
+    "value_formats": "percent",
+    "en": "SMG Damage",
+    "ru": "Урон от пистолетов-пулемётов",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "rifle-damage",
+    "value_formats": "percent",
+    "en": "Rifle Damage",
+    "ru": "Урон от винтовок",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "marksman-rifle-damage",
+    "value_formats": "percent",
+    "en": "Marksman Rifle Damage",
+    "ru": "Урон от снайперских винтовок",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "shotgun-damage",
+    "value_formats": "percent",
+    "en": "Shotgun Damage",
+    "ru": "Урон от дробовиков",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "pistol-damage",
+    "value_formats": "percent",
+    "en": "Pistol Damage",
+    "ru": "Урон от пистолетов",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "health-damage",
+    "value_formats": "percent",
+    "en": "Damage to Health",
+    "ru": "Урон здоровью",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "dtoc",
+    "value_formats": "percent",
+    "en": "Damage to Targets Out of Cover",
+    "ru": "Урон целям вне укрытия",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "critical-hit-chance",
+    "value_formats": "percent",
+    "en": "Critical Hit Chance",
+    "ru": "Вероятность критического попадания",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "critical-hit-damage",
+    "value_formats": "percent",
+    "en": "Critical Hit Damage",
+    "ru": "Урон от критического попадания",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "headshot-damage",
+    "value_formats": "percent",
+    "en": "Headshot Damage",
+    "ru": "Урон от попадания в голову",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "damage-to-armor",
+    "value_formats": "percent",
+    "en": "Damage to Armor",
+    "ru": "Урон броне",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "weapon-handling",
+    "value_formats": "percent",
+    "en": "Weapon Handling",
+    "ru": "Удобство обращения с оружием",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "magazine-size",
+    "value_formats": "percent|flat",
+    "en": "Magazine Size",
+    "ru": "Размер магазина",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "swap-speed",
+    "value_formats": "percent",
+    "en": "Swap Speed",
+    "ru": "Скорость смены оружия",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "burn-damage",
+    "value_formats": "percent",
+    "en": "Burn Damage",
+    "ru": "Урон от горения",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "burn-duration",
+    "value_formats": "percent",
+    "en": "Burn Duration",
+    "ru": "Длительность горения",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "explosive-damage",
+    "value_formats": "percent",
+    "en": "Explosive Damage",
+    "ru": "Урон от взрывов",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "signature-weapon-damage",
+    "value_formats": "percent",
+    "en": "Signature Weapon Damage",
+    "ru": "Урон от особого оружия",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "increased-threat",
+    "value_formats": "percent",
+    "en": "Increased Threat",
+    "ru": "Повышение угрозы",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "ammo-capacity",
+    "value_formats": "percent",
+    "en": "Ammo Capacity",
+    "ru": "Запас боеприпасов",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "melee-damage",
+    "value_formats": "percent",
+    "en": "Melee Damage",
+    "ru": "Урон в ближнем бою",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "electronic-damage",
+    "value_formats": "percent",
+    "en": "Electronic Damage",
+    "ru": "Урон электронике",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "armor",
+    "value_formats": "flat",
+    "en": "Armor",
+    "ru": "Броня",
+    "group": "defense",
+    "core": true
+  },
+  {
+    "id": "armor-regeneration",
+    "value_formats": "percent|flat",
+    "en": "Armor Regeneration",
+    "ru": "Восстановление брони",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "hazard-protection",
+    "value_formats": "percent",
+    "en": "Hazard Protection",
+    "ru": "Защита от негативных эффектов",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "health",
+    "value_formats": "percent|flat",
+    "en": "Health",
+    "ru": "Здоровье",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "explosive-resistance",
+    "value_formats": "percent",
+    "en": "Explosive Resistance",
+    "ru": "Устойчивость к взрывам",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "incoming-repairs",
+    "value_formats": "percent",
+    "en": "Incoming Repairs",
+    "ru": "Получаемое восстановление",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "armor-on-kill",
+    "value_formats": "percent|flat",
+    "en": "Armor on Kill",
+    "ru": "Броня за убийство",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "total-armor",
+    "value_formats": "percent",
+    "en": "Total Armor",
+    "ru": "Общая броня",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "health-on-kill",
+    "value_formats": "percent",
+    "en": "Health on Kill",
+    "ru": "Здоровье за убийство",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "shock-resistance",
+    "value_formats": "percent",
+    "en": "Shock Resistance",
+    "ru": "Устойчивость к шоку",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "disrupt-resistance",
+    "value_formats": "percent",
+    "en": "Disrupt Resistance",
+    "ru": "Устойчивость к подавлению",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "pulse-resistance",
+    "value_formats": "percent",
+    "en": "Pulse Resistance",
+    "ru": "Устойчивость к импульсу",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "reduced-threat",
+    "value_formats": "percent",
+    "en": "Reduced Threat",
+    "ru": "Снижение угрозы",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "damage-resistance",
+    "value_formats": "percent",
+    "en": "Damage Resistance",
+    "ru": "Сопротивление урону",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "protection-from-elites",
+    "value_formats": "percent",
+    "en": "Protection from Elites",
+    "ru": "Защита от элиты",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "burn-resistance",
+    "value_formats": "percent",
+    "en": "Burn Resistance",
+    "ru": "Устойчивость к горению",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "bleed-resistance",
+    "value_formats": "percent",
+    "en": "Bleed Resistance",
+    "ru": "Устойчивость к кровотечению",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "blind-deaf-resistance",
+    "value_formats": "percent",
+    "en": "Blind/Deaf Resistance",
+    "ru": "Устойчивость к ослеплению и оглушению",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "disorient-resistance",
+    "value_formats": "percent",
+    "en": "Disorient Resistance",
+    "ru": "Устойчивость к дезориентации",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "ensnare-resistance",
+    "value_formats": "percent",
+    "en": "Ensnare Resistance",
+    "ru": "Устойчивость к обездвиживанию",
+    "group": "defense",
+    "core": false
+  },
+  {
+    "id": "skill-tier",
+    "value_formats": "flat",
+    "en": "Skill Tier",
+    "ru": "Уровень навыка",
+    "group": "skill",
+    "core": true
+  },
+  {
+    "id": "reload-speed",
+    "value_formats": "percent",
+    "en": "Reload Speed",
+    "ru": "Скорость перезарядки",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "stability",
+    "value_formats": "percent",
+    "en": "Stability",
+    "ru": "Стабильность",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "accuracy",
+    "value_formats": "percent",
+    "en": "Accuracy",
+    "ru": "Точность",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "optimal-range",
+    "value_formats": "percent",
+    "en": "Optimal Range",
+    "ru": "Оптимальная дальность",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "rate-of-fire",
+    "value_formats": "percent",
+    "en": "Rate of Fire",
+    "ru": "Скорострельность",
+    "group": "offense",
+    "core": false
+  },
+  {
+    "id": "skill-haste",
+    "value_formats": "percent",
+    "en": "Skill Haste",
+    "ru": "Ускорение навыков",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "skill-damage",
+    "value_formats": "percent",
+    "en": "Skill Damage",
+    "ru": "Урон от навыков",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "repair-skills",
+    "value_formats": "percent",
+    "en": "Repair Skills",
+    "ru": "Восстановление навыками",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "status-effects",
+    "value_formats": "percent",
+    "en": "Status Effects",
+    "ru": "Негативные эффекты",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "skill-duration",
+    "value_formats": "percent",
+    "en": "Skill Duration",
+    "ru": "Длительность навыков",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "skill-efficiency",
+    "value_formats": "percent",
+    "en": "Skill Efficiency",
+    "ru": "Эффективность навыков",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "skill-health",
+    "value_formats": "percent",
+    "en": "Skill Health",
+    "ru": "Прочность навыков",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "shield-health",
+    "value_formats": "percent",
+    "en": "Shield Health",
+    "ru": "Прочность щита",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "scanner-pulse-haste",
+    "value_formats": "percent",
+    "en": "Scanner Pulse Haste",
+    "ru": "Ускорение сканирующего импульса",
+    "group": "skill",
+    "core": false
+  },
+  {
+    "id": "outgoing-healing",
+    "value_formats": "percent",
+    "en": "Outgoing Healing",
+    "ru": "Исходящее лечение",
+    "group": "skill",
+    "core": false
+  }
+]

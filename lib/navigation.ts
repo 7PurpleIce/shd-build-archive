@@ -1,6 +1,7 @@
 export const ARCHIVE_SECTIONS = [
   { id: "sets", en: "Brands & sets", ru: "Бренды и сеты" },
   { id: "talents", en: "Talents", ru: "Таланты" },
+  { id: "attributes", en: "Attributes", ru: "Статы" },
   { id: "builds", en: "Builds", ru: "Билды" },
   { id: "augments", en: "Augments", ru: "Аугменты" },
   { id: "expertise", en: "Expertise calculator", ru: "Калькулятор мастерства" },
