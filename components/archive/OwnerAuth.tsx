@@ -4,17 +4,21 @@ import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/u
 import {DropdownMenu,DropdownMenuTrigger,DropdownMenuContent,DropdownMenuLabel,DropdownMenuSeparator,DropdownMenuItem} from '@/components/ui/dropdown-menu';
 import {supabase} from '@/lib/supabase';
 import {useLocale} from './Locale';
+import {ownerCheckStarted} from '@/lib/archive-view-state';
 const OwnerContext=createContext({canManage:false,signedIn:false,loading:true});
 export function OwnerProvider({children}:{children:React.ReactNode}){
- const[state,setState]=useState({canManage:false,signedIn:false,loading:true});const revision=useRef(0);
+ const[state,setState]=useState({canManage:false,signedIn:false,loading:true});const revision=useRef(0);const currentUserId=useRef<string|undefined>(undefined);
  useEffect(()=>{
   if(!supabase){setState({canManage:false,signedIn:false,loading:false});return;}
   const client=supabase;
   async function resolve(userId?:string){
-   const current=++revision.current;setState({canManage:false,signedIn:!!userId,loading:!!userId});
+   const current=++revision.current;const previousUserId=currentUserId.current;currentUserId.current=userId;
+   setState(previous=>ownerCheckStarted(previous,previousUserId,userId));
    if(!userId)return;
-   const {data,error}=await client.from('archive_owners').select('user_id').eq('user_id',userId).maybeSingle();
-   if(current===revision.current)setState({canManage:!error&&!!data,signedIn:true,loading:false});
+   try{
+    const {data,error}=await client.from('archive_owners').select('user_id').eq('user_id',userId).maybeSingle();
+    if(current===revision.current)setState({canManage:!error&&!!data,signedIn:true,loading:false});
+   }catch{if(current===revision.current)setState({canManage:false,signedIn:true,loading:false});}
   }
   // Avoid awaiting database requests inside an Auth state-change callback.
   const {data:{subscription}}=client.auth.onAuthStateChange((_event,session)=>{void resolve(session?.user.id)});

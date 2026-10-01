@@ -13,12 +13,23 @@ import { Expertise } from "./Expertise";
 import { Traders } from "./Traders";
 import { Activities } from "./Activities";
 import { LocaleProvider, LanguageSwitch, useLocale } from "./Locale";
+import {accessibleSection,readSection,saveSection} from "@/lib/archive-view-state";
 const DamageCalculator = lazy(() => import("./DamageCalculator"));
 function ArchiveContent() {
-  const { canManage } = useOwner();
+  const owner = useOwner();
+  const { canManage, loading } = owner;
   const { t } = useLocale();
-  const [tab, setTab] = useState("sets");
-  useEffect(() => { if (!canManage && tab === "damage") setTab("sets"); }, [canManage, tab]);
+  const [tab, setTab] = useState(readSection);
+  const [calculatorVisited, setCalculatorVisited] = useState(false);
+  useEffect(() => {
+    const next = accessibleSection(tab, owner);
+    if (next !== tab) { setTab(next); saveSection(next); }
+    else if (tab !== "damage" || canManage) saveSection(tab);
+  }, [canManage, loading, tab]);
+  useEffect(() => {
+    if (!canManage && !loading) setCalculatorVisited(false);
+    else if (canManage && tab === "damage") setCalculatorVisited(true);
+  }, [canManage, loading, tab]);
   return (
     <div className="archive-app">
       <header className="masthead">
@@ -42,7 +53,8 @@ function ArchiveContent() {
       <main>
         <Tabs value={tab} onValueChange={setTab}>
           <ArchiveNavigation activeTab={tab} />
-          {canManage && <TabsContent value="damage"><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}><DamageCalculator /></Suspense></TabsContent>}
+          {tab === "damage" && loading && !canManage && <p role="status">{t("Checking access…", "Проверка доступа…")}</p>}
+          {canManage && <TabsContent value="damage" forceMount hidden={tab !== "damage"}><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}>{(calculatorVisited || tab === "damage") && <DamageCalculator />}</Suspense></TabsContent>}
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>
