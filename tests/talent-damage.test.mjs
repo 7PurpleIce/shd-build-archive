@@ -46,3 +46,41 @@ test('named perfect talents map to the actual source slot and brand, including s
  assert.ok(selectableTalents('backpack','rifle').some(t=>t.name==='Perfect Tamper Proof'));
  for(const kind of ['chest','backpack'])for(const t of selectableTalents(kind,'rifle').filter(t=>t.perfect))assert.equal(namedTalentGear(kind,t.name).length,1,t.name);
 });
+
+const {setTalentRule,evaluateSetRule}=load('set-effects');
+const {initialTalentState,baseCalculatorBonuses}=load('calculator-defaults');
+const setRule=(id,chest=false,backpack=false)=>setTalentRule(catalog.sets.find(s=>s.id===id),chest,backpack,30);
+test('selection initializes ordinary and perfect talent stacks without manual damage bonuses',()=>{
+ for(const [name,max] of [['Obliterate',20],['Perfect Obliterate',24]]){
+  const state=initialTalentState(get(name));assert.equal(state.active,true);assert.equal(state.values.stacks,max);
+  assert.equal(evaluateTalent(get(name),state.active,state.values,context).bonuses.twd,max);
+ }
+ assert.equal(initialTalentState(undefined).active,false);
+ assert.equal(baseCalculatorBonuses().chd,25);assert.equal(baseCalculatorBonuses().wd,0);
+});
+test('set upgrades use source limits, preserve zero stacks and disable cleanly',()=>{
+ const basic=setRule('striker-s-battlegear'),upgraded=setRule('striker-s-battlegear',true,true);
+ assert.equal(basic.controls[0].max,100);assert.equal(upgraded.controls[0].max,200);
+ close(evaluateSetRule(basic,true,{},context).amps[0],65);
+ close(evaluateSetRule(upgraded,true,{},context).amps[0],180);
+ assert.equal(evaluateSetRule(upgraded,true,{stacks:0},context).amps[0],0);
+ assert.equal(evaluateSetRule(upgraded,false,{},context).amps.length,0);
+ assert.equal(evaluateSetRule(basic,true,{stacks:200},context).amps[0],65);
+ assert.equal(evaluateSetRule(setRule('future-initiative',true),true,{},context).bonuses.twd,25);
+ assert.equal(evaluateSetRule(setRule('ongoing-directive',true),true,{},context).amps[0],60);
+ assert.equal(evaluateSetRule(setRule('concentrated-company',false,true),true,{},context).bonuses.wd,210);
+ assert.equal(setRule('heartbreaker',true).controls[0].max,100);
+ assert.equal(setRule('tipping-scales',true).controls[0].max,75);
+});
+test('all modeled source set variants produce finite values and next-shot sets do not inflate sustained DPS',()=>{
+ for(const s of catalog.sets.filter(s=>s.kind==='set'))for(const chest of [false,true])for(const backpack of [false,true]){
+  const rule=setTalentRule(s,chest,backpack,30);if(!rule)continue;
+  for(const control of rule.controls)assert.ok(Number.isFinite(control.max)&&control.max>0,s.id);
+  const effect=evaluateSetRule(rule,true,{},context);
+  for(const n of [...Object.values(effect.bonuses),...effect.amps])assert.ok(Number.isFinite(n),s.id);
+ }
+ const aces=evaluateSetRule(setRule('aces-eights',true),true,{},context);
+ close(talentDamage(input,[aces]).body,talentDamage(input,[]).body*2);
+ close(talentDamage(input,[aces]).sustained,talentDamage(input,[]).sustained);
+ assert.equal(evaluateSetRule(setRule('breaking-point'),true,{}, {...context,weaponType:'smg'}).bonuses.wd,undefined);
+});
