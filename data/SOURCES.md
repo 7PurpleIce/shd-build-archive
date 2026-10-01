@@ -31,3 +31,7 @@ SHD phoenix emblem (Ubisoft / Massive), sourced from The Division Zone: https://
 ## Attributes reference — 1 October 2026
 
 All 61 distinct stat IDs from div2hub/game-data `stats.csv` (blob 6fa841f026f6eae73be23567cd35e81afa24b633), CC BY 4.0. `attributes.csv` (blob 3e0d6ad619e8245f3a2b425a0b17377bfc4e6c05) retained for equipment context. Original snapshots retained in data/source. Display names expanded for DTOC and Health Damage; Russian labels are editorial translations, not a claim of verbatim official localization. Grouping is editorial, and only Weapon Damage, Armor and Skill Tier are presented as gear core attributes. The remaining list includes weapon, mod and bonus stats, not just recalibratable gear attributes; skill-variant-specific parameters and talent mechanics are not an exhaustive part of this upstream stat registry. No roll maxima or caps are asserted.
+
+## Attributes scope correction — 1 October 2026
+
+The owner's screenshot image(20261001-153459).png supersedes the broad stats registry for the Attributes page. Display exactly 3 gear cores and 12 secondary gear attributes, in screenshot order, with its normal maximum values and Russian labels (including «Эргономичность», «Навыки ремонта», «Убыстрение»). Armor regeneration is per second. Weapon/mod/brand-only stats are excluded from this page. Raw upstream snapshots remain archived as references.

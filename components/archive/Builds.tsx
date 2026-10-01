@@ -1,15 +1,15 @@
 "use client";
 import { SectionHeading } from "./SectionHeading";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Plus,
   ImagePlus,
-  ChevronDown,
-  X,
+  Maximize2,
   LoaderCircle,
   Pencil,
   Trash2,
 } from "lucide-react";
+import { BuildViewDialog } from "./BuildViewDialog";
 import { BuildEditorDialog } from "./BuildEditorDialog";
 import { DeleteBuildDialog } from "./DeleteBuildDialog";
 import "./build-actions.css";
@@ -34,6 +34,7 @@ export function Builds({ canManage }: { canManage: boolean }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [open, setOpen] = useState(false);
+  const viewTrigger = useRef<HTMLButtonElement | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState("");
@@ -135,7 +136,7 @@ export function Builds({ canManage }: { canManage: boolean }) {
             )
           : t("Build saved.", "Билд сохранён."),
       );
-      setSelected(build.id);
+      setSelected(null);
       setQuery("");
       setTagFilter([]);
       setOpen(false);
@@ -246,21 +247,17 @@ export function Builds({ canManage }: { canManage: boolean }) {
             return (
               <div
                 key={build.id}
-                className={
-                  selected === build.id ? "build-item expanded" : "build-item"
-                }
+                className="build-item"
               >
                 <button
                   className="build-card"
-                  onClick={() =>
-                    setSelected(selected === build.id ? null : build.id)
-                  }
-                  aria-expanded={selected === build.id}
+                  onClick={(event) => {viewTrigger.current=event.currentTarget;setSelected(build.id)}}
+                  aria-haspopup="dialog"
                 >
                   <img src={buildImageUrl(build.image_key)} alt={text.title} />
                   <span>
                     <strong>{text.title}</strong>
-                    <ChevronDown size={18} />
+                    <Maximize2 size={18} />
                   </span>
                 </button>
                 <BuildTagBadges tags={build.tags ?? []} />
@@ -291,43 +288,13 @@ export function Builds({ canManage }: { canManage: boolean }) {
                     </button>
                   </div>
                 )}
-                {selected === build.id && (
-                  <div className="build-details">
-                    <a
-                      href={buildImageUrl(build.image_key)}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={t(
-                        "Open full-size screenshot",
-                        "Открыть скриншот в полном размере",
-                      )}
-                    >
-                      <img
-                        src={buildImageUrl(build.image_key)}
-                        alt={text.title}
-                      />
-                    </a>
-                    <div>
-                      <p className="eyebrow">
-                        {t("BUILD DETAILS", "ОПИСАНИЕ БИЛДА")}
-                      </p>
-                      <h2>{text.title}</h2>
-                      <p className="long-copy">{text.description}</p>
-                      <button
-                        className="text-button"
-                        onClick={() => setSelected(null)}
-                      >
-                        <X size={15} />
-                        {t("Collapse", "Свернуть")}
-                      </button>
-                    </div>
-                  </div>
-                )}
+
               </div>
             );
           })}
         </div>
       )}
+      <BuildViewDialog build={builds.find(build=>build.id===selected)??null} onClose={()=>setSelected(null)} returnFocus={()=>viewTrigger.current?.focus()} />
       <BuildEditorDialog
         open={canManage && open}
         onOpenChange={setOpen}

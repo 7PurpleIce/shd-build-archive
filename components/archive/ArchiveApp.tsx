@@ -1,23 +1,9 @@
 "use client";
-import {
-  ARCHIVE_SECTIONS,
-  sectionNumber,
-  type ArchiveSection,
-} from "@/lib/navigation";
+import { ArchiveNavigation } from "./ArchiveNavigation";
 import { useState } from "react";
 import { OwnerProvider, OwnerAuth, useOwner } from "./OwnerAuth";
 import { assetPath } from "@/lib/supabase";
-import {
-  SlidersHorizontal,
-  Layers3,
-  LayoutGrid,
-  Zap,
-  Atom,
-  Calculator,
-  Store,
-  Swords,
-} from "lucide-react";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { Catalog } from "./Catalog";
 import { Attributes } from "./Attributes";
 import { Builds } from "./Builds";
@@ -27,16 +13,6 @@ import { Expertise } from "./Expertise";
 import { Traders } from "./Traders";
 import { Activities } from "./Activities";
 import { LocaleProvider, LanguageSwitch, useLocale } from "./Locale";
-const sectionIcons = {
-  sets: Layers3,
-  talents: Zap,
-  builds: LayoutGrid,
-  attributes: SlidersHorizontal,
-  augments: Atom,
-  expertise: Calculator,
-  traders: Store,
-  activities: Swords,
-} satisfies Record<ArchiveSection, typeof Layers3>;
 function ArchiveContent() {
   const { canManage } = useOwner();
   const { t } = useLocale();
@@ -63,21 +39,7 @@ function ArchiveContent() {
       </header>
       <main>
         <Tabs value={tab} onValueChange={setTab}>
-          <TabsList
-            className="main-nav"
-            aria-label={t("Site sections", "Разделы сайта")}
-          >
-            {ARCHIVE_SECTIONS.map((section) => {
-              const Icon = sectionIcons[section.id];
-              return (
-                <TabsTrigger key={section.id} value={section.id}>
-                  <Icon />
-                  {t(section.en, section.ru)}
-                  <span>{sectionNumber(section.id)}</span>
-                </TabsTrigger>
-              );
-            })}
-          </TabsList>
+          <ArchiveNavigation activeTab={tab} />
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>
