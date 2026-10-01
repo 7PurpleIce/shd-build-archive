@@ -105,6 +105,7 @@ function ArchiveContent() {
           </a>{" "}
           · © Ubisoft / Massive
         </span>
+        <span className="footer-creator">{t("Creator: ", "Создатель: ")}7BlackIce_</span>
       </footer>
     </div>
   );

@@ -34,3 +34,5 @@
 .augment-cost-card,.augment-progression,.build-dialog{border-radius:var(--archive-card-radius)}
 .build-item.expanded>.build-card{border-radius:var(--archive-card-radius) var(--archive-card-radius) 0 0}
 .build-details{border-radius:0 0 var(--archive-card-radius) var(--archive-card-radius)}
+
+.footer-creator{margin-left:auto;align-self:flex-end;text-align:right}
