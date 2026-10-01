@@ -1,11 +1,12 @@
 import {useId,type CSSProperties} from 'react';
 import {Watch} from 'lucide-react';
+import {CalculatorPanelHeading} from './CalculatorPanelHeading';
 import {WATCH_STATS,WATCH_CAP,clampWatchPoints,watchBonus,type WatchPoints} from '@/lib/shd-watch';
 import {useLocale} from './Locale';
 export function WatchStats({value,onChange}:{value:WatchPoints;onChange:(value:WatchPoints)=>void}){
  const {t,locale}=useLocale();const prefix=useId();
  const format=(n:number)=>new Intl.NumberFormat(locale,{maximumFractionDigits:1}).format(n);
- return <section className="damage-panel damage-watch"><div className="damage-block-title"><Watch size={23}/><div><span>05 / SHD</span><h2>{t('SHD watch stats','Уровень часов')}</h2></div></div>
+ return <section className="damage-panel damage-watch"><CalculatorPanelHeading icon={Watch} label="05 / SHD" title={t('SHD watch stats','Уровень часов')} action={<button type="button" className="watch-max watch-max-all" disabled={WATCH_STATS.every(stat=>clampWatchPoints(value[stat.id]||0)===WATCH_CAP)} aria-label={t('Max all watch stats','Максимум всех статов часов')} onClick={()=>onChange(Object.fromEntries(WATCH_STATS.map(stat=>[stat.id,WATCH_CAP])))}>MAX</button>}/>
  <p className="damage-help">{t('0–50 points per stat. MAX fills that stat to 50 points; the resulting percentage is shown beside it.','От 0 до 50 очков на характеристику. MAX выставляет 50 очков; рядом показан получаемый процент бонуса.')}</p>
  {([['offense','Offense','Атака'],['defense','Defense','Защита'],['skill','Skills','Навыки'],['handling','Handling','Обращение с оружием']] as const).map(([group,en,ru])=><div className={`watch-group watch-${group}`} key={group}><h3>{t(en,ru)}</h3><div className="watch-grid">{WATCH_STATS.filter(s=>s.group===group).map(stat=>{
  const points=clampWatchPoints(value[stat.id]||0);const id=prefix+'-'+stat.id;
