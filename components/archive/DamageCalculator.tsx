@@ -1,13 +1,14 @@
+import type {CalculatorLoadRequest} from '@/lib/build-calculator-links';
 import {exoticGear,selectedExoticGear,exoticRollOptions,selectExoticGear,exoticTalent,exoticEffect,gearBrandCounts} from '@/lib/exotic-gear';
 import {namedGear,selectedNamedGear,gearAttribute,gearStatId,isNamedAttribute,gearModCount,selectNamedGear,gearRollBonuses,type GearItem} from '@/lib/named-gear';
 import {CalculatorPanel} from './CalculatorPanel';
-import {CALCULATOR_PRESETS} from '@/lib/calculator-presets';
+import {CALCULATOR_PRESETS,findCalculatorPreset} from '@/lib/calculator-presets';
 import {EventBonuses} from './EventBonuses';
 import {eventBonusEffect,type EventBonus} from '@/lib/event-bonuses';
 import {SpecializationStats} from './SpecializationStats';
 import {blankSpecialization,specializationEffect} from '@/lib/specializations';
 import {formatGameText} from '@/lib/number-format';
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
 import {Crosshair, Shield, Sparkles, ChartNoAxesCombined, RotateCcw, ScanFace, Shirt, Backpack, Hand, Package, Footprints} from 'lucide-react';
 import {CalculatorPanelHeading} from './CalculatorPanelHeading';
 import {CalculatorNumber} from './CalculatorNumber';
@@ -41,11 +42,11 @@ type Roll={id:string;proto:boolean;value?:number};
 type Gear=GearItem;
 const blankGear=():Gear[]=>slots.map(()=>({brand:'',core:{id:'weapon-damage',proto:false},minor:[{id:'',proto:false},{id:'',proto:false}],mod:''}));
 const statKey:Record<string,string>={'weapon-damage':'wd','critical-hit-chance':'chc','critical-hit-damage':'chd','headshot-damage':'hsd','weapon-handling':'handling'};
-export default function DamageCalculator(){const {canUseCalculator}=useOwner();return canUseCalculator?<CalculatorBody/>:null;}
-function CalculatorBody(){
+export default function DamageCalculator({loadRequest}:{loadRequest?:CalculatorLoadRequest|null}){const {canUseCalculator}=useOwner();return canUseCalculator?<CalculatorBody loadRequest={loadRequest}/>:null;}
+function CalculatorBody({loadRequest}:{loadRequest?:CalculatorLoadRequest|null}){
  const {t,locale}=useLocale();
  const [presetId,setPresetId]=useState<string>('');
- const selectedPreset=CALCULATOR_PRESETS.find(p=>p.id===presetId);
+ const selectedPreset=findCalculatorPreset(presetId);
  const [weaponId,setWeaponId]=useState(weapons.find(w=>w.name==='FAMAS 2010')!.id);
  const weapon=weapons.find(w=>w.id===weaponId)!;
  const [attachments,setAttachments]=useState<Partial<Record<WeaponModSlot,string>>>({});
@@ -147,10 +148,11 @@ function CalculatorBody(){
  </div>;
  }
  function applyPreset(id:string){
- const preset=CALCULATOR_PRESETS.find(p=>p.id===id);if(!preset)return;setPresetId(id);
- const p=preset.create();setWeaponId(p.weaponId);setWeaponRolls(p.weaponRolls);setGear(p.gear);setWatch(p.watch);setSpecialization(p.specialization);setExpertise(p.expertise);setTalents(p.talents);setActive(p.active);setTalentValues(p.talentValues);setSetStates(p.setStates);setEventBonuses(p.eventBonuses);setArmored(p.armored);setOutside(p.outside);setHeadshots(p.headshots);setAttachments({});setQuery('');setOverride(null);
+ const preset=findCalculatorPreset(id);if(!preset)return;setPresetId(id);
+ const p=preset.create();setWeaponId(p.weaponId);setWeaponRolls(p.weaponRolls);setGear(p.gear);setWatch(p.watch);setSpecialization(p.specialization);setExpertise(p.expertise);setTalents(p.talents);setActive(p.active);setTalentValues(p.talentValues);setSetStates(p.setStates);setEventBonuses(p.eventBonuses);setArmored(p.armored);setOutside(p.outside);setHeadshots(p.headshots);setAttachments(p.attachments);setQuery('');setOverride(p.baseOverride);setEditingSlot(0);
  }
- return <div className="damage-page">
+ useEffect(()=>{if(!loadRequest)return;applyPreset(loadRequest.presetId);const frame=requestAnimationFrame(()=>{const root=document.getElementById('damage-calculator');root?.focus({preventScroll:true});root?.scrollIntoView({block:'start'});});return ()=>cancelAnimationFrame(frame);},[loadRequest]);
+ return <div className="damage-page" id="damage-calculator" tabIndex={-1}>
  <SectionHeading section="damage" eyebrow={t('TEST LAB · V1 · PVE','ТЕСТОВАЯ ЛАБОРАТОРИЯ · V1 · PVE')} title={t('Damage calculator','Калькулятор урона')}/>
  <p className="damage-notice">{t('Experimental PvE calculation at optimal range, with all shots landing. Weapon base stats are provisional and editable. No PvP normalization or damage falloff. In-game and calculated damage may differ slightly — around 0.00004%, possibly due to in-game rounding. For prototype Skill Tier values, use the table below.','Тестовый расчёт PvE на оптимальной дистанции, при попадании всех выстрелов. Базовые параметры оружия требуют сверки; урон можно изменить. Без нормализации PvP и падения урона с расстоянием. Урон в игре и калькуляторе может незначительно отличаться — примерно на 0,00004%, возможно из-за особенностей округления в игре. Соответствие обычных и прототипных уровней навыка приведено в таблице ниже.')}</p>
  <div className="damage-tier-reference"><table><caption>{t('Skill Tier: standard / prototype','Уровень навыка: обычный / прототипный')}</caption><thead><tr><th scope="col">{t('Standard','Обычный')}</th>{[1,2,3,4].map(n=><th scope="col" key={n}>{n}</th>)}</tr></thead><tbody><tr><th scope="row">{t('Prototype','Прототипный')}</th>{[1,3,4,6].map((n,i)=><td key={i}>{n}</td>)}</tr></tbody></table></div>

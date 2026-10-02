@@ -1,3 +1,4 @@
+import type {CalculatorLoadRequest} from '@/lib/build-calculator-links';
 "use client";
 import { ArchiveNavigation } from "./ArchiveNavigation";
 import { lazy, Suspense, useEffect, useState } from "react";
@@ -20,6 +21,8 @@ function ArchiveContent() {
   const { canManage, canUseCalculator, loading } = owner;
   const { t } = useLocale();
   const [tab, setTab] = useState(readSection);
+  const [calculatorRequest,setCalculatorRequest]=useState<CalculatorLoadRequest|null>(null);
+  const openBuildCalculator=(presetId:string)=>{if(!canUseCalculator)return;setCalculatorRequest(previous=>({presetId,requestId:(previous?.requestId||0)+1}));setCalculatorVisited(true);setTab("damage");};
   const [calculatorVisited, setCalculatorVisited] = useState(false);
   useEffect(() => {
     const next = accessibleSection(tab, owner);
@@ -27,7 +30,7 @@ function ArchiveContent() {
     else if (tab !== "damage" || canUseCalculator) saveSection(tab);
   }, [canUseCalculator, loading, tab]);
   useEffect(() => {
-    if (!canUseCalculator && !loading) setCalculatorVisited(false);
+    if (!canUseCalculator && !loading) {setCalculatorVisited(false);setCalculatorRequest(null);}
     else if (canUseCalculator && tab === "damage") setCalculatorVisited(true);
   }, [canUseCalculator, loading, tab]);
   return (
@@ -54,13 +57,13 @@ function ArchiveContent() {
         <Tabs value={tab} onValueChange={setTab}>
           <ArchiveNavigation activeTab={tab} />
           {tab === "damage" && loading && !canUseCalculator && <p role="status">{t("Checking access…", "Проверка доступа…")}</p>}
-          {canUseCalculator && <TabsContent value="damage" forceMount hidden={tab !== "damage"}><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}>{(calculatorVisited || tab === "damage") && <DamageCalculator />}</Suspense></TabsContent>}
+          {canUseCalculator && <TabsContent value="damage" forceMount hidden={tab !== "damage"}><Suspense fallback={<p>{t("Loading…", "Загрузка…")}</p>}>{(calculatorVisited || tab === "damage") && <DamageCalculator loadRequest={calculatorRequest} />}</Suspense></TabsContent>}
           <TabsContent value="sets">
             <Catalog />
           </TabsContent>
           <TabsContent value="attributes"><Attributes /></TabsContent>
           <TabsContent value="builds">
-            <Builds canManage={canManage} />
+            <Builds canManage={canManage} onOpenCalculator={canUseCalculator?openBuildCalculator:undefined} />
           </TabsContent>
           <TabsContent value="talents">
             <Talents />

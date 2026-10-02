@@ -291,3 +291,19 @@ test('exotic talent states enter the correct damage buckets and disable cleanly'
  const coy=equipExotic("Coyote's Mask");coy.effectValues={distance:1};const fx=eg.exoticEffect(coy,0,context);assert.equal(fx.bonuses.chc,10);assert.equal(fx.bonuses.chd,10);
  const iron=equipExotic('Iron Will');assert.equal(eg.exoticEffect(iron,1,{...context,weaponType:'lmg'}).forceHead,undefined);
 });
+
+test('CoCo build link resolves by stable ID and loads exact screenshot configuration',()=>{
+ const id=load('build-calculator-links').buildCalculatorPreset('5154f03a-3277-4685-9780-873d7c2821f6');assert.equal(id,'coco-striker-2');assert.equal(load('build-calculator-links').buildCalculatorPreset('other'),undefined);
+ const entry=load('calculator-presets').findCalculatorPreset(id);const p=entry.create();
+ assert.equal(p.weaponId,'assault-rifle:Lexington');assert.equal(p.baseOverride,48699.5);assert.equal(p.expertise,30);
+ const w=weaponData.find(w=>w.id===p.weaponId);const bonuses=weaponAttributeBonuses(w.attributes,p.weaponRolls,weaponAttributeData,false);
+ assert.equal(bonuses.wd,22.5);assert.equal(bonuses.health,31.5);assert.equal(bonuses.out,15);
+ assert.equal(p.specialization.id,'gunner');assert.equal(p.specialization.weaponTier,3);assert.equal(p.specialization.conditions.kill,true);assert.equal(p.specialization.conditions.still,true);
+ const mods=JSON.parse(readFileSync(new URL('../data/weapon-mods.json',import.meta.url),'utf8'));const wm=load('weapon-mods');const selected=wm.selectedWeaponMods(w.slots,p.attachments,mods);assert.equal(selected.length,4);assert.equal(wm.attachmentBonuses(selected).chc,15);
+ for(const i of [0,2,4,5]){assert.equal(p.gear[i].brand,'concentrated-company');assert.equal(p.gear[i].core.value,22.5);assert.equal(p.gear[i].minor[0].value,18);}
+ assert.equal(p.gear[1].brand,'ceska-vyroba-s-r-o');assert.equal(p.gear[1].minor[0].value,9);assert.equal(p.gear[1].minor[1].value,18);assert.equal(p.gear[1].modValue,6);
+ assert.equal(p.gear[0].modValue,12);assert.equal(p.gear[2].modValue,12);assert.equal(p.gear[3].exoticId,'3:Overdogs');assert.equal(p.gear[3].core.proto,false);
+ const talents=load('calculator-talents').calculatorTalents;assert.equal(talents.find(t=>t.id===p.talents[0]).name,'Killer');assert.equal(talents.find(t=>t.id===p.talents[1]).name,'Obliterate');assert.equal(p.talentValues[1].stacks,20);assert.equal(p.setStates['concentrated-company'].values.stacks,35);
+ assert.equal(p.eventBonuses.length,0);assert.ok(Object.values(p.watch).every(v=>v===50));
+ p.gear[0].minor[0].value=1;p.attachments.optics='';const fresh=entry.create();assert.equal(fresh.gear[0].minor[0].value,18);assert.equal(fresh.attachments.optics,'C79 Scope (3.4x)');
+});

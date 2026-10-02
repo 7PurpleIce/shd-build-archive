@@ -28,7 +28,7 @@ import {
   type BuildTag,
   type Build,
 } from "@/lib/builds";
-export function Builds({ canManage }: { canManage: boolean }) {
+export function Builds({ canManage,onOpenCalculator }: { canManage: boolean;onOpenCalculator?:(presetId:string)=>void }) {
   const { t, locale } = useLocale();
   const [builds, setBuilds] = useState<Build[]>([]);
   const [loading, setLoading] = useState(true);
@@ -294,7 +294,7 @@ export function Builds({ canManage }: { canManage: boolean }) {
           })}
         </div>
       )}
-      <BuildViewDialog build={builds.find(build=>build.id===selected)??null} onClose={()=>setSelected(null)} returnFocus={()=>viewTrigger.current?.focus()} />
+      <BuildViewDialog onOpenCalculator={onOpenCalculator?presetId=>{setSelected(null);onOpenCalculator(presetId);}:undefined} build={builds.find(build=>build.id===selected)??null} onClose={()=>setSelected(null)} returnFocus={()=>viewTrigger.current?.focus()} />
       <BuildEditorDialog
         open={canManage && open}
         onOpenChange={setOpen}
