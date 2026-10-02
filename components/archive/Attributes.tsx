@@ -7,6 +7,7 @@ import './attributes.css';
 import {formatStatValue} from '@/lib/number-format';
 import {prototypeValue} from '@/lib/attribute-values';
 
+const displayValue=(value:string)=>value.replaceAll('.',',');
 const groups = [
  {id:'offense',en:'Offense & weapons',ru:'Урон и оружие',Icon:Crosshair},
  {id:'defense',en:'Defense & survival',ru:'Защита и выживаемость',Icon:Shield},
@@ -19,7 +20,7 @@ const coreDescriptions:Record<string,{en:string;ru:string}>={
 };
 function AttributeValues({value,perSecond=false,prototype}:{value:string;perSecond?:boolean;prototype?:string}){
  const {t,locale}=useLocale();const unit=perSecond?t('/s','/с'):'';
- return <span className="attribute-values"><span>{formatStatValue(value)}{unit}</span><span className="attribute-value-divider" aria-hidden="true"> / </span><span className="attribute-prototype" aria-label={t('Prototype: ','Прототип: ')+prototypeValue(value,locale,prototype)+unit}>{prototypeValue(value,locale,prototype)}{unit}</span></span>;
+ return <span className="attribute-values"><span>{displayValue(formatStatValue(value))}{unit}</span><span className="attribute-value-divider" aria-hidden="true"> / </span><span className="attribute-prototype" aria-label={t('Prototype: ','Прототип: ')+displayValue(prototypeValue(value,locale,prototype))+unit}>{displayValue(prototypeValue(value,locale,prototype))}{unit}</span></span>;
 }
 export function Attributes(){
  const {t}=useLocale();
@@ -58,7 +59,7 @@ export function Attributes(){
     const labels={offense:['Offensive mods','Атакующие вставки'],defense:['Defensive mods','Защитные вставки'],skill:['Utility mods','Вставки навыков']} as const;
     return <section className={`attribute-group attribute-${id}`} key={id} aria-labelledby={`gear-mods-${id}`}>
      <div className="attribute-group-heading"><Icon size={20} aria-hidden="true"/><h3 id={`gear-mods-${id}`}>{t(labels[id][0],labels[id][1])}</h3><span>{items.length}</span></div>
-     <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong>{formatStatValue(item.value)}</strong></li>)}</ul>
+     <ul>{items.map(item=><li key={item.id}><span>{t(item.en,item.ru)}</span><strong>{displayValue(formatStatValue(item.value))}</strong></li>)}</ul>
     </section>;
    })}</div>
   </section>

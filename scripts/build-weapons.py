@@ -85,3 +85,32 @@ for slot, file in enumerate(['masks','chests','backpacks','gloves','holsters','k
 (root / 'data/named-gear.json').write_text(json.dumps(named_items,ensure_ascii=False,indent=2)+'\n')
 (root / 'data/named-gear-attributes.json').write_text(json.dumps(list(fixed_attrs.values()),ensure_ascii=False,indent=2)+'\n')
 print(f'Normalized {len(named_items)} named gear items and {len(fixed_attrs)} fixed attributes.')
+
+# Exotic gear uses fixed ordinary rolls, never prototype rolls.
+exotics=[]
+ru_exotics={'Catharsis':'Катарсис','Investor':'Инвестор'}
+for slot,file in enumerate(['masks','chests','backpacks','gloves','holsters','knees']):
+ for row in csv.DictReader((root/'data/source'/(file+'.csv')).open()):
+  if row['is_exotic']!='TRUE':continue
+  def normalize(spec):
+   if spec.startswith('fixed:'):return 'fixed:'+attr_by_id[spec[6:]]['stat_id']
+   return spec
+  exotics.append({'id':str(slot)+':'+row['name'],'name':row['name'],'ru':ru_exotics.get(row['name'],row['name']),'slot':slot,
+   'cores':[normalize(row[k]) for k in ['core_1','core_2','core_3'] if row[k]!='N/A'],
+   'minor':[normalize(row[k]) for k in ['minor_1','minor_2','minor_3'] if row[k]!='N/A'],
+   'mods':sum(row[k]!='N/A' for k in ['mod_1','mod_2','mod_3']), 'talent':row['talent_slot'][6:]})
+(root/'data/exotic-gear.json').write_text(json.dumps(exotics,ensure_ascii=False,indent=2)+'\n')
+print(f'Normalized {len(exotics)} exotic gear items.')
+extra_attrs={}
+for slot,file in enumerate(['masks','chests','backpacks','gloves','holsters','knees']):
+ for row in csv.DictReader((root/'data/source'/(file+'.csv')).open()):
+  if row['is_exotic']!='TRUE':continue
+  for key in ['core_1','core_2','core_3','minor_1','minor_2','minor_3']:
+   spec=row[key]
+   if not spec.startswith('fixed:'):continue
+   a=attr_by_id[spec[6:]];stat=a['stat_id']
+   if stat in site_attrs:continue
+   extra_attrs[stat]={'id':stat,'value_formats':'percent' if a['range_max'].endswith('%') else 'flat','en':stats[stat],
+    'ru':{'incoming-repairs':'Входящее лечение'}.get(stat,stats[stat]),'group':'defense','core':key.startswith('core_'),
+    'value':a['range_max'],'enValue':a['range_max'],'prototypeValue':a['range_max'],'enPrototypeValue':a['range_max']}
+(root/'data/exotic-gear-attributes.json').write_text(json.dumps(list(extra_attrs.values()),ensure_ascii=False,indent=2)+'\n')

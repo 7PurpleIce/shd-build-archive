@@ -1,0 +1,14 @@
+[
+  {
+    "id": "incoming-repairs",
+    "value_formats": "percent",
+    "en": "Incoming Repairs",
+    "ru": "Входящее лечение",
+    "group": "defense",
+    "core": false,
+    "value": "20%",
+    "enValue": "20%",
+    "prototypeValue": "20%",
+    "enPrototypeValue": "20%"
+  }
+]

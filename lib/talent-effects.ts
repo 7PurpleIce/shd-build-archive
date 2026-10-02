@@ -16,6 +16,9 @@ export function talentRule(t:TalentSource):TalentRule|undefined{
  const simple=(key:string,value:number,passive=false):TalentRule=>({passive,controls:[],apply:()=>key==='amp'?effect({},[value]):effect({[key]:value})});
  const stacked=(key:string,per:number,max:number,compound=false):TalentRule|undefined=>max>0?{controls:[stacks(max)],apply:v=>key==='amp'?effect({},[compound?((1+per/100)**(v.stacks||0)-1)*100:per*(v.stacks||0)]):effect({[key]:per*(v.stacks||0)})}:undefined;
  if(!p.every(Number.isFinite))return;
+ if(name==='Vicious Cycle'&&p.length)return stacked('wd',p[0],Number(t.description.match(/cap of (\d+)/)?.[1]||0));
+ if(name==='Stand Your Ground'&&p.length)return stacked('twd',p[0],stackMax());
+ if(name==='Pack Instincts'&&p.length>=4)return {controls:[control('distance','Last target: 0 = 0–15m / 1 = 15–25m / 2 = 25m+','Последняя цель: 0 = 0–15м / 1 = 15–25м / 2 = 25м+',2)],apply:v=>effect({chc:v.distance===2?p[3]:v.distance===1?p[1]:0,chd:v.distance===1?p[2]:v.distance===2?0:p[0]})};
  if(['Glass Cannon','Spotter','Behind You','Eyeless','Flatline','Foam at the Mouth','Head Scratcher','Ignited','Immobilize','Pressure Point','Sadist','Thunder Strike','Breathe Free','High Priority Target','Ortiz Assault Interface','Restrained'].includes(name)&&p.length)return simple('amp',p[0]);
  if(['Companion','Composure','Gunslinger','Overwatch','Spark','Vigilance','Wicked'].includes(name)&&p.length)return simple('twd',p[0]);
  if(['Close & Personal','Pummel','Soft Spot','Streamline','Swift','Unhinged'].includes(name)&&p.length)return simple('wd',p[0],name==='Unhinged');

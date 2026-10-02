@@ -251,3 +251,43 @@ test('set pieces count only one minor roll while normal brands count two',()=>{
  const g=gearFor('aces-eights');assert.equal(ng.gearRollBonuses(g,0,'rifle',true).hsd,undefined);
  assert.equal(ng.gearRollBonuses(g,0,'rifle',false).hsd,5);
 });
+
+const eg=load('exotic-gear');
+const exoticFor=name=>eg.exoticGear.find(e=>e.name===name);
+const equipExotic=name=>{const item=exoticFor(name);return eg.selectExoticGear(gearFor('airaldi-holdings',true),item.slot,item.id);};
+test('all 34 exotics resolve source cores, minor restrictions and slot-specific selections',()=>{
+ assert.equal(eg.exoticGear.length,34);
+ for(const item of eg.exoticGear){
+  const g=eg.selectExoticGear(gearFor('airaldi-holdings',true),item.slot,item.id);
+  assert.equal(g.brand,'');assert.equal(g.namedId,undefined);assert.equal(g.minor.length,item.minor.length);
+  assert.equal(1+(g.extraCores?.length||0),item.cores.length);assert.equal(ng.gearModCount(g,item.slot),item.mods);
+  assert.ok(eg.exoticTalent(g,item.slot),item.name);
+  for(const r of [g.core,...g.extraCores,...g.minor]){assert.equal(r.proto,false);assert.ok(ng.gearAttribute(r.id),item.name+' '+r.id);}
+  assert.ok(Object.values(ng.gearRollBonuses(g,item.slot,'rifle')).every(Number.isFinite));
+  assert.equal(eg.selectedExoticGear(g,(item.slot+1)%6),undefined);
+ }
+});
+test('exotics never receive prototype caps and their previous brand or named effects disappear',()=>{
+ const g=equipExotic("Coyote's Mask");g.core.proto=true;g.core.value=22.5;g.minor.forEach(r=>{r.proto=true;r.value=100;});
+ const b=ng.gearRollBonuses(g,0,'rifle');assert.equal(b.wd,15);assert.equal(b.chc,6);assert.equal(b.chd,12);
+ assert.equal(Object.keys(eg.gearBrandCounts([g])).length,0);
+ const cleared=eg.selectExoticGear(g,0,'');assert.equal(cleared.exotic,undefined);assert.equal(eg.exoticEffect(cleared,0,context),undefined);
+});
+test('Investor has three eligible minor attributes, no mod, and damage follows red attribute count',()=>{
+ const g=equipExotic('Investor');assert.equal(g.minor.length,3);assert.equal(ng.gearModCount(g,0),0);
+ for(const spec of exoticFor('Investor').minor){const ids=eg.exoticRollOptions(spec).map(a=>a.id);for(const id of ['headshot-damage','health','repair-skills'])assert.ok(!ids.includes(id));}
+ g.minor=[{id:'critical-hit-chance',proto:false},{id:'critical-hit-damage',proto:false},{id:'hazard-protection',proto:false}];
+ assert.equal(eg.exoticEffect(g,0,context).bonuses.chd,20);g.effectEnabled=false;assert.equal(eg.exoticEffect(g,0,context).bonuses.chd,0);
+});
+test('multi-core backpacks preserve all three cores and NinjaBike adds one to equipped brands only',()=>{
+ const g=equipExotic('NinjaBike Messenger Backpack');assert.equal(g.extraCores.length,2);assert.equal(g.minor.length,0);assert.equal(ng.gearRollBonuses(g,2,'rifle').wd,15);
+ const gear=[gearFor('aces-eights'),gearFor('airaldi-holdings'),g,gearFor('aces-eights'),gearFor('aces-eights'),gearFor('improvised')];
+ const counts=eg.gearBrandCounts(gear);assert.equal(counts['aces-eights'],4);assert.equal(counts['airaldi-holdings'],2);assert.equal(counts.improvised,undefined);
+ g.effectEnabled=false;assert.equal(eg.gearBrandCounts(gear)['aces-eights'],3);
+});
+test('exotic talent states enter the correct damage buckets and disable cleanly',()=>{
+ const c=equipExotic('Catharsis');c.effectValues={stacks:30};assert.equal(eg.exoticEffect(c,0,context).bonuses.wd,45);c.effectEnabled=false;assert.equal(eg.exoticEffect(c,0,context).bonuses.wd,undefined);
+ const s=equipExotic("Sawyer's Kneepads");s.effectValues={stacks:10};assert.equal(eg.exoticEffect(s,5,context).bonuses.twd,30);
+ const coy=equipExotic("Coyote's Mask");coy.effectValues={distance:1};const fx=eg.exoticEffect(coy,0,context);assert.equal(fx.bonuses.chc,10);assert.equal(fx.bonuses.chd,10);
+ const iron=equipExotic('Iron Will');assert.equal(eg.exoticEffect(iron,1,{...context,weaponType:'lmg'}).forceHead,undefined);
+});

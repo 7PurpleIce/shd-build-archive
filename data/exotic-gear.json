@@ -1,0 +1,509 @@
+[
+  {
+    "id": "0:Vile",
+    "name": "Vile",
+    "ru": "Vile",
+    "slot": 0,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:status-effects",
+      "fixed:hazard-protection"
+    ],
+    "mods": 1,
+    "talent": "Toxic Delivery"
+  },
+  {
+    "id": "0:Catharsis",
+    "name": "Catharsis",
+    "ru": "Катарсис",
+    "slot": 0,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "fixed:incoming-repairs",
+      "fixed:armor-regeneration"
+    ],
+    "mods": 1,
+    "talent": "Vicious Cycle"
+  },
+  {
+    "id": "0:Coyote's Mask",
+    "name": "Coyote's Mask",
+    "ru": "Coyote's Mask",
+    "slot": 0,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 1,
+    "talent": "Pack Instincts"
+  },
+  {
+    "id": "0:Catalyst",
+    "name": "Catalyst",
+    "ru": "Catalyst",
+    "slot": 0,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:hazard-protection",
+      "fixed:status-effects"
+    ],
+    "mods": 1,
+    "talent": "Chemical Agent"
+  },
+  {
+    "id": "0:Tinkerer",
+    "name": "Tinkerer",
+    "ru": "Tinkerer",
+    "slot": 0,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 1,
+    "talent": "Abridged"
+  },
+  {
+    "id": "0:Investor",
+    "name": "Investor",
+    "ru": "Инвестор",
+    "slot": 0,
+    "cores": [
+      "type:gear-core"
+    ],
+    "minor": [
+      "type:gear-minor|!headshot-damage-gear-minor|!health-gear-minor|!repair-skills-gear-minor",
+      "type:gear-minor|!headshot-damage-gear-minor|!health-gear-minor|!repair-skills-gear-minor",
+      "type:gear-minor|!headshot-damage-gear-minor|!health-gear-minor|!repair-skills-gear-minor"
+    ],
+    "mods": 0,
+    "talent": "Slotted"
+  },
+  {
+    "id": "1:Collector",
+    "name": "Collector",
+    "ru": "Collector",
+    "slot": 1,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 1,
+    "talent": "Hoarder"
+  },
+  {
+    "id": "1:Provocator",
+    "name": "Provocator",
+    "ru": "Provocator",
+    "slot": 1,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "fixed:armor-regeneration",
+      "fixed:hazard-protection"
+    ],
+    "mods": 1,
+    "talent": "Challenger"
+  },
+  {
+    "id": "1:Beacon",
+    "name": "Beacon",
+    "ru": "Beacon",
+    "slot": 1,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 1,
+    "talent": "Bond"
+  },
+  {
+    "id": "1:Tardigrade Armor System",
+    "name": "Tardigrade Armor System",
+    "ru": "Tardigrade Armor System",
+    "slot": 1,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "fixed:armor-regeneration",
+      "fixed:explosive-resistance"
+    ],
+    "mods": 1,
+    "talent": "Ablative Nano-Plating"
+  },
+  {
+    "id": "1:Ridgeway's Pride",
+    "name": "Ridgeway's Pride",
+    "ru": "Ridgeway's Pride",
+    "slot": 1,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 1,
+    "talent": "Bleeding Edge"
+  },
+  {
+    "id": "1:Iron Will",
+    "name": "Iron Will",
+    "ru": "Iron Will",
+    "slot": 1,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:headshot-damage",
+      "fixed:weapon-handling"
+    ],
+    "mods": 1,
+    "talent": "Resolved"
+  },
+  {
+    "id": "2:Acosta's Go-Bag",
+    "name": "Acosta's Go-Bag",
+    "ru": "Acosta's Go-Bag",
+    "slot": 2,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:skill-damage",
+      "fixed:skill-haste"
+    ],
+    "mods": 1,
+    "talent": "One in the Hand... / ...Two in the Bag"
+  },
+  {
+    "id": "2:Birdie's Quick Fix Pack",
+    "name": "Birdie's Quick Fix Pack",
+    "ru": "Birdie's Quick Fix Pack",
+    "slot": 2,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:skill-haste",
+      "fixed:repair-skills"
+    ],
+    "mods": 1,
+    "talent": "Combat Medic"
+  },
+  {
+    "id": "2:Memento",
+    "name": "Memento",
+    "ru": "Memento",
+    "slot": 2,
+    "cores": [
+      "fixed:weapon-damage",
+      "fixed:armor",
+      "fixed:skill-tier"
+    ],
+    "minor": [],
+    "mods": 1,
+    "talent": "Kill Confirmed"
+  },
+  {
+    "id": "2:NinjaBike Messenger Backpack",
+    "name": "NinjaBike Messenger Backpack",
+    "ru": "NinjaBike Messenger Backpack",
+    "slot": 2,
+    "cores": [
+      "fixed:weapon-damage",
+      "fixed:armor",
+      "fixed:skill-tier"
+    ],
+    "minor": [],
+    "mods": 1,
+    "talent": "Resourceful"
+  },
+  {
+    "id": "2:Harrier Pride",
+    "name": "Harrier Pride",
+    "ru": "Harrier Pride",
+    "slot": 2,
+    "cores": [
+      "fixed:weapon-damage",
+      "fixed:armor",
+      "fixed:skill-tier"
+    ],
+    "minor": [],
+    "mods": 1,
+    "talent": "Rebalance"
+  },
+  {
+    "id": "2:Sarru",
+    "name": "Sarru",
+    "ru": "Sarru",
+    "slot": 2,
+    "cores": [
+      "fixed:weapon-damage",
+      "fixed:armor",
+      "fixed:skill-tier"
+    ],
+    "minor": [],
+    "mods": 1,
+    "talent": "Decoy King"
+  },
+  {
+    "id": "3:Bloody Knuckles",
+    "name": "Bloody Knuckles",
+    "ru": "Bloody Knuckles",
+    "slot": 3,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Over the top"
+  },
+  {
+    "id": "3:BTSU Datagloves",
+    "name": "BTSU Datagloves",
+    "ru": "BTSU Datagloves",
+    "slot": 3,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:skill-haste",
+      "fixed:repair-skills"
+    ],
+    "mods": 0,
+    "talent": "Transference Overclock"
+  },
+  {
+    "id": "3:Exodus Gloves",
+    "name": "Exodus Gloves",
+    "ru": "Exodus Gloves",
+    "slot": 3,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Smoke Screen"
+  },
+  {
+    "id": "3:Overdogs",
+    "name": "Overdogs",
+    "ru": "Overdogs",
+    "slot": 3,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Weakest Link"
+  },
+  {
+    "id": "3:Rugged Gauntlets",
+    "name": "Rugged Gauntlets",
+    "ru": "Rugged Gauntlets",
+    "slot": 3,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Iron Grip"
+  },
+  {
+    "id": "4:Centurion Scabbard",
+    "name": "Centurion Scabbard",
+    "ru": "Centurion Scabbard",
+    "slot": 4,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:weapon-handling"
+    ],
+    "mods": 0,
+    "talent": "Counter"
+  },
+  {
+    "id": "4:Dodge City Gunslinger's Holster",
+    "name": "Dodge City Gunslinger's Holster",
+    "ru": "Dodge City Gunslinger's Holster",
+    "slot": 4,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:weapon-handling",
+      "fixed:headshot-damage"
+    ],
+    "mods": 0,
+    "talent": "Quick Draw"
+  },
+  {
+    "id": "4:Imperial Dynasty",
+    "name": "Imperial Dynasty",
+    "ru": "Imperial Dynasty",
+    "slot": 4,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:status-effects",
+      "fixed:hazard-protection"
+    ],
+    "mods": 0,
+    "talent": "Dragon's Glare"
+  },
+  {
+    "id": "4:Shocker Punch",
+    "name": "Shocker Punch",
+    "ru": "Shocker Punch",
+    "slot": 4,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "fixed:explosive-resistance",
+      "fixed:hazard-protection"
+    ],
+    "mods": 0,
+    "talent": "Defibrillator"
+  },
+  {
+    "id": "4:Waveform",
+    "name": "Waveform",
+    "ru": "Waveform",
+    "slot": 4,
+    "cores": [
+      "fixed:skill-tier"
+    ],
+    "minor": [
+      "fixed:skill-damage",
+      "fixed:skill-haste"
+    ],
+    "mods": 0,
+    "talent": "Alternating Current"
+  },
+  {
+    "id": "4:Nimble Holster",
+    "name": "Nimble Holster",
+    "ru": "Nimble Holster",
+    "slot": 4,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Bob and Weave"
+  },
+  {
+    "id": "5:Sawyer's Kneepads",
+    "name": "Sawyer's Kneepads",
+    "ru": "Sawyer's Kneepads",
+    "slot": 5,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "fixed:explosive-resistance",
+      "fixed:health"
+    ],
+    "mods": 0,
+    "talent": "Stand Your Ground"
+  },
+  {
+    "id": "5:Acosta Kneepads",
+    "name": "Acosta Kneepads",
+    "ru": "Acosta Kneepads",
+    "slot": 5,
+    "cores": [
+      "fixed:armor"
+    ],
+    "minor": [
+      "type:gear-offensive-minor",
+      "type:gear-defensive-minor"
+    ],
+    "mods": 0,
+    "talent": "Escape Plan"
+  },
+  {
+    "id": "5:Blacklisters",
+    "name": "Blacklisters",
+    "ru": "Blacklisters",
+    "slot": 5,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Ostracize"
+  },
+  {
+    "id": "5:NinjaBike Messenger Kneepads",
+    "name": "NinjaBike Messenger Kneepads",
+    "ru": "NinjaBike Messenger Kneepads",
+    "slot": 5,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Parkour!"
+  },
+  {
+    "id": "5:Nurse's Kneepads",
+    "name": "Nurse's Kneepads",
+    "ru": "Nurse's Kneepads",
+    "slot": 5,
+    "cores": [
+      "fixed:weapon-damage"
+    ],
+    "minor": [
+      "fixed:critical-hit-chance",
+      "fixed:critical-hit-damage"
+    ],
+    "mods": 0,
+    "talent": "Impervious"
+  }
+]
