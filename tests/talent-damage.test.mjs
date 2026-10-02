@@ -331,3 +331,26 @@ test('Overdogs amplifies damage by 30 percent by default and can be disabled',()
  g.effectEnabled=false;assert.equal(eg.exoticEffect(g,3,context).amps.length,0);
  for(const name of ['cocoStrikerPreset','strikerOverdogsPreset']){const p=load('calculator-presets')[name]();assert.equal(eg.exoticEffect(p.gear[3],3,context).amps[0],30);}
 });
+
+test('exotic gear selection starts supported talents in an active combat state',()=>{
+ for(const [name,key,value] of [['Vicious Cycle','stacks',30],['Stand Your Ground','stacks',10],['Chemical Agent','stacks',12],['Bond','source',2],['Decoy King','phase',4],['Kill Confirmed','short',1]]){
+  const item=eg.exoticGear.find(g=>g.talent===name);assert.ok(item,name);
+  const g=equipExotic(item.name);assert.equal(g.effectEnabled,true);assert.equal(g.effectValues[key],value,name);
+  const fx=eg.exoticEffect(g,item.slot,{...context,redCores:6});assert.ok(fx.amps.some(n=>n>0)||Object.values(fx.bonuses).some(n=>n>0),name);
+ }
+ assert.equal(fx('Chemical Agent',{stacks:12}).bonuses.wd,24);
+ assert.equal(fx('Over the top').bonuses.twd,25);
+ assert.equal(fx('Ostracize').amps[0],20);
+ assert.equal(fx('Counter',{mode:0}).bonuses.wd,20);assert.equal(fx('Counter',{mode:0}).bonuses.rof,20);
+ assert.equal(fx('Counter',{mode:1}).bonuses.wd,undefined);assert.equal(fx('Counter',{mode:1}).bonuses.mag,50);
+ for(const name of ['Chemical Agent','Over the top','Ostracize','Counter']){
+  const inactive=evaluateTalent(get(name),false,{stacks:12},context);assert.equal(inactive.amps.length,0);assert.equal(Object.keys(inactive.bonuses).length,0);
+ }
+ const quick=evaluateTalent(get('Quick Draw'),true,{stacks:100},{...context,weaponType:'pistol'});
+ assert.equal(quick.amps[0],1000);assert.equal(quick.forceHead,true);assert.equal(quick.nextShot,true);
+ assert.equal(fx('Quick Draw',{stacks:100}).amps.length,0);
+ close(talentDamage(input,[quick]).sustained,talentDamage(input,[]).sustained);
+ const talents=load('calculator-talents').calculatorTalents;
+ assert.equal(initialTalentState(talents.find(t=>t.name==='Adaptive Instincts')).values.body,1);
+ assert.equal(initialTalentState(talents.find(t=>t.name==='Capacitance')).values.tier,0);
+});

@@ -100,8 +100,7 @@ function CalculatorBody({loadRequest}:{loadRequest?:CalculatorLoadRequest|null})
  function changeWeapon(id:string){const next=weapons.find(w=>w.id===id)!;setWeaponId(id);setWeaponRolls(initialWeaponRolls(next.attributes,weaponAttributes));setOverride(null);setAttachments({});setQuery('');setTalents(old=>['',old[1],old[2]]);const state=initialTalentState(weaponTalent(next.talentSlot,''));setActive(old=>[state.active,old[1],old[2]]);setTalentValues(old=>[state.values,old[1],old[2]]);}
  function changeGear(i:number,patch:Partial<Gear>){if(patch.brand!==undefined&&(i===1||i===2)){const chosen=selectedTalents[i];if(chosen?.perfect&&!namedTalentGear(chosen.kind,chosen.name).some(g=>g.brand===patch.brand)){setTalents(old=>old.map((v,j)=>j===i?'':v));setActive(old=>old.map((v,j)=>j===i?false:v));setTalentValues(old=>old.map((v,j)=>j===i?{}:v));}}setGear(old=>old.map((g,j)=>{if(j!==i)return g;const next=patch.brand!==undefined&&patch.brand!==g.brand?selectNamedGear({...g,...patch},i,''):{...g,...patch};if(catalog.sets.find(s=>s.id===next.brand)?.kind==='set')next.minor=[next.minor[0],{id:'',proto:next.core.proto}];if(!gearModCount(next,i))next.mod='';return next;}));}
  function chooseExoticItem(i:number,id:string){
-  const next=selectExoticGear(gear[i],i,id);const state=initialTalentState(exoticTalent(next,i));
-  next.effectEnabled=true;next.effectValues=state.values;
+  const next=selectExoticGear(gear[i],i,id);
   setGear(old=>old.map((g,j)=>j===i?next:g));
   if(i===1||i===2){setTalents(old=>old.map((v,j)=>j===i?'':v));setActive(old=>old.map((v,j)=>j===i?false:v));setTalentValues(old=>old.map((v,j)=>j===i?{}:v));}
  }
@@ -109,6 +108,7 @@ function CalculatorBody({loadRequest}:{loadRequest?:CalculatorLoadRequest|null})
   const talent=exoticTalent(g,i);if(!talent)return null;const rule=talentRule(talent);const special=['Slotted','Resourceful'].includes(talent.name);
   return <div className="damage-talent"><h4>{t(talent.name,talent.ru?.name||talent.name)}</h4><p>{formatGameText(t(talent.description,talent.ru?.description||talent.description))}</p>
   {(rule||special)?<><label className="damage-check"><input type="checkbox" checked={g.effectEnabled!==false} onChange={e=>changeGear(i,{effectEnabled:e.target.checked})}/>{t('Apply talent — conditions met','Применить талант — условия выполнены')}</label>
+  <p className="damage-help">{t('Talent conditions are assumed met by default. Stacks and combat mode can be adjusted below.','По умолчанию считаем, что условия таланта выполнены. Стаки и режим боя можно изменить ниже.')}</p>
   {special&&<p className="damage-help">{t('Calculated from the equipped attributes and sets.','Рассчитывается по выбранным статам и комплектам.')}</p>}
   {rule?.note&&<p className="damage-help">{t(...rule.note)}</p>}
   <div className="damage-fields">{rule?.controls.map(c=><CalculatorNumber key={c.id} label={t(c.en,c.ru)} max={c.max} step={c.step||1} value={g.effectValues?.[c.id]||0} onChange={n=>changeGear(i,{effectValues:{...g.effectValues,[c.id]:n}})} showMax/>)}</div></>:<p className="damage-notice">{t(...talentStatus(talent).note)}</p>}

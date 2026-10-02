@@ -16,6 +16,11 @@ export function talentRule(t:TalentSource):TalentRule|undefined{
  const simple=(key:string,value:number,passive=false):TalentRule=>({passive,controls:[],apply:()=>key==='amp'?effect({},[value]):effect({[key]:value})});
  const stacked=(key:string,per:number,max:number,compound=false):TalentRule|undefined=>max>0?{controls:[stacks(max)],apply:v=>key==='amp'?effect({},[compound?((1+per/100)**(v.stacks||0)-1)*100:per*(v.stacks||0)]):effect({[key]:per*(v.stacks||0)})}:undefined;
  if(!p.every(Number.isFinite))return;
+ if(name==='Chemical Agent'&&p.length)return stacked('wd',p[0],Number(t.description.match(/maximum of (\d+)/)?.[1]||0));
+ if(name==='Over the top'&&p.length)return simple('twd',p[0]);
+ if(name==='Ostracize'&&p.length>=2)return {...simple('amp',p[1]),note:['Assumes an unmarked target while another enemy is marked.','Считаем, что стреляем по непомеченной цели, пока другой противник отмечен.']};
+ if(name==='Counter'&&p.length>=4)return {controls:[control('mode','Bonus group: 0 fire rate + damage / 1 magazine + reload','Группа бонусов: 0 скорострельность + урон / 1 магазин + перезарядка',1)],apply:v=>v.mode?effect({mag:p[2],reload:p[3]}):effect({rof:p[0],wd:p[1]})};
+ if(name==='Quick Draw'&&p.length)return {controls:[stacks(Number(t.description.match(/up to (\d+)/)?.[1]||0))],note:['First pistol shot after swapping only; excluded from sustained DPS.','Только первый выстрел из пистолета после переключения; не входит в постоянный DPS.'],apply:(v,c)=>c.weaponType==='pistol'?{...effect({},[p[0]*(v.stacks||0)]),forceHead:true,nextShot:true}:effect()};
  if(name==='Weakest Link'&&p.length)return {...simple('amp',p[0]),note:['Assumes you are shooting a target eligible for Weakest Link. Disable the talent when its condition is not met.','Считаем, что цель подходит под условия «Самого слабого звена». Если условие не выполнено, отключи талант.']};
  if(name==='Vicious Cycle'&&p.length)return stacked('wd',p[0],Number(t.description.match(/cap of (\d+)/)?.[1]||0));
  if(name==='Stand Your Ground'&&p.length)return stacked('twd',p[0],stackMax());

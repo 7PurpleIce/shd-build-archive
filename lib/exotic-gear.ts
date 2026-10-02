@@ -1,5 +1,6 @@
 import extraAttributes from '../data/exotic-gear-attributes.json';
 import {calculatorTalents} from './calculator-talents';
+import {initialTalentState} from './calculator-defaults';
 import {evaluateTalent,type TalentContext,type TalentEffect} from './talent-effects';
 import items from '../data/exotic-gear.json';
 import attributes from '../data/attributes.json';
@@ -19,7 +20,7 @@ export function selectExoticGear(g:GearItem,slot:number,id:string):GearItem{
  const taken=new Set<string>();
  const roll=(spec:string,core=false):GearRoll=>{const options=exoticRollOptions(spec,core);const a=options.find(a=>core||!taken.has(a.id));if(!a)return {id:'',proto:false};if(!core)taken.add(a.id);return {id:a.id,proto:false,value:attributeAmount(a)};};
  const cores=item.cores.map(spec=>roll(spec,true));
- return {brand:'',exotic:true,exoticId:item.id,core:cores[0],extraCores:cores.slice(1),minor:item.minor.map(spec=>roll(spec)),mod:item.mods?g.mod:'',modValue:g.modValue,extraMods:Array.from({length:Math.max(0,item.mods-1)},()=>({id:''})),effectEnabled:true,effectValues:{}};
+ return {brand:'',exotic:true,exoticId:item.id,core:cores[0],extraCores:cores.slice(1),minor:item.minor.map(spec=>roll(spec)),mod:item.mods?g.mod:'',modValue:g.modValue,extraMods:Array.from({length:Math.max(0,item.mods-1)},()=>({id:''})),effectEnabled:true,effectValues:initialTalentState(calculatorTalents.find(t=>t.name===item.talent)).values};
 }
 
 export function exoticTalent(g:GearItem,slot:number){const item=selectedExoticGear(g,slot);return item?calculatorTalents.find(t=>t.name===item.talent):undefined;}
