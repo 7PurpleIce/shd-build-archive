@@ -44,5 +44,13 @@ export function cocoStrikerPreset(){
   talents:[calculatorTalents.find(t=>t.name==='Killer')!.id,calculatorTalents.find(t=>t.name==='Obliterate')!.id,''],active:[true,true,false],
   talentValues:[{},{stacks:20},{}] as Record<string,number>[],setStates:{'concentrated-company':{enabled:true,values:{stacks:35}}},eventBonuses:[],armored:true,outside:true,headshots:0};
 }
-const linkedPresets=[{id:'coco-striker-2',en:'CoCo - Striker 2.0',ru:'Точка концентрации - Боевик 2.0',create:cocoStrikerPreset}];
+export function strikerOverdogsPreset(){
+ const base=cocoStrikerPreset();
+ return {...base,gear:base.gear.map(g=>g.brand==='concentrated-company'?{...g,brand:'striker-s-battlegear'}:g),
+  setStates:{'striker-s-battlegear':{enabled:true,values:{stacks:100}}},headshots:0};
+}
+const linkedPresets=[
+ {id:'coco-striker-2',en:'CoCo - Striker 2.0',ru:'Точка концентрации - Боевик 2.0',create:cocoStrikerPreset},
+ {id:'striker-overdogs-100',en:'Striker - 100stacks + overdogs',ru:'Боевик - 100 стаков + претенденты',create:strikerOverdogsPreset},
+];
 export function findCalculatorPreset(id:string){return [...CALCULATOR_PRESETS,...linkedPresets].find(p=>p.id===id);}

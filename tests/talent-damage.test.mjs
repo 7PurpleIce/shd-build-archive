@@ -295,6 +295,7 @@ test('exotic talent states enter the correct damage buckets and disable cleanly'
 test('CoCo build link resolves by stable ID and loads exact screenshot configuration',()=>{
  const id=load('build-calculator-links').buildCalculatorPreset('5154f03a-3277-4685-9780-873d7c2821f6');assert.equal(id,'coco-striker-2');assert.equal(load('build-calculator-links').buildCalculatorPreset('other'),undefined);
  const entry=load('calculator-presets').findCalculatorPreset(id);const p=entry.create();
+ assert.equal(p.headshots,0);
  assert.equal(p.weaponId,'assault-rifle:Lexington');assert.equal(p.baseOverride,48699.5);assert.equal(p.expertise,30);
  const w=weaponData.find(w=>w.id===p.weaponId);const bonuses=weaponAttributeBonuses(w.attributes,p.weaponRolls,weaponAttributeData,false);
  assert.equal(bonuses.wd,22.5);assert.equal(bonuses.health,31.5);assert.equal(bonuses.out,15);
@@ -306,4 +307,27 @@ test('CoCo build link resolves by stable ID and loads exact screenshot configura
  const talents=load('calculator-talents').calculatorTalents;assert.equal(talents.find(t=>t.id===p.talents[0]).name,'Killer');assert.equal(talents.find(t=>t.id===p.talents[1]).name,'Obliterate');assert.equal(p.talentValues[1].stacks,20);assert.equal(p.setStates['concentrated-company'].values.stacks,35);
  assert.equal(p.eventBonuses.length,0);assert.ok(Object.values(p.watch).every(v=>v===50));
  p.gear[0].minor[0].value=1;p.attachments.optics='';const fresh=entry.create();assert.equal(fresh.gear[0].minor[0].value,18);assert.equal(fresh.attachments.optics,'C79 Scope (3.4x)');
+});
+
+test('Striker build link copies CoCo, replaces only set pieces and activates 100 stacks',()=>{
+ const presets=load('calculator-presets');const base=presets.cocoStrikerPreset();
+ const id=load('build-calculator-links').buildCalculatorPreset('e15438dc-2b43-4d69-baf3-7d2db4f226e0');assert.equal(id,'striker-overdogs-100');
+ const p=presets.findCalculatorPreset(id).create();assert.equal(p.headshots,0);
+ assert.equal(p.gear.filter(g=>g.brand==='striker-s-battlegear').length,4);
+ assert.equal(p.setStates['striker-s-battlegear'].values.stacks,100);assert.equal(p.setStates['concentrated-company'],undefined);
+ const expected=JSON.parse(JSON.stringify(base));expected.gear.forEach(g=>{if(g.brand==='concentrated-company')g.brand='striker-s-battlegear';});expected.setStates={'striker-s-battlegear':{enabled:true,values:{stacks:100}}};
+ assert.deepEqual(JSON.parse(JSON.stringify(p)),expected);
+ const set=catalog.sets.find(s=>s.id==='striker-s-battlegear');
+ const rule=load('set-effects').setTalentRule(set,false,true,50);assert.equal(rule.controls[0].max,100);assert.equal(rule.apply({stacks:100},context).amps[0],90);
+ const calc=load('damage').calculateDamage;close(calc({...input,headshots:p.headshots}).average,calc({...input,headshots:p.headshots,hsd:0}).average);
+});
+
+test('Overdogs amplifies damage by 30 percent by default and can be disabled',()=>{
+ const g=equipExotic('Overdogs');const effect=eg.exoticEffect(g,3,context);
+ assert.equal(effect.amps.length,1);assert.equal(effect.amps[0],30);assert.equal(Object.keys(effect.bonuses).length,0);
+ assert.equal(talentStatus(get('Weakest Link')).kind,'auto');
+ const before=talentDamage({...input,amps:[100]},[]),after=talentDamage({...input,amps:[100]},[effect]);
+ for(const key of ['body','crit','head','critHead','average','burst','sustained'])close(after[key]/before[key],1.3);
+ g.effectEnabled=false;assert.equal(eg.exoticEffect(g,3,context).amps.length,0);
+ for(const name of ['cocoStrikerPreset','strikerOverdogsPreset']){const p=load('calculator-presets')[name]();assert.equal(eg.exoticEffect(p.gear[3],3,context).amps[0],30);}
 });

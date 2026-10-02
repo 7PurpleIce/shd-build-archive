@@ -16,6 +16,7 @@ export function talentRule(t:TalentSource):TalentRule|undefined{
  const simple=(key:string,value:number,passive=false):TalentRule=>({passive,controls:[],apply:()=>key==='amp'?effect({},[value]):effect({[key]:value})});
  const stacked=(key:string,per:number,max:number,compound=false):TalentRule|undefined=>max>0?{controls:[stacks(max)],apply:v=>key==='amp'?effect({},[compound?((1+per/100)**(v.stacks||0)-1)*100:per*(v.stacks||0)]):effect({[key]:per*(v.stacks||0)})}:undefined;
  if(!p.every(Number.isFinite))return;
+ if(name==='Weakest Link'&&p.length)return {...simple('amp',p[0]),note:['Assumes you are shooting a target eligible for Weakest Link. Disable the talent when its condition is not met.','Считаем, что цель подходит под условия «Самого слабого звена». Если условие не выполнено, отключи талант.']};
  if(name==='Vicious Cycle'&&p.length)return stacked('wd',p[0],Number(t.description.match(/cap of (\d+)/)?.[1]||0));
  if(name==='Stand Your Ground'&&p.length)return stacked('twd',p[0],stackMax());
  if(name==='Pack Instincts'&&p.length>=4)return {controls:[control('distance','Last target: 0 = 0–15m / 1 = 15–25m / 2 = 25m+','Последняя цель: 0 = 0–15м / 1 = 15–25м / 2 = 25м+',2)],apply:v=>effect({chc:v.distance===2?p[3]:v.distance===1?p[1]:0,chd:v.distance===1?p[2]:v.distance===2?0:p[0]})};
