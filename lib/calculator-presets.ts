@@ -23,14 +23,6 @@ export function primaDonnaPreset(){
  eventBonuses:applyEventPreset([],'deadeye-overdrive'),armored:false,outside:true,headshots:100};
 }
 
-export function mantisPreset(){
- const preset=primaDonnaPreset();const weapon=weapons.find(w=>w.name==='Mantis')!;
- return {...preset,weaponId:weapon.id,weaponRolls:initialWeaponRolls(weapon.attributes,attributes),talentValues:[{},{previous:54751504},{mode:3}] as Record<string,number>[]};
-}
-export const CALCULATOR_PRESETS=[
- {id:'mantis',en:'Mantis · Aces & Eights',ru:'Богомол · Тузы и восьмёрки',headDamage:54751525.80,create:mantisPreset},
-] as const;
-
 /** Max-roll version for the linked sniper build; exotics retain their normal caps. */
 export function maxPrimaDonnaPreset(){
  const p=primaDonnaPreset();
@@ -63,9 +55,9 @@ export function strikerOverdogsPreset(){
  return {...base,gear:base.gear.map(g=>g.brand==='concentrated-company'?{...g,brand:'striker-s-battlegear'}:g),
   setStates:{'striker-s-battlegear':{enabled:true,values:{stacks:100}}},headshots:0};
 }
-const linkedPresets=[
+export const CALCULATOR_PRESETS=[
  {id:'prima-donna',en:'Sniper - Aces & Eights + Airaldi',ru:'Снайпер - Тузы восьмерки + Аиралди',create:maxPrimaDonnaPreset},
  {id:'coco-striker-2',en:'CoCo - Striker 2.0',ru:'Точка концентрации - Боевик 2.0',create:cocoStrikerPreset},
  {id:'striker-overdogs-100',en:'Striker - 100stacks + overdogs',ru:'Боевик - 100 стаков + претенденты',create:strikerOverdogsPreset},
 ];
-export function findCalculatorPreset(id:string){return [...CALCULATOR_PRESETS,...linkedPresets].find(p=>p.id===id);}
+export function findCalculatorPreset(id:string){return CALCULATOR_PRESETS.find(p=>p.id===id);}

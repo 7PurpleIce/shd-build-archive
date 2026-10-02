@@ -180,11 +180,12 @@ test('Prima Donna preset reproduces the verified build with full watch, three mo
  const fresh=load('calculator-presets').primaDonnaPreset();p.gear[0].core.value=0;assert.equal(fresh.gear[0].core.value,22.5);
 });
 
-test('preset list resolves both weapons and never carries Prima Donna stacks into Mantis',()=>{
- const {CALCULATOR_PRESETS}=load('calculator-presets');assert.equal(CALCULATOR_PRESETS.length,1);
- const p=CALCULATOR_PRESETS.find(p=>p.id==='mantis').create();const w=weaponData.find(w=>w.id===p.weaponId);
- assert.equal(w.name,'Mantis');assert.equal(weaponTalent(w.talentSlot,'').name,'In Plain Sight');assert.equal(p.talentValues[0].stacks,undefined);
- assert.equal(p.weaponRolls.minor_1.id,'dtoc-weapon-minor');assert.equal(p.active[0],true);assert.equal(p.eventBonuses.length,5);
+test('all build presets are buttons, sniper rolls are maxed and Mantis is removed',()=>{
+ const {CALCULATOR_PRESETS,findCalculatorPreset}=load('calculator-presets');assert.equal(CALCULATOR_PRESETS.length,3);assert.equal(findCalculatorPreset('mantis'),undefined);
+ const id=load('build-calculator-links').buildCalculatorPreset('e94364c4-cc60-42b4-96c0-a3def7b0a6bd');assert.equal(id,'prima-donna');
+ const p=findCalculatorPreset(id).create();assert.equal(p.weaponId,'marksman-rifle:Prima Donna');
+ for(const g of p.gear){assert.equal(g.core.value,22.5);assert.equal(g.minor[0].value,15);if(g.minor[1].id)assert.equal(g.minor[1].value,12);if(g.mod)assert.equal(g.modValue,10);}
+ assert.ok(Object.values(p.weaponRolls).every(r=>!r.proto));assert.equal(p.weaponRolls.minor_1.value,10);
 });
 
 test('event presets fill five localized bonuses without duplication and preserve custom rows',()=>{
