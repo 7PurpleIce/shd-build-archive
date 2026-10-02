@@ -164,7 +164,7 @@ function CalculatorBody({loadRequest}:{loadRequest?:CalculatorLoadRequest|null})
  <label>{t('Weapon','Оружие')}<CalculatorSelect value={weaponId} onChange={e=>changeWeapon(e.target.value)}>{weapons.filter(w=>w.type===weapon.type&&(w.id===weaponId||w.name.toLowerCase().includes(query.toLowerCase()))).map(w=><option key={w.id} value={w.id}>{w.name}{w.exotic?' · Exotic':w.named?' · Named':''}</option>)}</CalculatorSelect></label>
  <div className="damage-fields">{numberField(t('Base damage','Базовый урон'),base,setOverride,10000000)}{numberField(t('Expertise damage %','Урон мастерства %'),expertise,setExpertise,30)}</div>
  <p className="damage-help">{t('RPM / magazine / reload','Скорострельность / магазин / перезарядка')}: {fmt(weapon.rpm)} / {weapon.mag} / {fmt(weapon.reload)} {t('s','с')}. <button type="button" onClick={()=>setOverride(null)}>{t('Restore base damage','Вернуть базовый урон')}</button></p>
- <WeaponAttributes exotic={weapon.exotic} specs={weapon.attributes} value={weaponRolls} onChange={setWeaponRolls}/>
+ <WeaponAttributes exotic={weapon.exotic} specs={weapon.attributes} value={weaponRolls} onChange={setWeaponRolls} onPrototypeChange={enabled=>{if(enabled)setExpertise(30);}}/>
  <p className="damage-help">{t('Weapon attributes and supported talents are included automatically. Base character critical damage (+25%) is included automatically. Shotgun damage is per whole shot.','Атрибуты оружия и поддерживаемые таланты учитываются автоматически. Базовый критический урон персонажа (+25%) учитывается автоматически. Урон дробовика считается за весь выстрел.')}</p>
  {renderTalent(0)}
  </CalculatorPanel>
