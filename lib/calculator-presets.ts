@@ -1,5 +1,8 @@
 import {selectExoticGear} from './exotic-gear';
 import type {GearItem} from './named-gear';
+import {gearAttribute} from './named-gear';
+import {attributeAmount} from './attribute-values';
+import gearMods from '../data/gear-mods.json';
 import type {WeaponModSlot} from './weapon-mods';
 import weapons from '../data/weapons.json';
 import attributes from '../data/weapon-attributes.json';
@@ -25,9 +28,20 @@ export function mantisPreset(){
  return {...preset,weaponId:weapon.id,weaponRolls:initialWeaponRolls(weapon.attributes,attributes),talentValues:[{},{previous:54751504},{mode:3}] as Record<string,number>[]};
 }
 export const CALCULATOR_PRESETS=[
- {id:'prima-donna',en:'Prima Donna · Aces & Eights',ru:'Примадонна · Тузы и восьмёрки',headDamage:71541516.14,create:primaDonnaPreset},
  {id:'mantis',en:'Mantis · Aces & Eights',ru:'Богомол · Тузы и восьмёрки',headDamage:54751525.80,create:mantisPreset},
 ] as const;
+
+/** Max-roll version for the linked sniper build; exotics retain their normal caps. */
+export function maxPrimaDonnaPreset(){
+ const p=primaDonnaPreset();
+ const weapon=weapons.find(w=>w.id===p.weaponId)!;
+ p.weaponRolls=initialWeaponRolls(weapon.attributes,attributes);
+ p.gear.forEach(g=>{
+  for(const roll of [g.core,...g.minor]){const a=gearAttribute(roll.id);if(a)roll.value=attributeAmount(a,roll.proto);}
+  const mod=gearMods.find(m=>m.id===g.mod);if(mod)g.modValue=attributeAmount(mod);
+ });
+ return p;
+}
 
 /** Screenshot configuration supplied for CoCo - Striker 2.0, 2026-10-02. */
 export function cocoStrikerPreset(){
@@ -50,6 +64,7 @@ export function strikerOverdogsPreset(){
   setStates:{'striker-s-battlegear':{enabled:true,values:{stacks:100}}},headshots:0};
 }
 const linkedPresets=[
+ {id:'prima-donna',en:'Sniper - Aces & Eights + Airaldi',ru:'Снайпер - Тузы восьмерки + Аиралди',create:maxPrimaDonnaPreset},
  {id:'coco-striker-2',en:'CoCo - Striker 2.0',ru:'Точка концентрации - Боевик 2.0',create:cocoStrikerPreset},
  {id:'striker-overdogs-100',en:'Striker - 100stacks + overdogs',ru:'Боевик - 100 стаков + претенденты',create:strikerOverdogsPreset},
 ];

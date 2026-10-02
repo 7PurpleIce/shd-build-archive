@@ -181,7 +181,7 @@ test('Prima Donna preset reproduces the verified build with full watch, three mo
 });
 
 test('preset list resolves both weapons and never carries Prima Donna stacks into Mantis',()=>{
- const {CALCULATOR_PRESETS}=load('calculator-presets');assert.equal(CALCULATOR_PRESETS.length,2);
+ const {CALCULATOR_PRESETS}=load('calculator-presets');assert.equal(CALCULATOR_PRESETS.length,1);
  const p=CALCULATOR_PRESETS.find(p=>p.id==='mantis').create();const w=weaponData.find(w=>w.id===p.weaponId);
  assert.equal(w.name,'Mantis');assert.equal(weaponTalent(w.talentSlot,'').name,'In Plain Sight');assert.equal(p.talentValues[0].stacks,undefined);
  assert.equal(p.weaponRolls.minor_1.id,'dtoc-weapon-minor');assert.equal(p.active[0],true);assert.equal(p.eventBonuses.length,5);
